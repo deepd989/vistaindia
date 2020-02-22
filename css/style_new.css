@@ -11,7 +11,8 @@ body
 }
 .nvbar
 {
-    padding-bottom:20px;
+    padding-top:5px;
+    padding-bottom:5px;
     /* margin-bottom:10px; */
     background: linear-gradient(to left, #fb9700 50%, #000000 50%);
 }
@@ -395,3 +396,22 @@ min-height: 350px;
 
 /* CARD TESTIMONIAL */
 
+/* FOOTER */
+#footer{padding:0px 0px;
+    background:#d7d7d7;
+    color:black;
+    margin-top:30px;    
+    /* position: fixed; */
+    z-index: 9999999;
+    bottom: 0;
+    width: 100%;
+}
+.footer-brand{text-align:center;}
+.footer-brand .logo>img{max-height:50px;}
+.copyright{height:50px;line-height:50px;}
+.social-media{margin-bottom:0px!important;}
+.contact-social{margin:10px 0px;}
+.social-media ul{margin:0px;padding:0px;}
+.social-media li{display:inline-block;list-style:none;margin:12px 5px 0px 5px;}
+.social-media li .fa{font-size:22px;}
+.social-media li a{color:black;}

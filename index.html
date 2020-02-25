@@ -8,7 +8,8 @@
         <link type="text/css" rel="stylesheet" href="css/style_new.css" />
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <script src="js/nav.js"></script>
+        <script src="js/testimonial.js"></script>
     </head>
     <body>
         <!--MOBILE NAVBAR-->
@@ -41,7 +42,7 @@
                             <img class="logo-img" src="img/logo-alt.png" alt="logo">
                         </div>
                         <div class="col-xs-2">
-                            <a href="index.html" class="nav_header">HOME</a>
+                            <a href="page1.html" class="nav_header">HOME</a>
                         </div>
                         <div class="col-xs-4">
                             <a href="page2.html" class="nav_header">MEDIA SERVICES</a>
@@ -130,7 +131,7 @@
                                     <p class="card-text">Some quick card description...</p>
                                     <!-- <a href="#" class="card-link">Card link</a> -->
                                     </div>
-                                </div>margin-top:5px;
+                                </div>
                         </div>
                         <div class="col-md-3 card_col">
                             <div class="card" style="width: 22rem;">
@@ -175,157 +176,225 @@
                <!-- TESTIMONIAL -->
                 <div class="container-fluid" style="background: linear-gradient(#d7d7d6 78%, #fb9700 22%); padding-bottom:30px;" >
                     <p class="testimonial" style="text-align:center;">TESTIMONIAL</p>
-                    
-                    <div class="row">
-                        <a class="pull-left" onclick="prv()" style="margin-right:11vw;">prv</a>
-                        <!--Page 1 of testimonials  -->
-                        <div>
-                        <div id="page_1_Testimonial" style="display: block;"> 
-                            <div class="col-md-3 col-xs-3" >
-                                <div class="card card2_main">
-                                    <div class="card-body2" style="text-align:center">
-                                            <div class="numberCircle2">
-                                                <img src="img/Testimonials/Aditya.jpg" class="card_image2">
-                                            </div>
-                                    <h5 class="card-title2">Aditya Pittie</h5>
-                                    <h5 class="card-title2">Managing Director</h5>
-                                    <p class="card-title" style="font-size:small;"><u>EPIC Television Networks Pvt Ltd</u></p>
-                                    <p class="card-text">
-                                        Vista India provides Epic an excellent service for our digital delivery needs to international platforms.
-                                     </p>
-                                    </div>
+                   <!-- DESKTOP TESTIMONIALS -->
+                   <div id="Desk_testimonials" style="display:block;">
+                   <div class="stt page1 Testimonials"  id="page1_testimonials">
+                    <p>prev</p>
+                    <div class="card card2_main">
+                        <div class="card-body2" style="text-align:center">
+                                <div class="numberCircle2">
+                                    <img src="img/Testimonials/Aditya.jpg" class="card_image2">
                                 </div>
-                            </div>
-                            <div class="col-md-3 " >
-                                <div class="card card2_main">
-                                    <div class="card-body2" style="text-align:center">
-                                            <div class="numberCircle2">
-                                                <img src="img/Testimonials/avinaash-jumani.jpg" class="card_image2">
-                                            </div>
-                                    <h5 class="card-title2">Avinaash Jumani</h5>
-                                    <h5 class="card-title2">Proprietor</h5>
-                                    <p class="card-title" style="font-size:small;"><u>PictureWorks India</u></p>
-                                    <p class="card-text">
-                                        The ability to distribute content on multiple digital platforms along with the expertise to manage all Licensing paperwork and QC, delivery, localization activities makes Vista India a one stop solution. Being market leaders they also ensure we get the right value for our content that is in parity with similar content. 
-                                    </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-xs-10">
-                                <div class="card card2_main">
-                                    <div class="card-body2" style="text-align:center">
-                                            <div class="numberCircle2">
-                                                <img src="img/Testimonials/Gaurav Verma.jpg" class="card_image2">
-                                            </div>
-                                    <h5 class="card-title2">Gaurav Verma</h5>
-                                    <h5 class="card-title2">Cheif Revenue Officer</h5>
-                                    <p class="card-title" style="font-size:small;"><u>Red Chillies Entertainment</u></p>
-                                    <p class="card-text">
-                                        Vista India has helped us in migrating to this new digital consumption age. They are a great service provider to a content company, they continue to deliver our content to various partners across the globe.
-                                    </p>
-                                    </div>
-                                </div>
-                            </div>
+                        <h5 class="card-title2">Aditya Pittie</h5>
+                        <h5 class="card-title2">Managing Director</h5>
+                        <p class="card-title" style="font-size:small;"><u>EPIC Television Networks Pvt Ltd</u></p>
+                        <p class="card-text">
+                            Vista India provides Epic an excellent service for our digital delivery needs to international platforms.
+                        </p>
                         </div>
-                        <!-- PAGE 1 ENDS -->
-
-                        <!--Page 2 of testimonials  -->
-                        <div id="page_2_Testimonial" style="display: none;"> 
-                            <div class="col-md-3 col-xs-10">
-                                <div class="card card2_main">
-                                    <div class="card-body2" style="text-align:center">
-                                            <div class="numberCircle2">
-                                                <img src="img/Testimonials/Aseem-Bajaj.jpg" class="card_image2">
-                                            </div>
-                                    <h5 class="card-title2">Aseem Bajaj</h5>
-                                    <h5 class="card-title2">Producer-Cinematographer</h5>
-                                    <br>
-                                    <p class="card-text">
-                                        Vista India handled all the deliveries to Netflix for my film "Rajma Chawal". From the audio stems to the final IMF package, their team coordinated with my post team and Netflix to ensure everything was seamless. They are reliable, supportive, knowledgeable and very experienced when it comes to Netflix deliveries. I have to admit that Vista India's team held our hands & walked us through the entire complex process like a walk in the clouds.
-                                       </p>
-                                    </div>
+                    </div>
+                    <div class="card card2_main">
+                        <div class="card-body2" style="text-align:center">
+                                <div class="numberCircle2">
+                                    <img src="img/Testimonials/avinaash-jumani.jpg" class="card_image2">
                                 </div>
-                            </div>
-                            <div class="col-md-3 " >
-                                <div class="card card2_main">
-                                    <div class="card-body2" style="text-align:center">
-                                            <div class="numberCircle2">
-                                                <img src="img/Testimonials/Onir.jpg" class="card_image2">
-                                            </div>
-                                    <h5 class="card-title2">Onir</h5>
-                                    <h5 class="card-title2">Filmmaker</h5>
-                                    <p class="card-title" style="font-size:small;"><u>National Award Winner</u></p>
-                                    <p class="card-text">                             As an independent filmmaker, I find Vista India’s support very empowering. It’s been a great association which has made it possible for our films to be monetized on premium digital platforms.
-                                    </p>
-                                    </div>
+                        <h5 class="card-title2">Avinaash Jumani</h5>
+                        <h5 class="card-title2">Proprietor</h5>
+                        <p class="card-title" style="font-size:small;"><u>PictureWorks India</u></p>
+                        <p class="card-text">
+                            The ability to distribute content on multiple digital platforms along with the expertise to manage all Licensing paperwork and QC, delivery, localization activities makes Vista India a one stop solution. Being market leaders they also ensure we get the right value for our content that is in parity with similar content. 
+                        </p>
+                        </div>
+                    </div>
+                    <div class="card card2_main">
+                        <div class="card-body2" style="text-align:center">
+                                <div class="numberCircle2">
+                                    <img src="img/Testimonials/Gaurav Verma.jpg" class="card_image2">
                                 </div>
-                            </div>
-                            <div class="col-md-3" >
-                                <div class="card card2_main">
-                                    <div class="card-body2" style="text-align:center">
-                                            <div class="numberCircle2">
-                                                <img src="img/Testimonials/vikram-mehra.jpg" class="card_image2">
-                                            </div>
-                                    <h5 class="card-title2">Vikram Mehra</h5>
-                                    <h5 class="card-title2">Managing Director</h5>
-                                    <p class="card-title" style="font-size:small;"><u>Saregama India LTD</u></p>
-                                    <p class="card-text">
-                                        Vista India has played a big role in the success of Yoodlee Films, in terms of a knowledgeable and unbiased sounding board and a transparent sales partner.
-                                      </p>
-                                    </div>
+                        <h5 class="card-title2">Gaurav Verma</h5>
+                        <h5 class="card-title2">Cheif Revenue Officer</h5>
+                        <p class="card-title" style="font-size:small;"><u>Red Chillies Entertainment</u></p>
+                        <p class="card-text">
+                            Vista India has helped us in migrating to this new digital consumption age. They are a great service provider to a content company, they continue to deliver our content to various partners across the globe.
+                        </p>
+                        </div>
+                    </div>
+                    <p onclick="next_desk_testimonial()">next</p>
+                </div>
+                <!-- page 1 ends -->
+                <!-- page 2 ends -->
+                <div class="stt page2 Testimonials" id="page2_testimonials" style="display:none;">
+                    <p onclick="prev_desk_testimonial()">prev</p>
+                    <div class="card card2_main">
+                        <div class="card-body2" style="text-align:center">
+                                <div class="numberCircle2">
+                                    <img src="img/Testimonials/Aseem-Bajaj.jpg" class="card_image2">
                                 </div>
-                            </div>
+                        <h5 class="card-title2">Aseem Bajaj</h5>
+                        <h5 class="card-title2">Producer-Cinematographer</h5>
+                        <br>
+                        <p class="card-text">
+                            Vista India handled all the deliveries to Netflix for my film "Rajma Chawal". From the audio stems to the final IMF package, their team coordinated with my post team and Netflix to ensure everything was seamless. They are reliable, supportive, knowledgeable and very experienced when it comes to Netflix deliveries. I have to admit that Vista India's team held our hands & walked us through the entire complex process like a walk in the clouds.
+                           </p>
                         </div>
-                        <!-- PAGE2 ENDS -->
-                        <a style="top:0; float:right;"onclick="next()">next</a>
+                    </div>
+                    <div class="card card2_main">
+                        <div class="card-body2" style="text-align:center">
+                                <div class="numberCircle2">
+                                    <img src="img/Testimonials/Onir.jpg" class="card_image2">
+                                </div>
+                        <h5 class="card-title2">Onir</h5>
+                        <h5 class="card-title2">Filmmaker</h5>
+                        <p class="card-title" style="font-size:small;"><u>National Award Winner</u></p>
+                        <p class="card-text">                             As an independent filmmaker, I find Vista India’s support very empowering. It’s been a great association which has made it possible for our films to be monetized on premium digital platforms.
+                        </p>
                         </div>
+                    </div>
+                    <div class="card card2_main">
+                        <div class="card-body2" style="text-align:center">
+                                <div class="numberCircle2">
+                                    <img src="img/Testimonials/vikram-mehra.jpg" class="card_image2">
+                                </div>
+                        <h5 class="card-title2">Vikram Mehra</h5>
+                        <h5 class="card-title2">Managing Director</h5>
+                        <p class="card-title" style="font-size:small;"><u>Saregama India LTD</u></p>
+                        <p class="card-text">
+                            Vista India has played a big role in the success of Yoodlee Films, in terms of a knowledgeable and unbiased sounding board and a transparent sales partner.
+                          </p>
                         </div>
-                        
+                    </div>
+                    <p>next</p>
+                </div>
+                <!-- page2 ends -->
+                </div>
+                <!-- Desktop Testimonial ends here -->
+                <!-- MOB TESTIMONIAL -->
+                <!-- MOB testimonials -->
+        <div class="stt" style="display:none;" id="Mob_testimonials"> 
+            <p onclick="prev_mob_testimonials()">prev</p>
+            <div class="card card2_main mob_cards" id="1_card">
+                <div class="card-body2" style="text-align:center">
+                        <div class="numberCircle2">
+                            <img src="img/Testimonials/Gaurav Verma.jpg" class="card_image2">
+                        </div>
+                <h5 class="card-title2">Gaurav Verma</h5>
+                <h5 class="card-title2">Cheif Revenue Officer</h5>
+                <p class="card-title" style="font-size:small;"><u>Red Chillies Entertainment</u></p>
+                <p class="card-text">
+                    Vista India has helped us in migrating to this new digital consumption age. They are a great service provider to a content company, they continue to deliver our content to various partners across the globe.
+                </p>
+                </div>
+            </div>
+            <div class="card card2_main mob_cards" id="2_card" style="display:none;">
+                <div class="card-body2" style="text-align:center">
+                        <div class="numberCircle2">
+                            <img src="img/Testimonials/avinaash-jumani.jpg" class="card_image2">
+                        </div>
+                <h5 class="card-title2">Avinaash Jumani</h5>
+                <h5 class="card-title2">Proprietor</h5>
+                <p class="card-title" style="font-size:small;"><u>PictureWorks India</u></p>
+                <p class="card-text">
+                    The ability to distribute content on multiple digital platforms along with the expertise to manage all Licensing paperwork and QC, delivery, localization activities makes Vista India a one stop solution. Being market leaders they also ensure we get the right value for our content that is in parity with similar content. 
+                </p>
+                </div>
+            </div>
+            <div class="card card2_main mob_cards" id="3_card" style="display:none;">
+                <div class="card-body2" style="text-align:center">
+                        <div class="numberCircle2">
+                            <img src="img/Testimonials/Aditya.jpg" class="card_image2">
+                        </div>
+                <h5 class="card-title2">Aditya Pittie</h5>
+                <h5 class="card-title2">Managing Director</h5>
+                <p class="card-title" style="font-size:small;"><u>EPIC Television Networks Pvt Ltd</u></p>
+                <p class="card-text">
+                    Vista India provides Epic an excellent service for our digital delivery needs to international platforms.
+                </p>
+                </div>
+            </div>
+            <div class="card card2_main mob_cards" id="4_card" style="display:none;">
+                <div class="card-body2" style="text-align:center">
+                        <div class="numberCircle2">
+                            <img src="img/Testimonials/vikram-mehra.jpg" class="card_image2">
+                        </div>
+                <h5 class="card-title2">Vikram Mehra</h5>
+                <h5 class="card-title2">Managing Director</h5>
+                <p class="card-title" style="font-size:small;"><u>Saregama India LTD</u></p>
+                <p class="card-text">
+                    Vista India has played a big role in the success of Yoodlee Films, in terms of a knowledgeable and unbiased sounding board and a transparent sales partner.
+                  </p>
+                </div>
+            </div>
+            <div class="card card2_main mob_cards" id="5_card" style="display:none;">
+                <div class="card-body2" style="text-align:center">
+                        <div class="numberCircle2">
+                            <img src="img/Testimonials/Onir.jpg" class="card_image2">
+                        </div>
+                <h5 class="card-title2">Onir</h5>
+                <h5 class="card-title2">Filmmaker</h5>
+                <p class="card-title" style="font-size:small;"><u>National Award Winner</u></p>
+                <p class="card-text">                             As an independent filmmaker, I find Vista India’s support very empowering. It’s been a great association which has made it possible for our films to be monetized on premium digital platforms.
+                </p>
+                </div>
+            </div>
+            <div class="card card2_main mob_cards" style="display:none;" id="6_card">
+                <div class="card-body2" style="text-align:center">
+                        <div class="numberCircle2">
+                            <img src="img/Testimonials/Aseem-Bajaj.jpg" class="card_image2">
+                        </div>
+                <h5 class="card-title2">Aseem Bajaj</h5>
+                <h5 class="card-title2">Producer-Cinematographer</h5>
+                <br>
+                <p class="card-text">
+                    Vista India handled all the deliveries to Netflix for my film "Rajma Chawal". From the audio stems to the final IMF package, their team coordinated with my post team and Netflix to ensure everything was seamless. They are reliable, supportive, knowledgeable and very experienced when it comes to Netflix deliveries. I have to admit that Vista India's team held our hands & walked us through the entire complex process like a walk in the clouds.
+                   </p>
+                </div>
+            </div>
+            <p onclick="next_mob_testimonials()">next</p>
+        </div>
                          
 
-                           
+                          
                     </div>
-                    <!-- TESITMONIAL ENDS -->
-                </div>              
-				</div>
+                    <div class="container-fluid" style="padding:0px; background-color:#e1e1e1;">
+                    <footer id="footer">
+                        <!-- container -->
+                        <div class="container">
+                            <!-- row -->
+                            <div class="row">
+                                <!-- contact social -->
+                                
+                                <!-- /contact social -->
+                
+                                <!-- copyright -->
+                                <div class="col-md-6 col-xs-6">
+                                    <span class="copyright" style="font-size:small ;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved &nbsp; | &nbsp;<a href="career.html" style="color: black;">Careers </a> | &nbsp;<a style="color: black;" href="privacy.html">Privacy Policy </a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                                </div>
+                                <div class="col-sm-6 text-right col-xs-6">
+                                    <ul class="social-media">
+                                    <li>Mail us at <a href="mailto:info@vistaindia.com" >info@vistaindia.com </a><li>
+                                    <li><a href="https://www.facebook.com/vistadigimedia/" target="_blank">| &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.instagram.com/vistadigimedia/"  target="_blank"><i class="fa fa-instagram" aria-hidden="true" ></i></a></li>
+                                    <li><a href="https://twitter.com/vistadigimedia"  target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/vista-india-digital-media/ "  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- /copyright -->
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /container -->
+                    </footer>
+                    </div>
+                    <!-- /Footer -->
+                </div>
+                              
+                </div>
+                
+            </div>
                <!-- Footer -->
-    <div class="container-fluid" style="margin-left:-15px; margin-right:-15px; padding:0px;">
-        <br>
-	<footer id="footer">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-				<!-- contact social -->
-				
-				<!-- /contact social -->
-
-				<!-- copyright -->
-				<div class="col-md-5 col-sm-5">
-					<span class="copyright" style="font-size:small ;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved &nbsp; | &nbsp;<a style="color: black;" href="career.html">Careers </a> | &nbsp;<a style="color: black;" href="privacy.html">Privacy Policy </a>
-				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-				</div>
-				<div class="col-md-7 text-right col-sm-7">
-					<ul class="social-media">
-					<li>Mail us at <a href="mailto:info@vistaindia.com" >info@vistaindia.com </a><li>
-					<li><a href="https://www.facebook.com/vistadigimedia/" target="_blank">| &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.instagram.com/vistadigimedia/"  target="_blank"><i class="fa fa-instagram" aria-hidden="true" ></i></a></li>
-					<li><a href="https://twitter.com/vistadigimedia"  target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.linkedin.com/company/vista-india-digital-media/ "  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-					</ul>
-				</div>
-				<!-- /copyright -->
-			</div>
-			<!-- /row -->
-		</div>
-		<!-- /container -->
-    </footer>
-    </div>
-	<!-- /Footer -->
-
-
-        </div>
+   
     </body>
     <script>
         let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
@@ -335,14 +404,10 @@
             let img=document.getElementById('homepage_image');
             img.classList.remove("pull-right")
         }
-        function hamburger() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } 
-        else{
-                x.style.display = "block";
-            }
+        if(width<=851)
+        {
+            document.getElementById("Desk_testimonials").style.display="none";
+            document.getElementById("Mob_testimonials").style.display="flex";
         }
 
         function prv()

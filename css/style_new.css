@@ -37,7 +37,7 @@ a
 }
 .logo-img
 {
-    width: 70%;
+    width: 90%;
     /* height:auto ; */
 }
 .nav_header
@@ -218,13 +218,94 @@ span.orange
       .logo-img
       {     
           height:30px;
-          width:30%;
+          width:170px;
           background-color: black;
       }
 }
 
 /* Card CSS */
 
+.card-body2 {
+    box-shadow: 10px 10px 5px grey;
+    position:relative;
+    padding-top: 120px;
+    border:2px solid white;
+    background:white;
+    border-radius:10px;
+    min-height: 350px;
+    /* width:300px; */
+    }
+    .card_image2
+    {
+        /* margin-top:32px; */
+        height:100%;
+        width:100%;
+        border-radius:50%;
+    }
+    .card-title2
+    {
+        font-size: large;
+        color: black;
+    }
+    .card2_main
+    {
+        width:250px; 
+        max-width:350px;
+        /* padding-right:15vw; */
+    }
+    .card-text
+    {
+        font-size: x-small;
+        padding:2px;
+    }
+    .numberCircle2 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 50px;
+        border: 1px none #fb9700;
+        /* padding:5px; */
+        color:white;
+        background:#fb9700;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-30%);
+    
+    }
+        .stt
+        {
+            display:flex;
+            justify-content:space-evenly ;
+        }
+    
+.five_hundred_img
+{
+    height:50vh;
+    max-height:400px
+}
+.watermark {
+    opacity: 0.2;
+    color: #b7b7b6;
+    position: absolute;
+    font-size:24vh;
+    margin-top:10vh;
+}
+.watermark1 {
+    opacity: 1;
+    color: BLACK;
+    position: absolute;
+    font-size:18vh;
+    margin-top:15vh;
+}
+.content_under_text
+{
+    text-align:center;
+    font-size:75px;
+    color: black;
+    margin-top:100px;
+}
 .numberCircle {
     width: 150px;
     height: 150px;
@@ -258,32 +339,6 @@ min-height: 200px;
 {
     font-size: large;
     color: black;
-}
-.five_hundred_img
-{
-    height:50vh;
-    max-height:400px
-}
-.watermark {
-    opacity: 0.2;
-    color: #b7b7b6;
-    position: absolute;
-    font-size:24vh;
-    margin-top:10vh;
-}
-.watermark1 {
-    opacity: 1;
-    color: BLACK;
-    position: absolute;
-    font-size:18vh;
-    margin-top:15vh;
-}
-.content_under_text
-{
-    text-align:center;
-    font-size:75px;
-    color: black;
-    margin-top:100px;
 }
 
 .numberCircle2 {
@@ -327,7 +382,7 @@ min-height: 350px;
 }
 .card2_main
 {
-    width:274px; 
+    width:300px; 
     max-width:350px;
     /* padding-right:15vw; */
 }
@@ -336,6 +391,8 @@ min-height: 350px;
     font-size: x-small;
     padding:2px;
 }
+
+
 
 @media screen and (max-width: 992px)
 {
@@ -380,6 +437,9 @@ min-height: 350px;
         width:300px;
         max-width:400px;
     }
+    .prev{
+        margin-right:5vw;        
+    }
 }
 .image-container {
     display: flex;
@@ -397,11 +457,12 @@ min-height: 350px;
 /* CARD TESTIMONIAL */
 
 /* FOOTER */
-#footer{padding:0px 0px;
+#footer{
+    padding:0px 0px;
     background:#d7d7d7;
     color:black;
     margin-top:30px;    
-    /* position: fixed; */
+    /* position: absolute; */
     z-index: 9999999;
     bottom: 0;
     width: 100%;
@@ -415,3 +476,18 @@ min-height: 350px;
 .social-media li{display:inline-block;list-style:none;margin:12px 5px 0px 5px;}
 .social-media li .fa{font-size:22px;}
 .social-media li a{color:black;}
+
+@media screen and (max-width: 319px)
+{
+    .watermark
+    {
+        font-size:4rem;
+    }
+}
+@media screen and (max-width:400px)
+{
+    .testimonial
+    {
+        display: none;
+    }
+}

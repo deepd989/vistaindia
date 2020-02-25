@@ -147,6 +147,7 @@ span.orange
 
 @media screen and (max-width: 800px) 
 {
+    
     .vertical-align {
         display: block; /* Turn off the flexible box layout */
     }
@@ -341,51 +342,6 @@ min-height: 200px;
     color: black;
 }
 
-.numberCircle2 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 50px;
-    border: 1px none #fb9700;
-    /* padding:5px; */
-    color:white;
-    background:#fb9700;
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%) translateY(-30%);
-
-}
-
-.card-body2 {
-box-shadow: 10px 10px 5px grey;
-position:relative;
-padding-top: 120px;
-border:2px solid white;
-background:white;
-border-radius:10px;
-min-height: 350px;
-/* width:300px; */
-}
-.card_image2
-{
-    /* margin-top:32px; */
-    height:100%;
-    width:100%;
-    border-radius:50%;
-}
-.card-title2
-{
-    font-size: large;
-    color: black;
-}
-.card2_main
-{
-    width:300px; 
-    max-width:350px;
-    /* padding-right:15vw; */
-}
 .card-text
 {
     font-size: x-small;
@@ -469,8 +425,8 @@ min-height: 350px;
 }
 .footer-brand{text-align:center;}
 .footer-brand .logo>img{max-height:50px;}
-.copyright{height:50px;line-height:50px;}
-.social-media{margin-bottom:0px!important;}
+.copyright{height:50px;line-height:50px; font-size: small;}
+.social-media{margin-bottom:0px!important; font-size: small;}
 .contact-social{margin:10px 0px;}
 .social-media ul{margin:0px;padding:0px;}
 .social-media li{display:inline-block;list-style:none;margin:12px 5px 0px 5px;}
@@ -483,11 +439,32 @@ min-height: 350px;
     {
         font-size:4rem;
     }
+    
 }
 @media screen and (max-width:400px)
 {
     .testimonial
     {
         display: none;
+    }
+    .social-media
+    {
+        padding-left:0px;
+         padding-top:2px;
+         font-size:x-small;
+    }
+    .copyright
+    {
+        font-size:9px;
+    }
+    .social-media li .fa{
+        font-size:20px;
+    }
+    .social-media li{display:inline-block;list-style:none;margin:12px 2px 0px 2px;}
+    .homepage_text
+    {
+        font-size:45px !important;
+        width: fit-content;
+
     }
 }

@@ -33,6 +33,7 @@ body
 .card
 {
     width:100% ;
+    max-width:300px;
 
 }
 .card_btns_div
@@ -100,4 +101,108 @@ body
   {
     width:295px;
     margin:0 auto;
+    bottom:10px;
   }
+  .mob_links
+  {
+
+      width: 100%;
+      max-width:300px;
+      /* background-color: #fb9700; */
+      margin:20px auto;
+      /* margin-bottom: 200px; */
+      border-style: none;
+      background-color: black;
+      border-color: black;
+  }
+  .open
+  {
+    border-style:none !important;   
+    /* border-color: black !important; */
+  }
+  .dropdown_btn
+  {
+    width: 100% !important;
+    max-width:300px !important;
+    background-color: black !important;
+    border-color: black !important;
+    border-bottom-color: #fb9700 !important;
+    color:#fb9700;
+  }
+  .dropdown_btn:active
+  {
+    width: 100%;
+    max-width:300px;
+    background-color: black;
+    border-color: black;
+    border-bottom-color: #fb9700;
+  }
+  .open
+  {
+    margin-bottom:150px;
+  }
+  .btn :active
+  {
+    border:none;
+  }
+  .dropdown-menu 
+  {
+    width: 100%;
+    max-width:300px;
+    background-color: #fb9700;
+    color: black;
+  }
+  .dropdown-menu li a
+  {
+      color: black;
+  }
+  .ls:hover
+  {
+      background-color:orange !important;
+  }
+  /* .dropdown_btn:active
+  {
+    width: 100%;
+    max-width:300px;
+    background-color: black;
+    border-color: black;
+    border-bottom-color: #fb9700;
+  } */
+  .dropdown_btn:hover
+  {
+    width: 100%;
+    max-width:300px;
+    background-color: black;
+    border-color: black;
+    border-bottom-color: #fb9700;
+  }
+  @media screen and (max-width:995px)
+  {
+    .link
+    {
+        font-size: large;
+    }
+  }
+  @media screen and (max-width:765px)
+  {
+      .card
+      {
+          margin: 30px auto;
+      }
+      .content
+      {
+        margin-top:0px;
+        padding-bottom:0px;
+      }
+      .row2
+      {
+          margin-top:-20px ;
+      }
+      .link
+      {
+          font-size: medium;
+      }
+      
+  }
+  
+  /* 675 se show dropdrown  */

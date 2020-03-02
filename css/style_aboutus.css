@@ -1,0 +1,184 @@
+.top_text
+{
+    margin-top:20px;
+    font-size:12px;
+    color: black;
+    text-align: center;
+    /* padding:15px; */
+}
+.heading_text
+{
+    font-size: x-large;
+    color: black;
+    text-align: center;
+    letter-spacing:2px;
+}
+/* .container
+{
+    padding-left:6vw;
+    padding-right:4vw;
+} */
+
+ .rowg
+{
+    padding-left:5vw;
+}
+/*
+.colg
+{
+    height:100% !important;
+    max-height:310px !important;
+} */
+
+.img_container
+{
+    width:240px;
+    height:210px;
+    border:solid 1px grey;
+    border-radius:5px;
+    text-align: center;
+    /* margin-right:30px; */
+}
+._img1
+{
+    margin-top:25px;
+}
+._img2
+{
+    margin-top:80px;
+    width:150px;
+}
+._img3
+{
+    width:200px;
+    height:50px;
+}
+.award_text
+{
+    padding-top:75px;
+}
+
+.about_us_card
+{
+    background-color: black; 
+    height:355px;
+    border-radius:5px;
+    padding:20px;
+    margin-top:20px;
+}
+
+.card_text
+{
+    width:50vw; 
+    color: white;
+    font-size: small;
+}
+
+.left_card_text
+{
+    padding-left:15px;
+    width:60vw !important;
+}
+.mob_text
+{
+    color:white; 
+    /* text-align:center ; */
+    padding-left:15px;
+    padding-right:15px;
+    font-size:small;
+    padding-bottom:5px ;
+}
+.mob_leadership
+{
+    display:none;
+}
+.certi_image
+{
+    padding-left:5vw;
+}
+
+@media screen and (max-width: 1125px)
+{
+    .card_text
+    {
+        font-size:small; 
+    }
+    .rowg
+    {
+        padding-left:4vw;
+    }
+    .certi_image
+{
+    padding-left:4vw;
+}
+        
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    .card_text
+    {
+        font-size:12px; 
+        width:37vw; 
+    }
+     .rowg
+    {
+        padding-left:1vw;
+    }
+    .certi_image
+    {
+        padding-left:1vw;
+    }
+  
+
+}
+@media screen and (max-width: 857px)
+{
+    .card_text
+    {
+        font-size:11px; 
+        width:38vw; 
+        
+    }
+
+}
+
+
+@media screen and (max-width: 767px)
+{
+    .rowg
+    {
+        padding-left:0px;
+    }
+    .img_container
+    {
+        margin:20px auto;
+    }
+    .certi_image
+    {
+        width:225px;
+        height:300px;
+        /* border:solid 1px grey;
+        border-radius:5px; */
+        /* text-align: center; */
+        margin:0px auto;
+        padding:0px;
+        
+    }
+    .award_text
+    {
+        padding-top:20px;
+        text-align: center;
+        /* padding-left:0px; */
+        /* padding-right:0px; */
+    }
+    .mob_leadership
+    {
+        display:block;
+    }
+    .desk_leadership
+    {
+        display: none;
+    }
+}

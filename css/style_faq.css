@@ -1,0 +1,63 @@
+.head_text
+{
+    letter-spacing:4px;
+    font-size:large ;
+    text-align: center;
+    margin-top:20px;
+    font-weight: 600;
+}
+.sub_head_text
+{
+    letter-spacing:3px;
+    font-size:small;
+    text-align: center;
+    margin-top:5px;
+    
+}
+.ques_text
+{
+    letter-spacing:2px;
+    font-weight: bold;
+    margin-top:30px;
+    line-height:5px;
+    /* padding:10px; */
+}
+.btn
+{
+    width:100px;
+    margin-left:5px;
+}
+.active
+{
+    background-color: black;
+    color: white !important;
+}
+a
+{
+    color:#fb9700;
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px)
+{
+    .head_text
+    {
+        font-size: medium;
+    }
+    .sub_head_text
+{
+    letter-spacing:3px;
+    font-size:small;
+    text-align: center;
+    margin-top:5px;
+}
+.ques_text
+{
+    line-height:20px;
+}
+
+}

@@ -1,0 +1,336 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Vista India
+        </title>
+        <link type="text/css" rel="stylesheet" href="css/style_new.css" />
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/nav.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/style_faq.css" />
+    </head>
+    <body>
+        <!--MOBILE NAVBAR-->
+        <div class="mobile-container mob_nav" >
+            <div class="topnav">
+                <div class="topnav_header" style="width:100%; background:black; padding-top:10px; padding-bottom:10px;" >
+                    <img class="logo-img" src="img/logo-alt.png" alt="logo">
+                </div>
+                <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">Media Services</a>
+                    <a href="page3_netflix.html">Recent Releases</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="FAQ.html">FAQ</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            </div>
+            <!--/MOBILE NAVBAR-->
+            <!-- NAVBAR-->
+            <div class="container-fluid">
+                <div class="row visible-desktop nvbar" >
+                    <div class="col-xs-6 left_col_navbar" >
+                        <div class="row pull-right">
+                            <div class="col-xs-4 ">
+                                <img class="logo-img" src="img/logo-alt.png" alt="logo">
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="index.html" class="nav_header">HOME</a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="page2.html" class="nav_header">MEDIA SERVICES</a>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="page3_netflix.html" class="nav_header">RECENT</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 right_col_navbar" >
+                        <div class="row">
+                            <div class="col-xs-3" style="padding-left:0px !important;">
+                                <a href="page3_netflix.html" class="nav_header">RELEASES</a>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="blogs.html" class="nav_header">BLOGS</a>
+                            </div>
+                            <div class="col-xs-2 ">
+                                <a href="gallery.html" class="nav_header">GALLERY</a>
+                            </div>
+                            <div class="col-xs-3" style="padding-left:5%;">
+                                <a href="aboutus.html" class="nav_header">ABOUT US</a>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="FAQ.html" class="nav_header">FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- /NAVBAR-->
+            <div class="container-fluid">
+                <p class="head_text">Communication is Everything!</p>
+                <p class="sub_head_text">May be we've already answered your questions...</p>
+            </div>
+            <div class="container" style="margin-top:25px;">
+                <p class="ques_text">What is content digital distribution?</p>
+                <p style="padding-bottom:5px;">Distribution of content such as films, TV shows, documentaries, music, etc, through various online platforms is termed as content digital distribution.</p>
+                <p class="ques_text">What are the different types of digital platforms?</p>
+                <p>Broadly there are 3 types of digital platforms:</p>
+                <ul>
+                    <li>  <strong> &#8226; SVOD - </strong> Subscription Video on Demand service where the platform charges a fixed subscription fee to access the content on it. Platforms like Netflix, Amazon Prime Video, etc fall under this category.
+                    </li>
+                    <br>
+                    <li><strong> &#8226; TVOD -</strong> Transaction Video on Demand service where the viewer can pay to watch (purchase or rent) a specific content. iTunes, Google Play, etc are examples of the same.
+                    </li>
+                    <br>
+                    <li><strong> &#8226; AVOD & FVOD - </strong> Ad supported & Free Video on Demand services where the viewer can watch anything for free in exchange for viewing ads. YouTube, Vimeo, etc fall under this category.
+                    </li>
+                    </ul>
+                <div style="display: inline-block;">
+                    <button class="btn active" onclick="set_active(1,2);" id="1"> SVOD</button>
+                    <button class="btn" id="2" onclick="set_active(2,1);">TVOD</button>
+                </div>
+            </div>
+            <div id="svod" >
+                <div class="container">
+                <video width="90%" poster="video/video_bg.png" controls class="embed-responsive-item" style="margin-top:20px; margin-bottom:20px;">
+                    <source src="video/VistaIndia_HQ20.mp4" type="video/mp4">
+                </video>
+                <p class="ques_text">Which SVOD platforms can Vista India deliver content to?</p>
+                <p>Currently, we are working with Netflix only. We are an official content aggregator for Netflix.</p>
+                <p class="ques_text">Can we pitch concepts/ideas/screenplay of films, documentaries or episodic content?</p>
+                <p>Vista India helps rights owners/producers to license their finished content to multiple digital platforms. For pitching your ideas/concepts, you will have to reach out to the digital platforms on your own.</p>
+                <p class="ques_text">What are the different types of SVOD rights for Netflix?</p>
+                <ul>
+                    <li><strong>&#8226; Exclusive:</strong> The content would be available only on Netflix for the agreed license period. The rights owner/ producer cannot publish the same content on any other platform.</li>
+                    <br>
+                    <li><strong>&#8226; Non-exclusive: </strong>Other than Netflix, the content can be made available on other platforms. The producer/ rights owner can go for non-exclusive deals with other platforms.</li>
+                    <br>
+                    <li><strong>&#8226; Exclusive with broadcasters app carve out: </strong>Nowadays, most of the broadcasters go for a combo deal (satellite & digital) while licensing a film. It includes satellite rights for their tv channels and digital rights for their OTT platform. In this case, the producer/ rights owner can go for the option of broadcasters app carve out.</li>
+                    </li>
+                </ul>
+                <p class="ques_text">What is the process to pitch my film to Netflix?</p>
+                <p>The whole process takes around 3 to 4 weeks. Netflix is a curated service i.e we will present your film, however they make independent buying decisions.
+                </p>
+                </div>
+                <img src="img/faq/flowchart.png" alt="" width="100%">
+                <div class="container" style="margin-top:20px;">
+                <p class="ques_text">
+                    What is the share between me and Vista India?
+                </p>
+                <p>It is 80:20 of the gross revenue minus deductibles. 80% to the content/rights owner and 20% to Vista India.
+                </p>
+                <p class="ques_text">
+                    It is 80:20 of the gross revenue minus deductibles. 80% to the content/rights owner and 20% to Vista India.
+                </p>
+                <p>Vista India is an Netflix Preferred Fulfillment Partner (NPFP). We handle the entire packaging and delivery of the content/rights to Netflix. The delivery cost per title is $815.</p>
+                <p class="ques_text">
+                    What is the payment structure of Netflix?
+                </p>
+                <p>Netflix remits licensing fees on a quarterly basis, over the entire license period. Below is an example for a better understanding of the Netflix payment structure.</p>
+         <ul>
+            <li>&#8226; If the start date of the licensing of your film is 1-Jan-2018</li>
+            <br>
+            <li>&#8226; Licensing  fee: $120,000 (minus delivery cost)</li>
+            <br>
+            <li>&#8226; Term: 3 years (36 months)</li>            
+            <li>&#8226; The payment would be made in 12 quarters (1 year = 4 quarters- 3 years = 12 quarters)</li>
+           <br>
+            <li>&#8226; Amount paid every quarter: $10,000 (Divide $1,20,000 into 12 equal instalments)</li>
+            <br>
+            <li>&#8226; Payment cycle: Feb 2018, May 2018, Aug 2018, Oct 2018, -,Oct 2020</li>
+            <br>    
+            </ul>
+            <p>Starting from Feb 2018, Netflix will pay $10,000 every quarter to Vista India. Vista India will deduct it’s 20% share i.e $2000 and wire the remaining 80% i.e $8000 to the content/rights owner. This process will be repeated every quarter till Oct 2020. Every quarter the content/ rights owner will receive $8000 in his/her bank account through online transfer from Vista India.</p>
+            <p class="ques_text">
+                How do I get my payment?</p>
+                <p>The licensing fee is routed through Vista India’s US Bank Account to the content/rights owner’s bank account mentioned in the agreement. The licensing fee is remitted in US Dollars without any withholding taxes.
+                </p>
+                 <p class="ques_text">
+                How long until my movie is online?</p>
+                <p>After delivering the assets to Vista India, it goes under QC checks at our end before delivering to Netflix. This process can take around 30 to 45 days depending on the condition of the assets and other factors. After this, Netflix takes around 30 days to make the content live on their platform. So, in total the whole process requires around 60 to 75 days.</p>
+                <p class="ques_text">
+                    What kind of assets are needed for Netflix?</p>
+                    <p>You can go through the detailed Netflix asset guide <a href="http://vistaindia.com/docs/EtD3PxF4]qn/Netflix Asset Guide.pdf" target="_blank">here</a> </p>
+                     <p class="ques_text">
+                     What are the Netflix artwork specifications? </p>
+                    <p>Vista India is a Netflix Preferred Creative Agency. Over the years, we have successfully delivered the artwork for many titles. For your reference, you can find the detailed artwork specifications for Netflix <a href="http://vistaindia.com/docs/zZVnbMxY2F4/Netflix%20Artwork%20Specifications.pdf" target="_blank">here</a> </p>
+                     <p class="ques_text">
+                    Do I have to sign a contract with Vista India?</p>
+                    <p>Yes. We shall forward you our standard Netflix agreement. We will require you to confirm the contents of the Agreement before we pitch your content to Netflix. Furthermore, kindly note that once we receive your confirmation on the draft, no changes shall be made or accepted at a later stage. The only additions made to the draft will be to incorporate the offer details, as and when we receive the same. 
+                    </p>
+                    <p>Also, request you to note that we will not be able to send you the counter signed copy of the Agreement right away. The procedure we follow is that once the content partner signs the Agreement, we have the materials called from them and have them checked and approved. Once approved, we deliver the same to Netflix. Upon receiving the approval of the Platform, we counter sign the Agreement and send the content partner's copy across. </p>
+                    <p>Stamp duty and other contract related charges are borne by Vista India.</p>    
+                    <p>Download  <a href="http://vistaindia.com/docs/j9itoY78/Vista%20Netflix%20Agreement.docx" target="_blank">Netflix Draft Agreement</a></p>
+                    <p class="ques_text">
+                        How do I get started?</p>
+                        <p>To start with you can share the submission guidelines (mentioned below) of your film at - <a href="mailto:info@vistaindia.com ">info@vistaindia.com</a> </p>
+                        <ul class="nomb">
+                        <li>&#8226; Password protected Vimeo screener (subtitled version in case of Hindi or regional content)</li>
+                        <br>
+                        <li>&#8226; Trailer</li>
+                        <br>
+                        <li>&#8226; Festivals & Awards</li>
+                        <br>
+                        <li>&#8226; Box office numbers (for released films)</li>
+                        <br>
+                        <li>&#8226; Critics and Audience review </li>
+                        <br>
+                        <li>&#8226; Territories available </li>
+                        <br>
+                        <li>&#8226; Language rights available (Subtitles and Dubbing)</li>
+                        <br>
+                        <li>&#8226; SVOD Rights (Exclusive / Non-Exclusive / Broadcaster's app carve out / etc.)</li>
+                        <br>
+                        <li>&#8226; Authorization letter (on official letterhead) from the content/rights holder (download the template from <a href="http://vistaindia.com/docs/WHdYTkL4x/Letter of Authorisation_Form_Revised.docx" target="_blank">here</a>) </li>
+                        <br>
+                    </ul>
+                        <p style="font-weight: bold;">
+                        Note - Please do not share any information through Google Drive / Wetransfer etc.</p>
+                        <p>Our content team will get back to you to take it to the next step.</p>       
+                        <p class="ques_text">
+                            What is the guarantee that my content will be licensed by Netflix?</p>
+                            <p>The final decision for selecting any content for licensing lies with the Netflix content team.</p>
+                            <p class="ques_text">
+                            Do I have to pay for pitching my content to Netflix or any other platforms?</p>
+                            <p>No, you don't have to pay for pitching your content to the platforms. It is free of cost service.</p>
+                             <p class="ques_text">
+                            Can I license multiple or a catalogue of films?</p>
+                            <p>Yes, you can. For that, you just have fill in all the details of the films mentioned in the Netflix Avails Template and send it to us at - <a href="mailto:info@vistaindia.com">info@vistaindia.com</a>
+                            You can download the template from <a href="http://vistaindia.com/docs/fNmXg8BK2/Netflix Avails Template.xlsx" target="_blank">here</a></p>
+                             <p class="ques_text">
+                            I am concerned that my film might get leaked online. Is sharing the screener necessary?</p>
+                            <p>Yes. It is mandatory and is needed by the content team at Netflix for reviewing. Vista India takes all the necessary precautions to keep your film safe and secure.</p>
+                             <p class="ques_text">
+                            Can I re-pitch my film to Netflix?</p>
+                            <p>Please do let us know if your content has been pitched to Netflix before. Re-pitching is only done in special cases, so it is imperative for us to know if Netflix has already provided any feedback on your title.  </p>
+                                             
+            </div>
+            </div>
+            <div id="tvod" style="display: none; margin-top:20px;">
+            <div class="container" >
+                <p class="ques_text">
+                    To which TVOD platforms can I deliver my content and what are the delivery costs?
+                </p>
+                <p>The cost depends upon the length of the film and the state of your assets. We make every attempt at reducing these costs. Since we have a lot of experience in working with Indian assets, we are in a very good position to reduce these expenses.</p>
+                <p>Below are the standard costs for your reference.</p>
+                <ul>
+                    <li>&#8226; iTunes: US $250
+                    </li>
+                    <br>
+                    <li>&#8226; Google Play: US $200</li>
+                    <br>
+                    <li>&#8226; Amazon Video Direct: US $200 + US $500 (For closed captions)</li>
+                </ul>
+                <p class="ques_text">For how many territories can I distribute my content?
+                </p>
+                <ul>
+                    <li>&#8226; iTunes: 109 territories including US, UK and India
+                    </li>
+                    <br>
+                    <li>&#8226; Google Play: 6 territories (India, US, UK, Australia, Canada, Ireland)
+                    </li>
+                    <br>
+                    <li>&#8226; Amazon Video Direct: US, UK and Germany</li>
+                    <br>
+                </ul>
+                <p class="ques_text">
+                    Which platform is suitable for my content?
+                </p>
+                <p>Each platform has its own audience and reach. The rights owner should consider these factors before taking a decision. Using our knowledge and expertise we will assist you in taking the right decision</p>
+                <p class="ques_text">What is the share between me and Vista India?
+                </p>
+                <p>It is 80:20 of the gross revenue minus deductibles. 80% to the rights owner and 20% to Vista India.
+                </p>
+                <p class="ques_text">
+                    What are deductible expenses?
+                </p>
+                <p>Deductible expenses are typically, expenses incurred towards ingest, QC, packaging, poster art, subtitle, Blu Ray or DVD purchase, courier charges, delivery charges and any marketing spend (if applicable).</p>
+                <p class="ques_text">Do platforms take a share from my title(s) sales earnings?
+                </p>
+                <p>Yes, they do. Below are the platform wise details of the same.
+                </p>
+                <ul>
+                    <li>&#8226; iTunes: 30 - 45 % of the total sales</li>
+                    <br>
+                    <li>&#8226; Google Play: 30 - 45 % of the total sales</li>
+                    <br>
+                    <li>&#8226; Amazon Video Direct: 50 % of the total sales</li>
+                </ul>
+                <p class="ques_text">What is the revenue breakdown for TVOD platforms?
+                </p>
+                <p>Let's understand this using an example. Assume that at the end of the month, the total sales of your titles on any of the platform is $10,000. (This process is followed at the end of every month)</p>
+                <p class="quest_text">How do I get my payment?</p>
+                <p>We wire once a month into your account and within 30 days from the time we receive the payments from the platforms.
+                </p>
+                <p class="ques_text">What kind of assets are needed for TVOD platforms?</p>
+                <ul>
+                <li>&#8226; Feature File: Apple ProRes 4:2:2 HQ</li>
+                <br>
+                <li>&#8226; Trailer File: Apple ProRes 4:2:2 HQ</li>
+                <br>
+                <li>&#8226; Poster Art: .PSD file at 1200 x 1440, 300 dpi</li>
+                <br>
+                <li>&#8226; Censor Certificate: 800 x 600 .jpg file</li>
+                <br>
+                <li>&#8226; Subtitle file for feature and trailer: .srt file</li>
+                <br>
+                <li>&#8226; Metadata: To be filled in the template we provide</li>
+                <br>
+                <li>&#8226; Closed captions (only for Amazon Video Direct)</li>
+                <br>
+                <li>&#8226; Consumer Grade Blu Ray. If a Blu Ray has not been manufactured, a consumer grade DVD would suffice</li>
+            </ul>
+            <p class="ques_text">How much time will it take for my film to go online?</p>
+            <p>The time a film goes live online can vary, some of it depends on you, and some of it is outside your control. Once we get all your assets, we start the ingest process. Our typical turnaround time is 4 weeks of finalizing the content and delivering it to the service. At this point, the platform will review the content with their own teams. This can take anywhere from 7 to 10 days. If the content is accepted, it will then go live, depending on how accurate the information and assets are to the technical necessities.</p>
+            <p class="ques_text">Do I have to sign a contract with Vista India?</p>
+            <p>Yes. Depending on the platform you want your content to be featured, we shall forward you our standard contract. Once you approve it, we shall have the documents franked. Two copies would be sent to you with our signatures. You would need to sign both the copies, retain one and return the other to Vista India.</p>
+            <p>Below are the links to the draft agreements for your reference.</p>
+            <ul>
+                <li>&#8226; <a href="http://vistaindia.com/docs/j9itoY78/Vista%20iTunes%20draft%20Agreement.docx" target="_blank">iTunes</a></li>
+                <br>
+                <li>&#8226; <a href="http://vistaindia.com/docs/j9itoY78/Vista%20Google%20draft%20agreement.docx" target="_blank">Google Play </a></li>
+                <!-- <li> <a href="http://vistaindia.com/docs/lM0ifh8e7/Amazon%20Prime%20Video%20Direct%20Digital%20Video%20License%20Agreement.docx" target="_blank">Amazon Video Direct </a></li> -->
+                <br>    
+            </ul>
+            <p class="ques_text">
+                How do I get started?</p>
+                <p>You can start with going through the agreements and asset requirements for the TVOD platforms. If you have any query, please write to us at -<a href="mailto:info@vistaindia.com"> info@vistaindia.com.</a> Along with this also kindly share all the details of your film, the territories and the platforms on which you would like your film to be made available. Our content and operations team will get back to you to take it to the next step.</p>
+                    </div>
+                    </div>
+        
+
+    </body>
+    <script>
+        function set_active(num1,num2)
+        {
+            let ab = document.getElementById(num1)
+            ab.classList.add('active')
+            let db = document.getElementById(num2)
+            db.classList.remove('active')
+            if(num1==1)
+            {
+                let svod=document.getElementById('svod')
+                svod.style.display="block"
+                let tvod=document.getElementById('tvod')
+                tvod.style.display="none"
+            }
+            else
+            {
+                console.log("show tvod")
+                let svod=document.getElementById('svod')
+                svod.style.display="none"
+                let tvod=document.getElementById('tvod')
+                tvod.style.display="block"
+                
+            }
+        }
+    </script>
+</html>

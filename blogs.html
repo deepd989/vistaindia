@@ -11,6 +11,63 @@
         <script src="js/nav.js"></script>
         <link type="text/css" rel="stylesheet" href="css/style_blogs.css" />
     </head>
+    <script>
+        function show_blog1()
+        {
+            let b1=document.getElementById("blog1");
+            let b1h=document.getElementById("blog1_header");
+            let b2=document.getElementById("blog2");
+            let b2h=document.getElementById("blog2_header");
+            let b3=document.getElementById("blog3");
+            let b3h=document.getElementById("blog3_header");
+            b1.style.display="block";
+            b2.style.display="none";
+            b3.style.display="none";
+            b1h.style.display="block";
+            b2h.style.display="none";
+            b3h.style.display="none";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            console.log("f1")
+        }
+        function show_blog2()
+        {
+            let b1=document.getElementById("blog1");
+            let b2=document.getElementById("blog2");
+            let b3=document.getElementById("blog3");
+            let b1h=document.getElementById("blog1_header");
+            let b2h=document.getElementById("blog2_header");
+            let b3h=document.getElementById("blog3_header");
+            b2.style.display="block";
+            b1.style.display="none";
+            b3.style.display="none";
+            b2h.style.display="block";
+            b1h.style.display="none";
+            b3h.style.display="none";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            console.log("f2")
+        }
+        function show_blog3()
+        {
+            let b1=document.getElementById("blog1");
+            let b2=document.getElementById("blog2");
+            let b3=document.getElementById("blog3");
+            let b1h=document.getElementById("blog1_header");
+            let b2h=document.getElementById("blog2_header");
+            let b3h=document.getElementById("blog3_header");
+            b3.style.display="block";
+            b2.style.display="none";
+            b1.style.display="none";
+            b3h.style.display="block";
+            b2h.style.display="none";
+            b1h.style.display="none";
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            console.log("f3")
+        }
+        
+    </script>
     <body>
         <!--MOBILE NAVBAR-->
         <div class="mobile-container mob_nav" >
@@ -22,7 +79,7 @@
                     <a href="index.html">Home</a>
                     <a href="page2.html">Media Services</a>
                     <a href="page3_netflix.html">Recent Releases</a>
-                    <a href="#about">Blogs</a>
+                    <a href="blogs.html">Blogs</a>
                     <a href="gallery.html">Gallery</a>
                     <a href="aboutus.html">About Us</a>
                     <a href="#about">FAQ</a>
@@ -58,13 +115,13 @@
                                 <a href="page3_netflix.html" class="nav_header">RELEASES</a>
                             </div>
                             <div class="col-xs-2">
-                                <a class="nav_header">BLOGS</a>
+                                <a href="blogs.html" class="nav_header">BLOGS</a>
                             </div>
                             <div class="col-xs-2 ">
                                 <a href="gallery.html" class="nav_header">GALLERY</a>
                             </div>
                             <div class="col-xs-3" style="padding-left:5%;">
-                                <a class="nav_header">ABOUT US</a>
+                                <a href="aboutus.html" class="nav_header">ABOUT US</a>
                             </div>
                             <div class="col-xs-2">
                                 <a class="nav_header">FAQ</a>
@@ -75,10 +132,129 @@
             </div>
             <!-- /NAVBAR-->
             <div class="container">
-                <p class="top_text">
+                <!-- PAGE1 Header -->
+                <p class="top_text" id="blog1_header">
+                    BLOG1 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                </p>
+                <!-- Page 2 Header -->
+                <p class="top_text" id="blog2_header" style="display:none;">
+                    BLOG2 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                </p>
+                <!-- page 3 header -->
+                <p class="top_text" id="blog3_header" style="display: none;">
+                    BLOG3 Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                </p>
+                <!--  -->
+            </div>
+            <!-- SOCIAL BUTTONS Desktop-->
+            <div class="social_buttons">
+                <a href="https://www.facebook.com/vistadigimedia/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/vistadigimedia"  target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/company/vista-india-digital-media/ "  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+            <!-- /SOCIAL BUTTONS Desktop-->
+            <!-- BLOG 1 -->
+            <div id="blog1">
+            <div style="text-align: center; margin-bottom:20px;" >
+                <img src="img/img.jpg" alt="" class="responsive">
+            </div>
+            <div style="display: flex; justify-content: space-around;">
+            <p class="blog_caption">
+                BLOG1 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+            </p>
+            </div>
+            <div style="display: flex; justify-content: space-around;">
+                <p class="blog_caption">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
                 </p>
+                </div>
+                <div style="display: flex; justify-content: space-around;">
+                    <p class="blog_caption">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    </p>
+                    </div>
             </div>
-    
+            <!-- blog1 ends -->
+            <!-- BLOG 2 -->
+            <div style="display: none;" id="blog2">
+            <div style="text-align: center; margin-bottom:20px;"  >
+                <img src="img/img2.jpg" alt="" class="responsive">
+            </div>
+            <div style="display: flex; justify-content: space-around;">
+            <p class="blog_caption">
+                BLOG2 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+            </p>
+            </div>
+            <div style="display: flex; justify-content: space-around;">
+                <p class="blog_caption">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                </p>
+                </div>
+                <div style="display: flex; justify-content: space-around;">
+                    <p class="blog_caption">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    </p>
+                    </div>
+            </div>
+            <!-- blog2 ends -->
+            <!-- BLOG 3 -->
+            <div id="blog3" style="display: none;">
+            <div style="text-align: center; margin-bottom:20px; "  >
+                <img src="img/img3.jpg" class="responsive">
+            </div>
+            <div style="display: flex; justify-content: space-around;">
+            <p class="blog_caption">
+                BLOG3 is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+            </p>
+            </div>
+            <div style="display: flex; justify-content: space-around;">
+                <p class="blog_caption">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                </p>
+                </div>
+                <div style="display: flex; justify-content: space-around;">
+                    <p class="blog_caption">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    </p>
+                    </div>
+            </div>
+            <!-- blog3 ends -->
+            <!-- HORIZONTAL ROW -->
+        <div class="container" style="margin-top:20px;">
+            <div class="row">
+                <div class="col-sm-4 row_container">
+                    <img src="img/img.jpg" alt="" class="row_img">
+                    <p class="img_header">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <p>18 December 2018</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                    <button type="button" class="btn btn_cust" onclick="show_blog1()">Read More</button>
+                </div>
+                <div class="col-sm-4 row_container">
+                    <img src="img/img2.jpg" alt="" class="row_img">
+                    <p class="img_header">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <p>18 December 2018</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                    <button type="button" class="btn btn_cust" onclick="show_blog2()">Read More</button>
+                </div>
+                <div class="col-sm-4 row_container">
+                    <img src="img/img3.jpg" alt=""  class="row_img">
+                    <p class="img_header">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    <p>18 December 2018</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                    <button type="button" class="btn btn_cust" onclick="show_blog3()">Read More</button>
+                </div>
+            </div> 
+        </div>
+            <!--HORIZONTAL ROW ENDS  -->
+
     </body>
 </html>

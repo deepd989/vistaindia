@@ -1,0 +1,84 @@
+.mob_links
+  {
+
+      width: 100%;
+      max-width:300px;
+      /* background-color: #fb9700; */
+      margin:20px auto;
+      /* margin-bottom: 200px; */
+      border-style: none;
+  }
+  .dropdown_btn
+  {
+    width: 100% !important;
+    max-width:300px !important;
+    background-color:#d7d7d7!important;
+    border:none !important;
+  }
+  .dropdown_btn:active
+  {
+    width: 100%;
+    max-width:300px;
+
+  }
+  .open
+  {
+    margin-bottom:150px;
+  }
+  .btn :active
+  {
+    border:none;
+  }
+  .dropdown-menu 
+  {
+    width: 100%;
+    max-width:300px;
+
+  }
+.career_text
+{
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing:3px;
+}
+.head_text
+{
+    text-align: center;
+    letter-spacing:4px;
+    font-weight: bold;
+    font-size: large;
+    margin-top:30px;
+}
+.active
+{
+    background-color: black;
+    color:white !important;
+}
+.btn:focus
+{
+
+    border-color: #fb9700 !important;
+    outline: none !important;
+    
+}
+
+a
+{
+    color: #fb9700;
+}
+
+@media screen and (max-width: 767px)
+{
+    .illustration
+    {
+        display:none;
+    }
+    .mob_links
+    {
+        display: block !important;
+    }
+    .desk_links
+    {
+        display: none !important;
+    }
+}

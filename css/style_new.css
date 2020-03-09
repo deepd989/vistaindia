@@ -2,7 +2,19 @@
     font-family: "codecpro";
     src: url("font/CodecPro-Regular.woff") format('woff');
 }
+.rotateimg180 {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
 
+.carousel_arrow
+{
+    /* padding-bottom:100px !important; */
+   
+}
 
 body
 {
@@ -128,6 +140,10 @@ span.orange
     padding-left:8%;
     padding-right:8%;
 }
+
+
+
+
 
 /* media query for phone view */
 @media screen and (max-width: 992px) 
@@ -467,4 +483,24 @@ min-height: 200px;
         width: fit-content;
 
     }
+    .footer
+    {
+        text-align: center;
+    }
 }
+
+@media screen and (max-width:844px) and (min-width:762px)
+{
+    .social-media li{font-size:x-small;}
+    .social-media li a{font-size:x-small;}   
+    .copyright{font-size:x-small;}
+}
+@media screen and (min-width:757px)
+{
+    .footer_col
+    {
+        text-align: center !important;
+    }
+}
+
+

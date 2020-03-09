@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/nav.js"></script>
         <script src="js/testimonial.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!--MOBILE NAVBAR-->
@@ -75,8 +77,8 @@
         </div>
         <!-- /NAVBAR-->
         <!--page 1 content-->
-        <div class="container-fluid">
-            <div class="row row1 vertical-align" >
+        
+            <!-- <div class="row row1 vertical-align" >
                 <div class="col-md-3 homepage_text" style="color:white;">
                 <div>
                     <p class="text" style="text-align:center;">Over 10,000 hours of content under management</p>
@@ -85,7 +87,80 @@
                 <div class="col-md-9" style="padding-right:0px;">
                     <img src="img/img.jpg" class="responsive pull-right" id="homepage_image">
                 </div>
+            </div> -->
+            <div class="" style=" background: linear-gradient(to left, #fb9700 50%, #000000 50%); width:100%; margin-top:0px;">
+                
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img src="img/Sliders/1.jpg"  style="width:100%;">
+                    </div>
+              
+                    <div class="item">
+                        <img src="img/Sliders/2.jpg"  style="width:100%;">
+                    </div>
+                  
+                    <div class="item">
+                        <img src="img/Sliders/3.jpg"  style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/Sliders/4.jpg"  style="width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="img/Sliders/5.jpg"  style="width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="img/Sliders/6.jpg"  style="width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="img/Sliders/7.jpg"  style="width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="img/Sliders/8.jpg"  style="width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="img/Sliders/9.jpg"  style="width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="img/Sliders/10.jpg"  style="width:100%;">
+                    </div>
+                  </div>
+              
+                  <!-- Left and right controls -->
+                  <!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev"> -->
+                    <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
+                    <!-- <span class="sr-only">Previous</span> -->
+                  <!-- </a> -->
+                  <!-- <a class="right carousel-control" href="#myCarousel" data-slide="next"> -->
+                    <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
+                    <!-- <p class="sr-only">Next</p> -->
+                  </a>
+                </div>
+                <div class="container" style=" height:50px;"> 
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="pull-right" style="padding-top:5px;">
+                            <a class="carousel_arrow" href="#myCarousel" data-slide="prev">
+                                <img src="img/inactive_arrow.png" height="20px" class="rotateimg180">
+                            </a>
+                            <a class="carousel_arrow" href="#myCarousel" data-slide="next">
+                                <img src="img/active_arrow.png" height="20px" alt="">
+                            </a>
+                        </div>
+                        </div>
+                        <div class="col-xs-6">
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
             </div>
+              <div class="container-fluid">
+                
             <div class="container-fluid" style="padding:0px;">
                 <div class="row row2" style="height: 100vh;">
                     <p style="text-align: center; margin-top:2%;">
@@ -179,7 +254,7 @@
                    <!-- DESKTOP TESTIMONIALS -->
                    <div id="Desk_testimonials" style="display:block;">
                    <div class="stt page1 Testimonials"  id="page1_testimonials">
-                    <p>prev</p>
+                    <p><img src="img/inactive_arrow.png" height="20px" class="rotateimg180"></p>
                     <div class="card card2_main">
                         <div class="card-body2" style="text-align:center">
                                 <div class="numberCircle2">
@@ -219,12 +294,16 @@
                         </p>
                         </div>
                     </div>
-                    <p onclick="next_desk_testimonial()">next</p>
+                    <p onclick="next_desk_testimonial()">
+                        <img src="img/active_arrow.png" height="20px" class="">
+                    </p>
                 </div>
                 <!-- page 1 ends -->
                 <!-- page 2 ends -->
                 <div class="stt page2 Testimonials" id="page2_testimonials" style="display:none;">
-                    <p onclick="prev_desk_testimonial()">prev</p>
+                    <p onclick="prev_desk_testimonial()">
+                        <img src="img/active_arrow.png" height="20px" class="rotateimg180">
+                    </p>
                     <div class="card card2_main">
                         <div class="card-body2" style="text-align:center">
                                 <div class="numberCircle2">
@@ -263,7 +342,7 @@
                           </p>
                         </div>
                     </div>
-                    <p>next</p>
+                    <p><img src="img/inactive_arrow.png" height="20px"></p>
                 </div>
                 <!-- page2 ends -->
                 </div>
@@ -271,7 +350,7 @@
                 <!-- MOB TESTIMONIAL -->
                 <!-- MOB testimonials -->
         <div class="stt" style="display:none; margin-top:100px ;" id="Mob_testimonials"> 
-            <p onclick="prev_mob_testimonials()" style="padding-right:8px;">prev</p>
+            <p onclick="prev_mob_testimonials()" style="padding-right:8px;"><img src="img/active_arrow.png" height="20px" class="rotateimg180"></p>
             <div class="card card2_main mob_cards" id="1_card">
                 <div class="card-body2" style="text-align:center">
                         <div class="numberCircle2">
@@ -349,11 +428,8 @@
                    </p>
                 </div>
             </div>
-            <p onclick="next_mob_testimonials()"style="padding-left:10px">next</p>
+            <p onclick="next_mob_testimonials()"style="padding-left:10px"><img src="img/active_arrow.png" height="20px"></p>
         </div>
-                         
-
-                          
                     </div>
                     <div class="container-fluid" style="padding:0px; background-color:#e1e1e1;">
                     <footer id="footer">
@@ -366,19 +442,21 @@
                                 <!-- /contact social -->
                 
                                 <!-- copyright -->
-                                <div class="col-md-7">
+                                <div class="col-sm-6 footer_col">
                                     <span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved &nbsp; | &nbsp;<a href="career.html" style="color: black;">Careers </a> | &nbsp;<a style="color: black;" href="privacy.html">Privacy Policy </a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
                                 </div>
-                                <div class="col-md-5">
-                                    <ul class="social-media">
-                                    <li>Mail us at <a href="mailto:info@vistaindia.com" >info@vistaindia.com </a><li>
-                                    <li><a href="https://www.facebook.com/vistadigimedia/" target="_blank">| &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.instagram.com/vistadigimedia/"  target="_blank"><i class="fa fa-instagram" aria-hidden="true" ></i></a></li>
-                                    <li><a href="https://twitter.com/vistadigimedia"  target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/vista-india-digital-media/ "  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                    </ul>
+                                <div class="col-sm-6 footer_col" >
+                                    <div class="pull-right social-media_div" id="footer_right_col">
+                                        <ul class="social-media">
+                                        <li>Mail us at <a href="mailto:info@vistaindia.com" >info@vistaindia.com </a><li>
+                                        <li><a href="https://www.facebook.com/vistadigimedia/" target="_blank">| &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/vistadigimedia/"  target="_blank"><i class="fa fa-instagram" aria-hidden="true" ></i></a></li>
+                                        <li><a href="https://twitter.com/vistadigimedia"  target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/vista-india-digital-media/ "  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                </div>
                                 </div>
                                 <!-- /copyright -->
                             </div>
@@ -399,11 +477,6 @@
     <script>
         let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         console.log(width)
-        if(width<992)
-        {
-            let img=document.getElementById('homepage_image');
-            img.classList.remove("pull-right")
-        }
         if(width<=851)
         {
             document.getElementById("Desk_testimonials").style.display="none";
@@ -424,6 +497,9 @@
             page2.style.display="block";
             page1.style.display="none";
         }
-
+        if(width<=757)
+        {
+            document.getElementById('footer_right_col').classList.remove('pull-right')
+        }
     </script>
 </html>

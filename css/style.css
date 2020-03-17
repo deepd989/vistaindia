@@ -466,19 +466,6 @@ ul.tabs li {
 .cta-content h2{font-size:42px;color:#FFF;text-transform:capitalize;}
 .cta-content p{color:#fff;}
 .cta-content .video-play{display:inline-block;height:120px;width:120px;margin:0px auto 60px;background:#FFF;border-radius:50%;text-align:center;line-height:120px;font-size:42px;color:#dd0a37;cursor:pointer;}
-#footer{padding:0px 0px;background:#3e3e3e;color:#fff;margin-top:30px;    position: fixed;
-    z-index: 9999999;
-    bottom: 0;
-    width: 100%;}
-.footer-brand{text-align:center;}
-.footer-brand .logo>img{max-height:50px;}
-.copyright{height:50px;line-height:50px;}
-.social-media{margin-bottom:0px!important;}
-.contact-social{margin:10px 0px;}
-.social-media ul{margin:0px;padding:0px;}
-.social-media li{display:inline-block;list-style:none;margin:12px 5px 0px 5px;}
-.social-media li .fa{font-size:22px;}
-.social-media li a{color:#fff;}
 .divider{position:absolute;left:50%;top:5%;bottom:5%;border-left:1px solid #b9b5b5;}
 .contact-social a{display:inline-block;width:30px;height:30px;text-align:center;border-radius:50%;background:#f29200;color:#fff;line-height:30px;margin-right:15px;-webkit-transition:0.3s all;transition:0.3s all;}
 .contact-social a:hover{opacity:0.8;}

@@ -12,3 +12,15 @@
     margin-top: 20px;
     letter-spacing:3px;
 }
+a
+{
+    color: #fb9700;
+}
+.text-bold
+{
+    font-weight: bold !important;
+}
+.faqsection
+{
+    margin-bottom:20px;
+}

@@ -48,14 +48,14 @@
                                 <a href="page2.html" class="nav_header">MEDIA SERVICES</a>
                             </div>
                             <div class="col-xs-2">
-                                <a href="page3_netflix.html" class="nav_header">RECENT</a>
+                                <a href="page3_netflix.html" id="rec" class="nav_header" onmouseover="make_active()" onmouseout="make_deactive()">RECENT</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 right_col_navbar" >
                         <div class="row">
-                            <div class="col-xs-3" style="padding-left:0px !important;">
-                                <a href="page3_netflix.html" class="nav_header">RELEASES</a>
+                            <div class="col-xs-2" style="padding-left:0px !important;">
+                                <a href="page3_netflix.html" class="nav_header" id="rel"  onmouseover="make_active2()" onmouseout="make_deactive2()">RELEASES</a>
                             </div>
                             <div class="col-xs-2">
                                 <a href="blogs.html" class="nav_header">BLOGS</a>
@@ -66,8 +66,8 @@
                             <div class="col-xs-3" style="padding-left:5%;">
                                 <a href="aboutus.html" class="nav_header">ABOUT US</a>
                             </div>
-                            <div class="col-xs-2">
-                                <a href="FAQ.html" class="nav_header">FAQ</a>
+                            <div class="col-xs-3">
+                                <a href="FAQ.html" class="nav_header active_link2">FAQ</a>
                             </div>
                         </div>
                     </div>
@@ -305,6 +305,39 @@
                 <p>You can start with going through the agreements and asset requirements for the TVOD platforms. If you have any query, please write to us at -<a href="mailto:info@vistaindia.com"> info@vistaindia.com.</a> Along with this also kindly share all the details of your film, the territories and the platforms on which you would like your film to be made available. Our content and operations team will get back to you to take it to the next step.</p>
                     </div>
                     </div>
+            
+                    <footer id="footer">
+                        <!-- container -->
+                        <div class="container">
+                            <!-- row -->
+                            <div class="row" style="padding-top:5px;">
+                                <!-- contact social -->
+                                
+                                <!-- /contact social -->
+                
+                                <!-- copyright -->
+                                <div class="col-sm-6 footer_col">
+                                    <span class="copyright footer_col"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved &nbsp; | &nbsp;<a href="career.html" style="color: black;">Careers </a> | &nbsp;<a style="color: black;" href="privacy.html">Privacy Policy </a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                                </div>
+                                <div class="col-sm-6" >
+                                    <div class="pull-right social-media_div footer_col" id="footer_right_col">
+                                        <ul class="social-media">
+                                        <li>Mail us at <a href="mailto:info@vistaindia.com" >info@vistaindia.com </a><li>
+                                        <li><a href="https://www.facebook.com/vistadigimedia/" target="_blank">| &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/vistadigimedia/"  target="_blank"><i class="fa fa-instagram" aria-hidden="true" ></i></a></li>
+                                        <li><a href="https://twitter.com/vistadigimedia"  target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/vista-india-digital-media/ "  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                </div>
+                                </div>
+                                <!-- /copyright -->
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /container -->
+                    </footer>
         
 
     </body>
@@ -332,5 +365,10 @@
                 
             }
         }
+        let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+       if(width<=757)
+       {
+           document.getElementById('footer_right_col').classList.remove('pull-right')
+       }
     </script>
 </html>

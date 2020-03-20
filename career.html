@@ -76,6 +76,101 @@
                   </div>
             </div>
             <!-- /NAVBAR-->
+            <!-- MODAL -->
+              
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <!-- <h4 class="modal-title">Modal Header</h4> -->
+                      </div>
+                      <div class="modal-body">
+                            <form action="">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form_content">
+                                        <p class="lab">First Name:</p>
+                                        <input/>
+                                    </div>
+                                    <div class="form_content">
+                                        <p class="lab">Mobile no :</p>
+                                        <input style="max-width:20px; margin-right:30px; margin-left:5px;"/>
+                                        <input style="max-width:165px;"/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form_content">
+                                        <p class="lab">Last Name:</p>
+                                        <input style="max-width:220px ;"/>
+                                        
+                                    </div>
+                                <div class="form_content">
+                                    <p class="lab">City Based in:</p>
+                                        <input style="max-width:140px;"/>
+                                </div>    
+                                </div>
+                            </div>
+                            <div class="form_content">
+                                <p class="lab">About yourself (optional):</p>
+                                <input style="width:120%;"/>
+                            </div>
+                            <div class="form_content">
+                                <p class="lab">Email:</p>
+                                <input style="width:120%;"/>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form_content make_small">
+                                        <p class="lab" style="padding-right:5px;">Total years of experience:</p>
+                                        <input style="max-width:50px; margin-right:10px;" />
+                                        <p class="lab" >Years</p>
+                                        <input style="max-width:50px; margin-right:10px;"/>
+                                        <p class="lab">Months</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                           <div class="row">
+                               <div class="col-sm-6">
+                                <div class="form_content">
+                                 <p class="lab">Current CTC :</p>
+                                <input style="max-width:200px;"/> 
+                            </div>
+                           
+                               </div>
+                               <div class="col-sm-6">
+                                <div class="form_content">
+                                    <p class="lab">Expected CTC:</p>
+                                    <input style="max-width:200px;"/>
+                                </div>
+                                 
+                            </div>
+                           </div>
+                           <div class="form_content choose_file_div" style="margin-top:5px;">
+                           <label class="custom-file-upload" >
+                            <input type="file" id="FILE" style="display: none;" onchange="get_file_name()">
+                            Choose File
+                            </label>
+                            <p class="file_text">No File Chosen</p>
+                        </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              
+
+            <!-- /MODAL -->
             <!-- CAROUSEL -->
             <!-- /CAROUSEL -->
             <!-- CONTENT -->
@@ -150,7 +245,7 @@
                             <br>
                             <li><strong>&#8226;</strong> Know-how of multiple languages along with the demographics and cultures</li>
                         </ul>
-                            <button class="btn active" style="margin-top:10px;">APPLY NOW</button>
+                            <button class="btn active" style="margin-top:10px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
                        </div>
                        <div class="col-sm-5">
                             <img class="illustration" src="img/illustration/1.png" alt="" width="100%" style="margin-top:30%;">
@@ -194,7 +289,7 @@
                         <br>
                         <li><strong>&#8226;</strong> Know-how of multiple languages along with the demographics and cultures</li>                        
                         </ul>
-                        <button class="btn active" style="margin-top:10px;">APPLY NOW</button>
+                        <button class="btn active" style="margin-top:10px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
                            </div>
                            <div class="col-sm-5">
 
@@ -249,7 +344,7 @@
                         <br>
                         <li><strong>&#8226;</strong> Location: Andheri West, Mumbai</li>
                         </ul>
-                        <button class="btn active" style="margin-top:10px;">APPLY NOW</button>
+                        <button class="btn active" style="margin-top:10px;"data-toggle="modal" data-target="#myModal" >APPLY NOW</button>
                            </div>
                            <div class="col-sm-5">
                                <img  class="illustration" src="img/illustration/1-01.png" alt="" width="100%">
@@ -295,14 +390,14 @@
                                 <br>
                                 <li><strong>&#8226;</strong> Location: Andheri West, Mumbai</li>
                             </ul>
-                            <button class="btn active" style="margin-top:10px;">APPLY NOW</button>                           
+                            <button class="btn active" style="margin-top:10px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>                           
                             </div>
                            <div class="col-sm-5">
                               
                            </div>
                        </div>
                 </div>
-                <div id="div2" style="display: none;">
+                <div id="div2" style="display: none; height:65vh;">
                     <div style="padding-top:30px;">
                         <p>We have no job opportunities currently under this category. </p>
                         <p>We would love to stay in touch and hope our paths to cross sometime.  </p> 
@@ -360,7 +455,7 @@
                             <br>
                             <li><strong>&#8226;</strong> Demonstrated interest in adapting to newer enabling technologies</li>
                             </ul>
-                            <button class="btn active" style="margin-top:10px;">APPLY NOW</button>
+                            <button class="btn active" style="margin-top:10px;" data-toggle="modal" data-target="#myModal" >APPLY NOW</button>
                         </div>
                         <div class="col-sm-5">
                             
@@ -416,7 +511,7 @@
                             
                             </ul>
                             
-                            <button class="btn active" style="margin-top:10px;">APPLY NOW</button>
+                            <button class="btn active" style="margin-top:10px;" data-toggle="modal" data-target="#myModal" >APPLY NOW</button>
                         </div>
                         <div class="col-sm-5">
                             <img src="img/illustration/it.png" alt="" width="100%" class="illustration">
@@ -468,7 +563,7 @@
                             
                             
                             </ul>
-                            <button class="btn active" style="margin-top:10px;">APPLY NOW</button>
+                            <button class="btn active" style="margin-top:10px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
                         </div>
                         <div class="col-sm-5"></div>
                     </div>
@@ -502,7 +597,7 @@
                      <li><strong>&#8226; </strong>Excellent knowledge of Accounting Software like Tally ERP.9, Quick Book, MS Office, Internet, etc.</li><br>
 
                     </ul>
-                    <button class="btn active" style="margin-top:10px;">APPLY NOW</button>
+                    <button class="btn active" style="margin-top:10px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
                 </div>
                 <div id="div5" style="display: none;">
                     <div class="row">
@@ -528,7 +623,7 @@
                              <li><strong>&#8226; </strong>Be open to new trends, technologies, processes, etc. as per the evolving market and adapt accordingly.</li><br>
                              <li><strong>&#8226; </strong>Experience in using MS Office, Excel, Windows 10, etc.  </li><br>   
                             </ul>
-                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;">APPLY NOW</button>
+                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
                             <h4>Senior Dubbing Engineer</h4>
                             <h4>Job description</h4>
                             <ul>
@@ -550,7 +645,7 @@
                              <li><strong>&#8226; </strong>Be open to new trends, technologies, processes, etc. as per the evolving market and adapt accordingly.</li><br>
                              <li><strong>&#8226; </strong>Experience in using MS Office, Excel, Windows 10, etc.</li><br>
                             </ul>
-                             <button class="btn active" style="margin-top:10px; margin-bottom:20px;">APPLY NOW</button>
+                             <button class="btn active" style="margin-top:10px; margin-bottom:20px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
                             
                             <h4>Senior Dubbing Director</h4>
                                             <h4>Job description</h4>
@@ -572,7 +667,7 @@
                              <li><strong>&#8226; </strong>Ability to teach and train co-workers, writers  in best practices and explore new trends and evolve.</li><br>
                              <li><strong>&#8226; </strong>Experience in using MS Office, Excel, Windows 10, etc.</li><br>
                             </ul>
-                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;">APPLY NOW</button>
+                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
                             
                             <h4> Language QC Artist
 
@@ -593,7 +688,7 @@
                              <li><strong>&#8226; </strong>Ability to teach and train co-workers, writers in best practices and explore new trends and evolve.</li><br>
                             
                             </ul>
-                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;">APPLY NOW</button>
+                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
 
                             <h4> Language QC Artist
 
@@ -614,7 +709,7 @@
                              <li><strong>&#8226; </strong>Ability to teach and train co-workers, writers in best practices and explore new trends and evolve.</li><br>
                             
                             </ul>
-                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;">APPLY NOW</button>
+                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
                             
                             <h4> Project Manager / Line Producer
                             </h4>
@@ -636,7 +731,7 @@
                              <li><strong>&#8226; </strong>Experience in using MS Office, Excel, Windows 10, Google Calendar.</li><br>
                             
                             </ul>
-                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;">APPLY NOW</button>
+                            <button class="btn active" style="margin-top:10px; margin-bottom:20px;" data-toggle="modal" data-target="#myModal">APPLY NOW</button>
 
                             
                         </div>
@@ -649,7 +744,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="div6" style="display: none;">
+                <div id="div6" style="display: none; height:65vh;">
                     <div style="padding-top:30px;">
                         <p>We have no job opportunities currently under this category. </p>
                         <p>We would love to stay in touch and hope our paths to cross sometime.  </p> 
@@ -748,5 +843,15 @@
        {
            document.getElementById('footer_right_col').classList.remove('pull-right')
        }
+    //    document.getElementById('fileInput').onchange = function () {
+    // alert('Selected file: ' + this.value);
+    // };
+
+     function get_file_name()
+     {
+         let f =document.getElementById('FILE').value;
+         f = f.replace(/.*[\/\\]/, '');
+         console.log(f);
+     }
     </script>
 </html>

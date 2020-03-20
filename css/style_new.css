@@ -138,6 +138,7 @@ span.orange
 {
     padding-left:8%;
     padding-right:8%;
+    padding-top:20px;
 }
 .left_col_navbar
 {
@@ -273,7 +274,7 @@ span.orange
 /* Card CSS */
 
 .card-body2 {
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 5px 5px 5px grey;
     position:relative;
     padding-top: 120px;
     border:2px solid white;
@@ -343,8 +344,8 @@ span.orange
     opacity: 1;
     color: BLACK;
     position: absolute;
-    font-size:18vh;
-    margin-top:15vh;
+    font-size:12vh;
+    margin-top:17vh;
 }
 .content_under_text
 {
@@ -377,6 +378,9 @@ border:2px solid #d7d7d7;
 background:#d7d7d7;
 border-radius:10px;
 min-height: 200px;
+padding-left:5px;
+padding-right:5px;
+min-height: 300px;
 }
 .card_image
 {

@@ -61,10 +61,50 @@
     outline: none !important;
     
 }
+.lab
+{
+  padding-right:5px;
+  font-weight: bold;
+  padding-top:10px !important;
+}
 
 a
 {
     color: #fb9700;
+}
+.form_content
+{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center;  */
+  align-items: center;
+  margin-top:5px;
+}
+.file_text
+{
+  /* padding:10px; */
+  margin-top:5px;
+  /* padding-top: 8px; */
+}
+.choose_file_div
+{
+  background-color: black;
+  color: white;
+  width: max-content;
+  border:2px solid #fb9700;
+  border-radius: 5px;
+  height: max-content;
+
+}
+
+.custom-file-upload
+{
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:15px;
+  padding-bottom:15px;
+  background-color:#fb9700;
+  border-radius:5px;
 }
 
 @media screen and (max-width: 767px)
@@ -81,4 +121,16 @@ a
     {
         display: none !important;
     }
+}
+
+@media screen and (max-width: 400px)
+{
+  .make_small p
+  {
+    font-size: x-small !important;
+  }
+  .lab
+  {
+    font-size: x-small ;
+  }
 }

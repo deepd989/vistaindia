@@ -71,10 +71,42 @@
     max-width:900px;
   }
 
+.social_buttons_mob
+{
+    display:flex;
+    justify-content: center;
+}
+.social_buttons_mob2
+{
+    background-color:#d7d7d7;
+    /* color:black ; */
+    /* padding:5px;
+    padding-top:20px;
+    padding-bottom:20px; */
+    width:200px;
+    display:flex;
+    justify-content: center;
+    border-radius:5px;
+
+}
+.social_buttons_mob2 a i{
+    color: black;
+    font-size: xx-large;
+    /* margin-top:10px; */
+    padding:10px;
+    /* background-color:#d7d7d7; */
+
+}
+
 @media screen and (max-width: 767px)
 {
     .social_buttons
     {
         display: none;
+    }
+    .social_buttons_mob
+    {
+        display:flex !important; 
+        /* justify-content: center !important; */
     }
 }

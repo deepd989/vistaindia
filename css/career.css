@@ -64,8 +64,9 @@
 .lab
 {
   padding-right:5px;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding-top:10px !important;
+  color: white;
 }
 
 a
@@ -88,23 +89,55 @@ a
 }
 .choose_file_div
 {
-  background-color: black;
+  background: linear-gradient(to right,#fb9700 50%, #292c35 50%);
   color: white;
+  max-width:310px;
   width: max-content;
   border:2px solid #fb9700;
   border-radius: 5px;
   height: max-content;
+  /* cursor: pointer !important; */
 
+}
+.input_area
+{
+  background-color:#383c45;
+  border:none ;
+  color: white;
+}
+.input_area :active
+{
+  outline: #fb9700 !important;
 }
 
 .custom-file-upload
 {
-  padding-left:20px;
-  padding-right:20px;
-  padding-top:15px;
-  padding-bottom:15px;
+  margin-top:5px;
+  padding-left:15px;
+  /* padding-right:15px; */
+  padding-top:5px;
+  padding-bottom:5px;
   background-color:#fb9700;
   border-radius:5px;
+  height:100%;
+  width:50%;
+}
+/* .custom-file-upload :hover
+{
+  cursor: pointer !important;
+} */
+
+.submit_btn
+{
+  margin-top:20px;
+  padding-top:7px;
+  padding-bottom:7px;
+  padding-left:50px;
+  padding-right:50px;
+  background-color: #fb9700;
+  border: 2px #fb9700 solid;
+  border-radius: 5px;
+  color: white;
 }
 
 @media screen and (max-width: 767px)

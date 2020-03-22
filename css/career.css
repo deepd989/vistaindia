@@ -156,6 +156,18 @@ a
     }
 }
 
+@media screen and (min-width: 700px)
+{
+  .carousel_main
+  {
+    height:60vh !important;
+  }
+  .carousel_image
+  {
+    height:90% !important;
+  }
+}
+
 @media screen and (max-width: 400px)
 {
   .make_small p

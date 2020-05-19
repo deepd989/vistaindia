@@ -43,8 +43,8 @@
             <div class="container-fluid">
                 <div class="row visible-desktop nvbar" >
                     <div class="col-xs-6 left_col_navbar" >
-                        <div class="row pull-right">
-                            <div class="col-xs-4 ">
+                        <div class="row">
+                            <!-- <div class="col-xs-4 ">
                                 <img class="logo-img" src="img/logo-alt.png" alt="logo">
                             </div>
                             <div class="col-xs-2">
@@ -55,12 +55,18 @@
                             </div>
                             <div class="col-xs-2">
                                 <a href="page3_netflix.html" id="rec" class="nav_header" onmouseover="make_active()" onmouseout="make_deactive()">RECENT</a>
+                            </div> -->
+                            <div style="display:flex; justify-content: space-between;  ;">
+                                <img class="logo-img" src="img/logo-alt.png" alt="logo"  >                            
+                                <a href="index.html" class="nav_header ">HOME</a>
+                                <a href="page2.html" class="nav_header active_link">MEDIA SERVICES</a>
+                                <a href="page3_netflix.html" id="rec" class="nav_header" onmouseover="make_active()" onmouseout="make_deactive()">RECENT</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-6 right_col_navbar" >
                         <div class="row">
-                            <div class="col-xs-2" style="padding-left:0px !important;">
+                            <!-- <div class="col-xs-2" style="padding-left:0px !important;">
                                 <a href="page3_netflix.html" class="nav_header" id="rel"  onmouseover="make_active2()" onmouseout="make_deactive2()">RELEASES</a>
                             </div>
                             <div class="col-xs-2">
@@ -74,6 +80,13 @@
                             </div>
                             <div class="col-xs-3">
                                 <a href="FAQ.html" class="nav_header">FAQ</a>
+                            </div> -->
+                            <div style="display:flex; justify-content: space-between;  ;">
+                                <a href="page3_netflix.html" class="nav_header" id="rel"  onmouseover="make_active2()" onmouseout="make_deactive2()">RELEASES</a>
+                                <a href="blogs.html" class="nav_header">BLOGS</a>
+                                <a href="gallery.html" class="nav_header">GALLERY</a>
+                                <a href="aboutus.html" class="nav_header">ABOUT US</a>
+                                <a href="FAQ.html" class="nav_header" style="margin-right:8%;">FAQ</a>
                             </div>
                         </div>
                     </div>
@@ -126,11 +139,11 @@
                 </div>
                 <div class="container">
                     <div class="outer2" id="outerWrap"  >
-                        <div class="layer1" style="line-height:0px;">
+                        <div class="layer1">
                         <p style="margin-top:17px;">LOCALIZATION</p>
                         <p>(Sub & Dubs)</p>
                         </div>
-                        <div id="layer2" style="height:max-content;">
+                        <div id="layer2" >
                             <div class="div2_content_desktop">
                                 <p class="layer2_text">
                                     We cater to International studios who need their content to be localized for premium OTT services. We offer a complete timed text localization service in major languages such as English, Hindi, Tamil, Telugu, Marathi, Bengali, Malayalam, Kannada, Punjabi, etc. Having delivered more than 100,000 minutes of subtitles in various languages, we have covered different genres.
@@ -138,18 +151,22 @@
                             </div>
                             <div class="div2_content_desktop_2">
                                 <div class="row">
-                                    <div class="col-sm-12">
-                                    <ul>
+                                    <div class="col-sm-6" >
+                                    <ul style="margin-bottom:0px ;">
                                         <li><strong style="color: #fb9700;"> &#8226; </strong>Subtitle Origination</li><br>
                                         <li><strong style="color: #fb9700;"> &#8226; </strong>QC and Conformance</li><br>
                                         <li><strong style="color: #fb9700;"> &#8226; </strong>SDH/CC Origination</li><br>
                                         <li><strong style="color: #fb9700;"> &#8226; </strong>SDH/CC QC and Conformance</li><br>
                                         <li><strong style="color: #fb9700;"> &#8226; </strong>Forced Subtitles Origination</li><br>
                                         <li><strong style="color: #fb9700;"> &#8226; </strong>Text Translation</li><br>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul>
+                                        
                                         <li><strong style="color: #fb9700;"> &#8226; </strong>Spot QC and Report Generation</li><br>
                                         <li><strong style="color: #fb9700;"> &#8226; </strong>Transcription</li><br>
                                         <li><strong style="color: #fb9700;"> &#8226; </strong>Dialogue List</li><br>
-                                        
                                     </ul>
                                 </div>
                             </div>
@@ -169,17 +186,24 @@
                                 </p>
                             </div>
                             <div class="div2_content_desktop_2">
+                                <div class="col-sm-6">
                                 <ul>
                                     <li><strong style="color: #fb9700;"> &#8226; </strong>Project Management</li><br>
                                     <li><strong style="color: #fb9700;"> &#8226; </strong>Voice Casting</li><br>
                                     <li><strong style="color: #fb9700;"> &#8226; </strong>Translation and Dubbing Script Origination</li><br>
                                     <li><strong style="color: #fb9700;"> &#8226; </strong>Language Dubbing Recording</li><br>
                                     <li><strong style="color: #fb9700;"> &#8226; </strong>Audio Description Script Origination, Recording and Mixing</li><br>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul style="text-align:justify;">
                                     <li><strong style="color: #fb9700;"> &#8226; </strong>5.1 + 7.1 Mixing/Re-recording for Broadcast, OTT Platforms and Theatricals</li><br>
                                     <li><strong style="color: #fb9700;"> &#8226; </strong>Dubbed Audio Language QC and Technical QC as per Broadcast and OTT platform specifications</li><br>
                                     <li><strong style="color: #fb9700;"> &#8226; </strong>ADR Recording</li><br>
                                     <li><strong style="color: #fb9700;"> &#8226; </strong>Restoration and Clean up</li><br> 
+                                    
                                     </ul>
+                                </div>
                             </div>
                         </div>
                     </div>                    

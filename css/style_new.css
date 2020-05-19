@@ -34,7 +34,7 @@
 {
     border: 2px #fb9700 solid;
     outline: none !important;
-    padding:2px;
+    /* padding:1px; */
     color: white;
     text-decoration: none !important;
     border-radius: 5px;
@@ -99,12 +99,14 @@ a
 }
 .logo-img
 {
-    width: 90%;
+    width: 150px;
+    height:25px;
     /* height:auto ; */
+    margin-left:8%;
 }
 .nav_header
 {
-    margin-top:5px;
+    margin-top:0px;
     color: white;
     font-size: large;
 
@@ -370,7 +372,7 @@ span.orange
 .content_under_text
 {
     text-align:center;
-    font-size:75px;
+    font-size:55px;
     color: black;
     margin-top:100px;
 }
@@ -416,6 +418,7 @@ min-height: 300px;
 {
     font-size: x-small;
     padding:2px;
+    text-align: justify !important;
 }
 
 
@@ -573,12 +576,20 @@ min-height: 300px;
   }
     
 }
+#rec
+{
+    padding-right:7px ;
+}
+#rel
+{
+    padding-left:7px;
+}
 
 .active_link2
 {
     border: 2px black solid;
     outline: none !important;
-    padding:2px;
+    /* padding:2px; */
     color: white;
     text-decoration: none !important;
     border-radius: 5px;
@@ -587,7 +598,7 @@ min-height: 300px;
 {
     border: 2px solid #fb9700;
     border-right:none;
-    padding:2px;
+    /* padding:2px; */
     padding-right:10px;
     overflow: hidden;
     padding-left:5px;
@@ -598,7 +609,7 @@ min-height: 300px;
 {
     border: 2px solid black;
     border-left:none;
-    padding:2px;
+    /* padding:2px; */
     padding-left:10px;
     overflow: hidden;
     padding-right:5px;

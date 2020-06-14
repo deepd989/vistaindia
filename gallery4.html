@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Vista India
+        </title>
+        <link type="text/css" rel="stylesheet" href="css/style_new.css" />
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/nav.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/style_gallery.css" />
+        <link type="text/css" rel="stylesheet" href="css/gallery_in.css" />
+        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+    </head>
+    <body>
+       <!--MOBILE NAVBAR-->
+       <div class="mobile-container mob_nav" >
+        <div class="topnav">
+            <div class="topnav_header" style="width:100%; background:black; padding-top:10px; padding-bottom:10px;" >
+                <img class="logo-img" src="img/logo-alt.png" alt="logo">
+            </div>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="page2.html">Media Services</a>
+                <a href="page3_netflix.html">Recent Releases</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        </div>
+        <!--/MOBILE NAVBAR-->
+        <!-- NAVBAR-->
+        <div class="container-fluid">
+            <div class="row visible-desktop nvbar" >
+                <div class="col-xs-6 left_col_navbar" >
+                    <div class="row">
+                        <div style="display:flex; justify-content: space-between;">
+                            <img class="logo-img" src="img/logo-alt.png" alt="logo"  >                            
+                            <a href="index.html" class="nav_header">HOME</a>
+                            <a href="page2.html" class="nav_header">MEDIA SERVICES</a>
+                            <a href="page3_netflix.html" id="rec" class="nav_header" onmouseover="make_active()" onmouseout="make_deactive()">RECENT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 right_col_navbar" >
+                    <div class="row">
+                        <div style="display:flex; justify-content: space-between;  ;">
+                            <a href="page3_netflix.html" class="nav_header" id="rel"  onmouseover="make_active2()" onmouseout="make_deactive2()">RELEASES</a>
+                            <a href="blogs.html" class="nav_header">BLOGS</a>
+                            <a href="gallery.html" class="nav_header active_link2">GALLERY</a>
+                            <a href="aboutus.html" class="nav_header">ABOUT US</a>
+                            <a href="FAQ.html" class="nav_header" style="margin-right:8%;">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <!-- /NAVBAR-->
+            <div class="gallery" style="padding-top:30px">
+                <!-- <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href=""><img src="img/Independence Day/1.jpg" width="300px"></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href=""><img src="img/Independence Day/1.jpg" width="300px"></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href=""><img src="img/Independence Day/1.jpg" width="300px"></a>
+                        </div>
+                    </div> 
+            </div> -->
+            <div class="container">
+                <div class="row_gallery"> 
+                    <div class="column_gallery">
+                        <a href="img/Independence Day/1.jpg" data-lightbox="mygallery3"><img src="img/Independence Day/1.jpg" height="200px" ></a>
+                      
+                    </div>
+                    <div class="column_gallery">
+                        <a href="img/Independence Day/2.jpg" data-lightbox="mygallery3"><img src="img/Independence Day/2.jpg" height="200px" ></a>
+                      
+                    </div>  
+                    <div class="column_gallery">
+                        <a href="img/Independence Day/3.jpg" data-lightbox="mygallery3"><img src="img/Independence Day/3.jpg" height="200px" ></a>
+                    </div>
+                    <div class="column_gallery">
+                        <a href="img/Independence Day/4.jpg" data-lightbox="mygallery3"><img src="img/Independence Day/4.jpg" height="200px" ></a>
+                    </div>
+                    <div class="column_gallery">
+                        <a href="img/Independence Day/5.jpg" data-lightbox="mygallery3"><img src="img/Independence Day/5.jpg" height="200px" ></a>
+                    </div>
+                   
+                  </div>
+            </div>
+            </div>
+    </body>
+</html>

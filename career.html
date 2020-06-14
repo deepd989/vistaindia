@@ -153,73 +153,72 @@
                   </div>
                 </div>
                 
-              
-
-            <!-- /MODAL -->
-            <!-- CAROUSEL -->
-            <div class="carousel_main" style=" background: linear-gradient(to left, #fb9700 50%, #000000 50%); width:100%; margin-top:0px; ">
+              <!-- /MODAL -->
+<!-- Carousel-->
+<div class="" style=" background: linear-gradient(to left, #fb9700 50%, #000000 50%); width:100%; margin-top:0px;">
                 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <img src="img/Sliders/1.jpg" class="carousel_image"  style="width:100%; ">
-                    </div>
-              
-                    <div class="item">
-                        <img src="img/Sliders/2.jpg" class="carousel_image"   style="width:100%;">
-                    </div>
-                  
-                    <div class="item">
-                        <img src="img/Sliders/3.jpg" class="carousel_image"  style="width:100%;">
-                    </div>
+    <div id="myCarousel" class="carousel slide " data-ride="carousel">
+  
+      <!-- Wrapper for slides -->
+      <!-- IF PHONE replace career_slider to Slider  for phones-->
+      <!-- USED JS TO CHANGE IT FOR PHONE ACCORDINGLY -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/career_slider/1.jpg"  class="carousel_image_career" style="width:100%;">
+        </div>
+  
+        <div class="item">
+            <img src="img/career_slider/2.jpg" class="carousel_image_career"  style="width:100%;">
+        </div>
+      
+        <div class="item">
+            <img src="img/career_slider/3.jpg" class="carousel_image_career"  style="width:100%;">
+        </div>
 
-                    <div class="item">
-                        <img src="img/Sliders/4.jpg" class="carousel_image"  style="width:100%;">
-                    </div>
-                    <div class="item">
-                        <img src="img/Sliders/5.jpg" class="carousel_image"  style="width:100%; ">
-                    </div>
-                    <div class="item">
-                        <img src="img/Sliders/6.jpg" class="carousel_image"  style="width:100%;">
-                    </div>
-                    <div class="item">
-                        <img src="img/Sliders/7.jpg" class="carousel_image"  style="width:100%;">
-                    </div>
-                    <div class="item">
-                        <img src="img/Sliders/8.jpg" class="carousel_image"  style="width:100%;">
-                    </div>
-                    <div class="item">
-                        <img src="img/Sliders/9.jpg" class="carousel_image"  style="width:100%;">
-                    </div>
-                    <div class="item">
-                        <img src="img/Sliders/10.jpg" class="carousel_image"  style="width:100%;">
-                    </div>
-                  </div>
-                  </a>
-                </div>
-                <div class="container" style=" height:50px;"> 
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <div class="pull-right" style="padding-top:5px;">
-                            <a class="carousel_arrow" href="#myCarousel" data-slide="prev">
-                                <img src="img/inactive_arrow.png" height="20px" class="rotateimg180">
-                            </a>
-                            <a class="carousel_arrow" href="#myCarousel" data-slide="next">
-                                <img src="img/active_arrow.png" height="20px" alt="">
-                            </a>
-                        </div>
-                        </div>
-                        <div class="col-xs-6">
-                            
-                        </div>
-                        
-                    </div>
-                    
-                </div>
+        <div class="item">
+            <img src="img/career_slider/4.jpg" class="carousel_image_career"  style="width:100%;">
+        </div>
+        <div class="item">
+            <img src="img/career_slider/5.jpg" class="carousel_image_career" style="width:100%;">
+        </div>
+        <div class="item">
+            <img src="img/career_slider/6.jpg" class="carousel_image_career" style="width:100%;">
+        </div>
+        <div class="item">
+            <img src="img/career_slider/7.jpg" class="carousel_image_career"  style="width:100%;">
+        </div>
+        <div class="item">
+            <img src="img/career_slider/8.jpg" class="carousel_image_career"  style="width:100%;">
+        </div>
+        <div class="item">
+            <img src="img/career_slider/9.jpg" class="carousel_image_career"  style="width:100%;">
+        </div>
+      </div>
+      </a>
+    </div>
+    <div class="container" style=" height:50px;"> 
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="pull-right" style="padding-top:5px;">
+                <a class="carousel_arrow" href="#myCarousel" data-slide="prev">
+                    <img src="img/inactive_arrow.png" height="20px" class="rotateimg180">
+                </a>
+                <a class="carousel_arrow" href="#myCarousel" data-slide="next">
+                    <img src="img/active_arrow.png" height="20px" alt="">
+                </a>
             </div>
-            <!-- /CAROUSEL -->
+            </div>
+            <div class="col-xs-6">
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<!-- /Carousel -->
+            
+            
             <!-- CONTENT -->
             <p class="head_text">CAREERS</p>
             <p class="career_text">Interested to join us?</p>
@@ -834,6 +833,21 @@
         </footer>
     </body>
     <script>
+        let width2 = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if(width2<500)
+        {
+            images=document.getElementsByClassName("carousel_image_career")
+            console.log("fn222")
+            for(i=0;i<9;i++)
+            {
+                //console.log(images[i].src)
+                s=images[i].src
+                a=s.slice(s.length-5,s.length)
+                images[i].src="img/Sliders/"+a
+
+
+            }
+        }
         function set_active(num)
         { 
             for(let i=1;i<=6;i++)

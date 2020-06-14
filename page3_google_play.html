@@ -1,0 +1,382 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vista India</title>
+        <link type="text/css" rel="stylesheet" href="css/style_new.css" />
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/nav.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/style_3.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!--MOBILE NAVBAR-->
+        <div class="mobile-container mob_nav" >
+            <div class="topnav">
+                <div class="topnav_header" style="width:100%; background:black; padding-top:10px; padding-bottom:10px;" >
+                    <img class="logo-img" src="img/logo-alt.png" alt="logo">
+                </div>
+                <div id="myLinks">
+                    <a href="index.html">Home</a>
+                    <a href="page2.html">Media Services</a>
+                    <a href="page3_netflix.html">Recent Releases</a>
+                    <a href="blogs.html">Blogs</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="FAQ.html">FAQ</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            </div>
+            <!--/MOBILE NAVBAR-->
+            <!-- NAVBAR-->
+            <div class="container-fluid">
+                <div class="row visible-desktop nvbar" >
+                    <div class="col-xs-6 left_col_navbar" >
+                        <div class="row ">
+                            <!-- <div class="col-xs-4 ">
+                                <img class="logo-img" src="img/logo-alt.png" alt="logo">
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="index.html" class="nav_header">HOME</a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="page2.html" class="nav_header">MEDIA SERVICES</a>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="page3_netflix.html" id="rec" class="nav_header recent_active" onmouseover="make_active()" onmouseout="make_deactive()">RECENT</a>
+                            </div> -->
+                            <div style="display:flex; justify-content: space-between;  ;">
+                                <img class="logo-img" src="img/logo-alt.png" alt="logo"  >                            
+                                <a href="index.html" class="nav_header ">HOME</a>
+                                <a href="page2.html" class="nav_header">MEDIA SERVICES</a>
+                                <a href="page3_netflix.html" id="rec" class="nav_header recent_active" onmouseover="make_active()" onmouseout="make_deactive()">RECENT</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 right_col_navbar" >
+                        <div class="row">
+                            <!-- <div class="col-xs-2" style="padding-left:0px !important;">
+                                <a href="page3_netflix.html" class="nav_header release_active" id="rel"  onmouseover="make_active2()" onmouseout="make_deactive2()">RELEASES</a>
+                            </div>
+                            <div class="col-xs-2">
+                                <a href="blogs.html" class="nav_header">BLOGS</a>
+                            </div>
+                            <div class="col-xs-2 ">
+                                <a href="gallery.html" class="nav_header">GALLERY</a>
+                            </div>
+                            <div class="col-xs-3" style="padding-left:5%;">
+                                <a href ="aboutus.html" class="nav_header">ABOUT US</a>
+                            </div>
+                            <div class="col-xs-3">
+                                <a href="FAQ.html" class="nav_header">FAQ</a>
+                            </div> -->
+                            <div style="display:flex; justify-content: space-between;  ;">
+                                <a href="page3_netflix.html" class="nav_header release_active" id="rel"  onmouseover="make_active2()" onmouseout="make_deactive2()">RELEASES</a>
+                                <a href="blogs.html" class="nav_header">BLOGS</a>
+                                <a href="gallery.html" class="nav_header">GALLERY</a>
+                                <a href="aboutus.html" class="nav_header">ABOUT US</a>
+                                <a href="FAQ.html" class="nav_header" style="margin-right:8%;">FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- /NAVBAR-->
+            <!-- -->
+            <!-- MAIN -->
+            <div class="container">
+                <div class="main" id="desk_links">
+                    <div class="link"><a href="page3_netflix.html">NETFLIX</a></div>
+                    <div class="link"><a href="page3_itunes.html">ITUNES</a></div >
+                    <div class="link active_tab"><a href="page3_google_play.html">GOOGLE PLAY</a></div>
+                    <div class="link"><a href="page3_amazon_prime.html">AMAZON PRIME</a></div>
+                    <div class="link"><a href="page3_prime_video_direct.html">PRIME VIDEO DIRECT</a></div>
+                   
+
+                </div>
+                <!-- MAIN MOB -->
+                <div class="dropdown mob_links" id="mob_links" style="display: none;">
+                    <button class="dropdown-toggle dropdown_btn" style="color: white;" type="button" data-toggle="dropdown">GOOGLE PLAY
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li ><a href="page3_netflix.html" class="ls">NETFLIX</a></li>
+                      <li ><a href="page3_itunes.html" class="ls">ITUNES</a></li>
+                      <!-- <li ><a href="page3_google_play.html" class="ls">GOOGLE PLAY</a></li> -->
+                      <li ><a href="page3_amazon_prime.html"  class="ls">AMAZON PRIME</a></li>
+                      <li ><a href="page3_prime_video_direct.html" class="ls">PRIME VIDEO DIRECT</a></li>
+                    </ul>
+                </div>
+                <!-- /MAIN MOB -->
+                <!-- PAGE1 STARTS -->
+                <div class="page">
+                <!-- ROW1 STARTS -->
+                
+                <div class="row content">
+                    <div class="col-sm-3" >
+                        <div class="card">
+                            <img src="img/GooglePlay/1.jpg" class="card_img" >
+                            <div class="container cardbox">
+                                <div class="card_btns_div">
+                                    <button class="card_btns">Watch</button>
+                                    <button class="card_btns" >Share</button>
+                                </div>
+                                <p><u>Title:</u> Regiment Diaries</p>
+                                <p><u>Synopsis</u>:Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p><u>Services:</u></p>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" >
+                        <div class="card">
+                            <img src="img/GooglePlay/2.jpg" class="card_img" >
+                            <div class="container cardbox">
+                                <div class="card_btns_div">
+                                    <button class="card_btns">Watch</button>
+                                    <button class="card_btns" >Share</button>
+                                </div>
+                                <p><u>Title:</u> Regiment Diaries</p>
+                                <p><u>Synopsis</u>:Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p><u>Services:</u></p>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" >
+                        <div class="card">
+                            <img src="img/GooglePlay/3.jpg" class="card_img" >
+                            <div class="container cardbox">
+                                <div class="card_btns_div">
+                                    <button class="card_btns">Watch</button>
+                                    <button class="card_btns" >Share</button>
+                                </div>
+                                <p><u>Title:</u> Regiment Diaries</p>
+                                <p><u>Synopsis</u>:Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p><u>Services:</u></p>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" >
+                        <div class="card">
+                            <img src="img/GooglePlay/4.jpg" class="card_img" >
+                            <div class="container cardbox">
+                                <div class="card_btns_div">
+                                    <button class="card_btns">Watch</button>
+                                    <button class="card_btns" >Share</button>
+                                </div>
+                                <p><u>Title:</u> Regiment Diaries</p>
+                                <p><u>Synopsis</u>:Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p><u>Services:</u></p>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ROW1 ENDS -->
+                <!-- ROW2 STARTS -->
+                <div class="row content row2">
+                    <div class="col-sm-3" >
+                        <div class="card">
+                            <img src="img/GooglePlay/5.jpg" class="card_img" >
+                            <div class="container cardbox">
+                                <div class="card_btns_div">
+                                    <button class="card_btns">Watch</button>
+                                    <button class="card_btns" >Share</button>
+                                </div>
+                                <p><u>Title:</u> Regiment Diaries</p>
+                                <p><u>Synopsis</u>:Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p><u>Services:</u></p>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" >
+                        <div class="card">
+                            <img src="img/GooglePlay/6.jpg" class="card_img" >
+                            <div class="container cardbox">
+                                <div class="card_btns_div">
+                                    <button class="card_btns">Watch</button>
+                                    <button class="card_btns">Share</button>
+                                </div>
+                                <p><u>Title:</u> Regiment Diaries</p>
+                                <p><u>Synopsis</u>:Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p><u>Services:</u></p>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" >
+                        <div class="card">
+                            <img src="img/GooglePlay/7.jpg" class="card_img" >
+                            <div class="container cardbox">
+                                <div class="card_btns_div">
+                                    <button class="card_btns">Watch</button>
+                                    <button class="card_btns" >Share</button>
+                                </div>
+                                <p><u>Title:</u> Regiment Diaries</p>
+                                <p><u>Synopsis</u>:Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p><u>Services:</u></p>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" >
+                        <div class="card">
+                            <img src="img/GooglePlay/8.jpg" class="card_img" >
+                            <div class="container cardbox">
+                                <div class="card_btns_div">
+                                    <button class="card_btns">Watch</button>
+                                    <button class="card_btns" >Share</button>
+                                </div>
+                                <p><u>Title:</u> Regiment Diaries</p>
+                                <p><u>Synopsis</u>:Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p><u>Services:</u></p>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                                <div class="services">
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="parent" style="visibility: hidden;">
+                        <div class="pagination">
+                            <a >Prev</a>
+                            <a >1</a>
+                            <a >2</a>
+                            <a>3</a>
+                            <a>4...</a>
+                            <a >Next</a>
+                          </div>
+                        </div>
+                    <!-- <p style="background-color: yellow; position:absolute; width:100%; left:0px;">asd</p> -->
+                
+                
+                    <footer id="footer" style="position:absolute !important; width:100% !important; left:0px !important;">
+                        <!-- container -->
+                        <div class="container">
+                            <!-- row -->
+                            <div class="row" style="padding-top:5px;">
+                                <!-- contact social -->
+                                
+                                <!-- /contact social -->
+                
+                                <!-- copyright -->
+                                <div class="col-sm-6 footer_col">
+                                    <span class="copyright footer_col"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved &nbsp; | &nbsp;<a href="career.html" style="color: black;">Careers </a> | &nbsp;<a style="color: black;" href="privacy.html">Privacy Policy </a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                                </div>
+                                <div class="col-sm-6" >
+                                    <div class="pull-right social-media_div footer_col" id="footer_right_col">
+                                        <ul class="social-media">
+                                        <li>Mail us at <a href="mailto:info@vistaindia.com" >info@vistaindia.com </a><li>
+                                        <li><a href="https://www.facebook.com/vistadigimedia/" target="_blank">| &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/vistadigimedia/"  target="_blank"><i class="fa fa-instagram" aria-hidden="true" ></i></a></li>
+                                        <li><a href="https://twitter.com/vistadigimedia"  target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/vista-india-digital-media/ "  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                </div>
+                                </div>
+                                <!-- /copyright -->
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <!-- /container -->
+                    </footer>
+                </div>
+                <!-- ROW2 ENDS -->
+                </div>
+                <!-- PAGE 1 ENDS -->
+            </div>
+    </body>
+    <script>
+        let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        console.log(width)
+        if(width<620)
+        {
+            let D=document.getElementById('desk_links');
+            D.style.display="none";
+            let M=document.getElementById('mob_links');
+            M.style.display="block"
+        }
+        if(width<=757)
+        {
+            document.getElementById('footer_right_col').classList.remove('pull-right')
+        }
+    </script>
+</html>

@@ -350,24 +350,73 @@ span.orange
             justify-content:space-evenly ;
         }
     
+.parentcirclediv
+{
+    width:340px;
+    height:340px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}       
+.parentcirclediv-image
+{
+    position: relative;
+	display: block;
+}
+
+.parentcirclediv-text{
+    position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    width: 300px;
+    height: 200px; 
+    text-align: center;   
+   vertical-align:middle;
+   line-height:200px;
+}
+.parentcirclediv-text h3{
+    color: white;
+    display: inline-table;
+   vertical-align:middle;
+   line-height:100%;
+color:black;
+}
+/* new css */
+.try2
+{
+    background:url('../img/Minutes_Circle.png') top left/cover no-repeat;
+    height:340px;
+    width:340px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* background: black; */
+}
+/* new new css */
+
+    
 .five_hundred_img
 {
-    height:50vh;
-    max-height:400px
+    height:340px;
+    width:340px;
+    /*position: relative;
+		display: block; */
+    /* max-height:400px */
 }
 .watermark {
     opacity: 0.2;
     color: #b7b7b6;
     position: absolute;
     font-size:24vh;
-    margin-top:10vh;
+    /* margin-top:10vh; */
 }
 .watermark1 {
     opacity: 1;
     color: BLACK;
-    position: absolute;
+    /* position: absolute; */
     font-size:12vh;
-    margin-top:17vh;
+    /* margin-top:17vh; */
 }
 .content_under_text
 {
@@ -453,8 +502,8 @@ min-height: 300px;
     }
     .watermark1
     {
-        margin-top:7rem;
-        font-size:5rem;
+        /* margin-top:7rem; */
+        /* font-size:5rem; */
         /* font-size:10vh;     */
     }
     .content_under_text

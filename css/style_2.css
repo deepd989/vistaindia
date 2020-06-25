@@ -69,7 +69,7 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
 
 .logo_div2
 {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 .top_para
 {
@@ -121,6 +121,7 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
     }
     #outerWrap {
         height:520px;
+        /* margin-top:30px; */
         }
     .outer2
     {
@@ -128,7 +129,8 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
     }
     .outer4
     {
-        height:350px !important;            
+        height:350px !important;  
+        margin-top: 0px !important;           
     }
     .div2_content_desktop
         {
@@ -160,6 +162,7 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
     {
         padding-top:0px;
     }
+    
 }
 
 @media screen and (max-width: 557px)
@@ -193,3 +196,44 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
     }
 }
 
+@media screen and (max-width: 400px)
+{
+    #outerwrap
+    {
+        margin-top:70px;
+    }
+    .outer4
+    {
+        margin-top:50px !important;
+    }
+    .outer4_key
+    {
+        margin-top:0px !important;
+        margin-bottom:40px ;
+    }
+}
+@media screen and (max-width: 350px)
+{
+    .outer4
+    {
+        margin-top:100px !important;
+    }
+    .outer4_key
+    {
+        margin-top:0px !important;
+        margin-bottom:40px ;
+    }
+}
+
+@media screen and (max-width: 335px)
+{
+    .outer4
+    {
+        margin-top:150px !important;
+    }
+    .outer4_key
+    {
+        margin-top:0px !important;
+        margin-bottom:40px ;
+    }
+}

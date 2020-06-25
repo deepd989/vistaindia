@@ -408,14 +408,15 @@ color:black;
     opacity: 0.2;
     color: #b7b7b6;
     position: absolute;
-    font-size:24vh;
+    font-size:10vw; 
     /* margin-top:10vh; */
+    
 }
 .watermark1 {
     opacity: 1;
     color: BLACK;
     /* position: absolute; */
-    font-size:12vh;
+    font-size:80px;
     /* margin-top:17vh; */
 }
 .content_under_text
@@ -423,7 +424,8 @@ color:black;
     text-align:center;
     font-size:55px;
     color: black;
-    margin-top:100px;
+    margin-top:35px;
+    margin-bottom:100px;
 }
 .numberCircle {
     width: 150px;
@@ -490,15 +492,11 @@ min-height: 300px;
     {
         margin-top:20px;
     }
-    .five_hundred_img
-    {
-        height:21rem ;
-        /* max-height:300px ; */
-    }
+    
     .watermark
     {
-        margin-top:7rem;   
-        font-size:5rem;
+        /* margin-top:7rem;    */
+        /* font-size:5rem; */
     }
     .watermark1
     {
@@ -559,45 +557,7 @@ min-height: 300px;
 .social-media li .fa{font-size:22px;}
 .social-media li a{color:black;}
 
-@media screen and (max-width: 319px)
-{
-    .watermark
-    {
-        font-size:4rem;
-    }
-    
-}
-@media screen and (max-width:400px)
-{
-    .testimonial
-    {
-        display: none;
-    }
-    .social-media
-    {
-        padding-left:0px;
-         padding-top:2px;
-         font-size:x-small;
-    }
-    .copyright
-    {
-        font-size:9px;
-    }
-    .social-media li .fa{
-        font-size:20px;
-    }
-    .social-media li{display:inline-block;list-style:none;margin:12px 2px 0px 2px;}
-    .homepage_text
-    {
-        font-size:45px !important;
-        width: fit-content;
 
-    }
-    .footer
-    {
-        text-align: center;
-    }
-}
 
 @media screen and (max-width:844px) and (min-width:762px)
 {
@@ -672,11 +632,76 @@ min-height: 300px;
 
 .gradient_mob
   {
-      display: block !important;
+      display: none !important;
   }
   .gradient_desk
   {
-    display: none !important;
+    /* display: none !important; */
+  }
+  .watermark
+  {
+      font-size:12vw;
+      
+  }
+  .watermark1
+  {
+      font-size:50px;
   }
   
+  }
+
+  @media screen and (max-width:550px)
+  {
+    span
+    {
+        font-size:25px !important;
+     background:none;
+    }
+  }
+
+@media screen and (max-width:400px)
+{
+    span
+    {
+        font-size:20px !important;
+     background:none;
+    }
+    
+    .testimonial
+    {
+        display: none;
+    }
+    .social-media
+    {
+        padding-left:0px;
+         padding-top:2px;
+         font-size:x-small;
+    }
+    .copyright
+    {
+        font-size:9px;
+    }
+    .social-media li .fa{
+        font-size:20px;
+    }
+    .social-media li{display:inline-block;list-style:none;margin:12px 2px 0px 2px;}
+    .homepage_text
+    {
+        font-size:45px !important;
+        width: fit-content;
+
+    }
+    .footer
+    {
+        text-align: center;
+    }
+    .try2
+    {
+        height:290px;
+        width:290px;
+    }
+    .watermark
+    {
+        font-size:50px;
+    }
 }

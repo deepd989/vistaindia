@@ -48,8 +48,14 @@ body
 .services
 {
     line-height: 10px;
+    /* text-align: center; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+
+}
+.services p
+{
+  padding-right:10px;
 }
 .card p
 {

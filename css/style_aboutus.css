@@ -1,3 +1,7 @@
+.card_text_1
+{
+    top:55px;
+}
 .top_text
 {
     margin-top:35px;
@@ -41,6 +45,10 @@
     text-align: center;
     /* margin-right:30px; */
 }
+.img_card_2
+    {
+        padding-left:10px;  
+    }
 ._img1
 {
     margin-top:25px;
@@ -68,6 +76,10 @@
     padding:20px;
     margin-top:20px;
 }
+.card_3_top
+{
+    top:40px;
+}
 
 .card_text
 {
@@ -84,7 +96,7 @@
 }
 .card_text_2
 {
-    padding-top:40px ;
+    padding-top:55px ;
 }
 .mob_text
 {
@@ -103,7 +115,14 @@
 {
     padding-left:5vw;
 }
+@media screen and (max-width: 1199px)
+{
+    .card_text_2
+{
+    padding-top:35px ;
+}
 
+}
 @media screen and (max-width: 1125px)
 {
     .card_text
@@ -122,16 +141,24 @@
 {
     padding-top:20px ;
 }
+.img_card_2
+    {
+        padding-left:10px;  
+    }
         
 }
 
 
 @media screen and (max-width: 1000px)
 {
+    .img_card_2
+    {
+        padding-left:20px;  
+    }
     .card_text
     {
         font-size:12px; 
-        width:37vw; 
+        /* width:37vw;  */
     }
      .rowg
     {
@@ -143,19 +170,38 @@
     }
     .card_text_2
 {
-    padding-top:20px ;
+    padding-top:12px ;
+}
+.card_3_top
+{
+    top:25px;
 }
     
   
 
 }
-@media screen and (max-width: 857px)
+@media screen and (max-width: 991px){
+    .card_text
+    {
+        /* font-size:12px;  */
+        width:37vw; 
+    }
+    .card_text_1
+    {
+        top:25px;
+    }
+}
+@media screen and (max-width: 859px)
 {
     .card_text
     {
         font-size:11px; 
         width:38vw; 
         
+    }
+    .card_text_2
+    {
+        padding-top:20px ;
     }
 
 }

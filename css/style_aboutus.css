@@ -36,6 +36,7 @@
     max-height:310px !important;
 } */
 
+
 .img_container
 {
     width:240px;
@@ -44,18 +45,20 @@
     border-radius:5px;
     text-align: center;
     /* margin-right:30px; */
+    /* background-color:red; */
+    display:flex !important;
+    justify-content: center !important;
+    align-items:center !important;
+    
 }
-.img_card_2
-    {
-        padding-left:10px;  
-    }
+
 ._img1
 {
-    margin-top:25px;
+    /* margin-top:25px; */
 }
 ._img2
 {
-    margin-top:80px;
+    /* margin-top:80px; */
     width:150px;
 }
 ._img3

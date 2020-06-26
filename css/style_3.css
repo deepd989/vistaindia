@@ -42,12 +42,12 @@ body
     margin-top:3px;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom:5px;
+    margin-bottom:20px;
 
 }
 .services
 {
-    line-height: 10px;
+    line-height: 15px;
     /* text-align: center; */
     display: flex;
     justify-content: flex-start;
@@ -59,7 +59,7 @@ body
 }
 .card p
 {
-    font-size:x-small;
+    font-size:small;
 }
 .card_img
 {

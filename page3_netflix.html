@@ -11,6 +11,27 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
+    <script>
+       function share(platform,id)
+       {
+           let ID='netflix_'+ id
+            document.getElementById(ID)
+            str=ID+" p"
+            console.log(str)
+            let arr=document.getElementById(ID).children
+            let title=arr[0].innerHTML
+            console.log(title.substr(13))
+            // for(i=0;i<2;i++)
+            // {
+            //     console.log(arr[i].)
+            // }
+            if(platform=='facebook')
+            {
+                
+            }
+
+       }
+    </script>
     <body>
         <!--MOBILE NAVBAR-->
         <div class="mobile-container mob_nav" >
@@ -99,7 +120,7 @@
                 <!-- MAIN MOB -->
                 <div class="dropdown mob_links" id="mob_links" style="display: none;">
                     <button class="dropdown-toggle dropdown_btn" style="color: white;" type="button" data-toggle="dropdown">NETFLIX
-                    <span class="caret"></span></button>
+                    </button>
                     <ul class="dropdown-menu">
                       <!-- <li ><a href="page3_netflix.html" class="ls">NETFLIX</a></li> -->
                       <li ><a href="page3_itunes.html" class="ls">ITUNES</a></li>
@@ -116,11 +137,30 @@
                     <div class="col-sm-3" >
                         <div class="card">
                             <img src="img/NETFLIX/1.jpg" class="card_img" >
+                            
                             <div class="container cardbox row1_height_class">
-                                <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://www.netflix.com/watch/81252029?trackId=13752289&tctx=0%2C0%2Cfe65abc7-1100-43e6-abd8-bb94cd735399-213682895%2C%2C%2C" target="_blank">Watch </a> </button>
-                                    <button class="card_btns" >Share</button>
+                                
+                                <div class="card_btns_div" >
+                                    <button class="card_btns" ><a href="https://www.netflix.com/watch/81252029?trackId=13752289&tctx=0%2C0%2Cfe65abc7-1100-43e6-abd8-bb94cd735399-213682895%2C%2C%2C" target="_blank">Watch </a> </button>
+                                    <div class="bs-example">
+                                        <div class="dropdown" >
+                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+                                            
+                                          </button>
+                                        
+                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                                
+                              
+                                <div style="position:relative; z-index:1 ;" id="netflix_1">
                                 <p class="title_height"><u>Title:</u> Ala Vaikunthapuramloo</p>
                                 <div class="syn_netflix"><p ><u>Synopsis</u> : After growing up enduring criticism from his father, a young man finds his world shaken upon learning he was switched at birth with a millionaire’s son.</p></div>
                                 <p><u>Services:</u></p>
@@ -132,6 +172,7 @@
                                     <p>Metadata creation</p>
                                     <p>Artwork creation</p>
                                 </div>
+                                </div>
                               </div>
                         </div>
                     </div>
@@ -141,21 +182,41 @@
                             <div class="container cardbox row1_height_class">
                                 <div class="card_btns_div">
                                     <button class="card_btns"><a href="https://www.netflix.com/watch/81289660?trackId=13752289&tctx=0%2C0%2C27741f5d-8332-443b-a704-df0e3089bb4c-213783859%2C%2C%2C" target="_blank">Watch</a></button>
-                                    <button class="card_btns" >Share</button>
+                                    <div class="bs-example">
+                                        <div class="dropdown" >
+                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+                                            
+                                          </button>
+                                        
+                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div style="position:relative; z-index:1 ;" id="netflix_2">
                                 <p class="title_height"><u>Title:</u> Forensic</p>
                                 <div class="syn_netflix"><p ><u>Synopsis</u> : A pair of officers with history navigates clues from the past, false leads and a ticking clock to and an elusive serial killer who targets young girls.</p></div>
                                 <p><u>Services:</u></p>
                                 <div class="services">
+                                    
                                     <p>Art creation</p>
                                     <p>English  Subtitles</p>
-                                    <p>Hindi Subtitles</p>
+                                   
                                     
                                 </div>
                                 <div class="services">
                                     <p>Metadata creation</p>
                                     <p>Media Processing  </p>
                                   
+                                </div>
+                                <div class="services">
+                                    <p>Hindi Subtitles</p>
+                                </div>
                                 </div>
                                 
                               </div>
@@ -167,8 +228,23 @@
                             <div class="container cardbox row1_height_class">
                                 <div class="card_btns_div">
                                     <button class="card_btns"><a href="https://www.netflix.com/watch/81121896?trackId=13752289&tctx=0%2C0%2Cab313485-09e6-4250-b734-884fcf15c7ee-13091583%2C%2C%2C" target="_blank">Watch</a></button>
-                                    <button class="card_btns" >Share</button>
+                                    <div class="bs-example">
+                                        <div class="dropdown" >
+                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+                                            
+                                          </button>
+                                        
+                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div style="position:relative; z-index:1 ;" id="netflix_3">
                                 <p class="title_height"><u>Title:</u> Chippa</p>
                                 <div class="syn_netflix"><p ><u>Synopsis</u> : At midnight on his 10th birthday, a boy scours the lesser-known Kolkata streets in search of a father he’s never met, carrying a letter he can’t read.</p></div>
                                 <p><u>Services:</u></p>
@@ -182,6 +258,7 @@
                                 </div>
                               </div>
                         </div>
+                        </div>
                     </div>
                     <div class="col-sm-3" >
                         <div class="card">
@@ -189,8 +266,23 @@
                             <div class="container cardbox row1_height_class">
                                 <div class="card_btns_div">
                                     <button class="card_btns"><a href="https://www.netflix.com/watch/81259883?trackId=13752289&tctx=0%2C0%2C094e22cb-5aed-4584-ad00-939e72221e86-53385713%2C%2C%2C" target="_blank">Watch</a></button>
-                                    <button class="card_btns" >Share</button>
+                                    <div class="bs-example">
+                                        <div class="dropdown" >
+                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+                                            
+                                          </button>
+                                        
+                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div style="position:relative; z-index:1 ;" id="netflix_4">
                                 <p class="title_height"><u>Title:</u> Har Kisse Ke Hisse Kaamyaab</p>
                                 <div class="syn_netflix"><p ><u>Synopsis</u> : Always small-time, never the spotlight. His 500th film could be the break he’s waited for – or another broken dream.</p></div>
                                 <p><u>Services:</u></p>
@@ -203,6 +295,7 @@
                                     <p>Artwork creation</p>
                                 </div>
                               </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,23 +308,42 @@
                             <div class="container cardbox row2_height_class">
                                 <div class="card_btns_div">
                                     <button class="card_btns"><a href="https://www.netflix.com/watch/81191228?trackId=13752289&tctx=0%2C0%2C83eb6cc9-133b-455e-899a-f4277309ea07-107626360%2C%2C%2C" target="_blank">Watch</a></button>
-                                    <button class="card_btns" >Share</button>
+                                    <div class="bs-example">
+                                        <div class="dropdown" >
+                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+                                            
+                                          </button>
+                                        
+                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div style="position:relative; z-index:1 ;" id="netflix_5">
                                 <p class="title_height"><u>Title:</u> La Patrie Homeland</p>
                                 <div class="syn_netflix"><p ><u>Synopsis</u> : Determined to trace her ancestral history, an Armenian woman travels to a French village, where she befriends a kind man and better yet, finds herself</p></div>
                                 <p><u>Services:</u></p>
                                 <div class="services">
                                     <p>Digital Distribution</p>
                                     <p>English Closed Captioning</p>
-                                    <p>Artwork Creation</p>
+                                   
                                 </div>
                                 <div class="services">
                                     <p>Media Processing </p>
                                     <p> Metadata Creation</p>
                                     
                                 </div>
+                                <div class="services">
+                                    <p>Artwork Creation</p>
+                                </div>
                                 
                               </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-3" >
@@ -240,8 +352,23 @@
                             <div class="container cardbox row2_height_class">
                                 <div class="card_btns_div">
                                     <button class="card_btns"><a href="https://www.netflix.com/watch/81155803?trackId=13752289&tctx=0%2C0%2Cc2a711ef-8376-4192-a5a9-322ad2293308-4059847%2C%2C%2C" target="_blank">Watch</a></button>
-                                    <button class="card_btns">Share</button>
+                                    <div class="bs-example">
+                                        <div class="dropdown" >
+                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+                                            
+                                          </button>
+                                        
+                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div style="position:relative; z-index:1 ;" id="netflix_6">
                                 <p class="title_height"><u>Title:</u> Uriyadi II</p>
                                 <div class="syn_netflix"><p ><u>Synopsis</u> :When a chemical plant’s poor conditions cause tragedies, an employee leads a protest against the company’s callous owner and local politicians.</p></div>
                                 <p><u>Services:</u></p>
@@ -254,6 +381,7 @@
                                     <p>Artwork creation</p>
                                 </div>
                               </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-3" >
@@ -262,8 +390,23 @@
                             <div class="container cardbox row2_height_class">
                                 <div class="card_btns_div">
                                     <button class="card_btns"><a href="https://www.netflix.com/watch/81113920?trackId=14170287&tctx=0%2C0%2Cfddc166a-4299-45ea-a977-dde6dff6feda-3583038%2C7797718e-41fa-489d-aba9-0fff3a146036_113511476X3XX1591547765659%2C7797718e-41fa-489d-aba9-0fff3a146036_ROOT%2C" target="_blank">Watch</a></button>
-                                    <button class="card_btns" >Share</button>
+                                    <div class="bs-example">
+                                        <div class="dropdown" >
+                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+                                            
+                                          </button>
+                                        
+                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div style="position:relative; z-index:1 ;" id="netflix_7">
                                 <p class="title_height"><u>Title:</u> Love Aak Kal</p>
                                 <div class="syn_netflix"><p ><u>Synopsis</u> : She wants to keep it casual. He wants commitment. For this love story to have a future, it may need some help from the past.</p></div>
                                 <p><u>Services:</u></p>
@@ -275,6 +418,7 @@
                                     <p>Metadata creation</p>
                                     <p>Artwork creation</p>
                                 </div>
+                                </div>
                               </div>
                         </div>
                     </div>
@@ -284,8 +428,23 @@
                             <div class="container cardbox row2_height_class">
                                 <div class="card_btns_div">
                                     <button class="card_btns"><a href="https://www.netflix.com/watch/81273579?trackId=13752289&tctx=0%2C0%2Cf4711d2a-1c14-4d91-8324-55165b8398d1-250677250%2C%2C%2C" target="_blank">Watch</a></button>
-                                    <button class="card_btns" >Share</button>
+                                    <div class="bs-example">
+                                        <div class="dropdown" >
+                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+                                            
+                                          </button>
+                                        
+                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                          </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                                <div style="position:relative; z-index:1 ;" id="netflix_8">
                                 <p class="title_height"><u>Title:</u> World Famous Lover</p>
                                 <div class="syn_netflix"><p ><u>Synopsis</u> : When his frustrated girlfriend decides to leave him, a struggling writer gets down to work on stories of romance he hopes will win him back.</p></div>
                                 <p><u>Services:</u></p>
@@ -299,6 +458,7 @@
                                     
                                 </div>
                               </div>
+                            </div>
                         </div>
                     </div>
                     <div class="parent" style="visibility: hidden;">
@@ -387,6 +547,7 @@
             }
             console.log("done")
         }
+        
         
         function equalize_syn()
         {

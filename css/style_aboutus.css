@@ -63,12 +63,13 @@
 }
 ._img3
 {
-    width:200px;
+    width:150px;
     height:50px;
 }
 .award_text
 {
     padding-top:75px;
+    font-size:18px;
 }
 
 .about_us_card
@@ -88,7 +89,7 @@
 {
     width:50vw; 
     color: white;
-    font-size: small;
+    font-size: 14px ;
 }
 
 .left_card_text

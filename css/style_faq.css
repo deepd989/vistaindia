@@ -3,8 +3,8 @@
     letter-spacing:4px;
     font-size:large ;
     text-align: center;
-    margin-top:20px;
-    font-weight: 600;
+    margin-top:40px;
+    font-weight:bold;
 }
 .sub_head_text
 {
@@ -20,6 +20,7 @@
     font-weight: bold;
     margin-top:30px;
     line-height:5px;
+    font-size: large;
     /* padding:10px; */
 }
 .btn

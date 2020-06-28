@@ -43,6 +43,7 @@ body
     display: flex;
     justify-content: space-evenly;
     margin-bottom:20px;
+    max-height:40px ;
 
 }
 .services
@@ -77,12 +78,19 @@ body
     width:100% ;
     /* height:200px; */
 }
+.cardbox p
+{
+  font-size:16px;
+}
 .card_btns
 {
     background-color:#303030;
     border:none;
     border-radius:3px;
     color:white;
+    margin-top:10px ;
+    max-height:22px;
+     height:22px ;
 }
 .card_btns a
 {
@@ -290,3 +298,58 @@ body
     column-count:         1;
     }
   } 
+
+  /* icons */
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 35px;
+    /* text-align: center; */
+    text-decoration: none;
+    /* margin: 5px 2px; */
+  }
+  
+  .fa:hover {
+      opacity: 0.3;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    /* font-size:5px; */
+    /* width: ; */
+  }
+  .fa-whatsapp
+  {
+    background: #25d366;
+    color: white;
+
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  

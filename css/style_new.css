@@ -16,7 +16,7 @@
   }
 
   
-  
+
 
 
 
@@ -161,6 +161,7 @@ span.orange
     padding-left:8%;
     padding-right:8%;
     padding-top:20px;
+    font-size:18px;
 }
 .left_col_navbar
 {
@@ -192,6 +193,7 @@ span.orange
     text-align: center;
     padding-left:8%;
     padding-right:8%;
+    font-size:18px;
 }
 
 
@@ -325,7 +327,7 @@ span.orange
     }
     .card-text
     {
-        font-size: x-small;
+        font-size: small !important;
         padding:2px;
     }
     .numberCircle2 {
@@ -467,8 +469,10 @@ min-height: 300px;
 
 .card-text
 {
-    font-size: x-small;
+    font-size: small;
     padding:2px;
+    padding-left:10px !important;
+    padding-right:10px !important;
     text-align: justify !important;
 }
 

@@ -1,13 +1,13 @@
 .top_text
 {
-    margin-top:20px;
-    font-size:21px;
+    margin-top:40px;
+    font-size:xx-large;
     color: black;
     text-align: center;
     padding:15px;
-    margin-bottom:20px ;
+    margin-bottom:40px ;
 }
-.blog_caption
+.blog_captiontop
 {
     /* font-size:21px; */
     color: black;

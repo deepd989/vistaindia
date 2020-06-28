@@ -1,3 +1,22 @@
+.btn
+{
+  max-height:34px ;
+}
+.active
+{
+  margin-bottom:40px;
+  max-height:34px !important;
+}
+.JD
+{
+  padding-top:10px;
+  padding-bottom:10px ;
+}
+.mt20
+{
+  padding-top:10px ;
+  padding-bottom:10px ;
+}
 .mob_links
   {
 

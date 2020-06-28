@@ -1,17 +1,22 @@
+p{
+    font-size:16px ;
+}
+
 .head_text
 {
     letter-spacing:4px;
-    font-size:large ;
+    font-size:18px ;
     text-align: center;
-    margin-top:40px;
+    margin-top:50px !important;
     font-weight:bold;
 }
 .sub_head_text
 {
     letter-spacing:3px;
-    font-size:small;
+    font-size:16px;
     text-align: center;
-    margin-top:5px;
+    margin-top:15px;
+    margin-bottom:15px;
     
 }
 .ques_text

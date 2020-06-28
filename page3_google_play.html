@@ -1,44 +1,46 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Vista India</title>
-        <link type="text/css" rel="stylesheet" href="css/style_new.css" />
-        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="js/nav.js"></script>
-        <link type="text/css" rel="stylesheet" href="css/style_3.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!--MOBILE NAVBAR-->
-        <div class="mobile-container mob_nav" >
-            <div class="topnav">
-                <div class="topnav_header" style="width:100%; background:black; padding-top:10px; padding-bottom:10px;" >
-                    <img class="logo-img" src="img/logo-alt.png" alt="logo">
-                </div>
-                <div id="myLinks">
-                    <a href="index.html">Home</a>
-                    <a href="page2.html">Media Services</a>
-                    <a href="page3_netflix.html">Recent Releases</a>
-                    <a href="blogs.html">Blogs</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="aboutus.html">About Us</a>
-                    <a href="FAQ.html">FAQ</a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista India</title>
+    <link type="text/css" rel="stylesheet" href="css/style_new.css" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/nav.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/style_3.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--MOBILE NAVBAR-->
+    <div class="mobile-container mob_nav">
+        <div class="topnav">
+            <div class="topnav_header" style="width:100%; background:black; padding-top:10px; padding-bottom:10px;">
+                <img class="logo-img" src="img/logo-alt.png" alt="logo">
+            </div>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="page2.html">Media Services</a>
+                <a href="page3_netflix.html">Recent Releases</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
                 <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            </div>
-            <!--/MOBILE NAVBAR-->
-            <!-- NAVBAR-->
-            <div class="container-fluid">
-                <div class="row visible-desktop nvbar" >
-                    <div class="col-xs-6 left_col_navbar" >
-                        <div class="row ">
-                            <!-- <div class="col-xs-4 ">
+            </a>
+        </div>
+    </div>
+    <!--/MOBILE NAVBAR-->
+    <!-- NAVBAR-->
+    <div class="container-fluid">
+        <div class="row visible-desktop nvbar">
+            <div class="col-xs-6 left_col_navbar">
+                <div class="row ">
+                    <!-- <div class="col-xs-4 ">
                                 <img class="logo-img" src="img/logo-alt.png" alt="logo">
                             </div>
                             <div class="col-xs-2">
@@ -50,17 +52,18 @@
                             <div class="col-xs-2">
                                 <a href="page3_netflix.html" id="rec" class="nav_header recent_active" onmouseover="make_active()" onmouseout="make_deactive()">RECENT</a>
                             </div> -->
-                            <div style="display:flex; justify-content: space-between;  ;">
-                                <img class="logo-img" src="img/logo-alt.png" alt="logo"  >                            
-                                <a href="index.html" class="nav_header ">HOME</a>
-                                <a href="page2.html" class="nav_header">MEDIA SERVICES</a>
-                                <a href="page3_netflix.html" id="rec" class="nav_header recent_active" onmouseover="make_active()" onmouseout="make_deactive()">RECENT</a>
-                            </div>
-                        </div>
+                    <div style="display:flex; justify-content: space-between;  ;">
+                        <img class="logo-img" src="img/logo-alt.png" alt="logo">
+                        <a href="index.html" class="nav_header ">HOME</a>
+                        <a href="page2.html" class="nav_header">MEDIA SERVICES</a>
+                        <a href="page3_netflix.html" id="rec" class="nav_header recent_active"
+                            onmouseover="make_active()" onmouseout="make_deactive()">RECENT</a>
                     </div>
-                    <div class="col-xs-6 right_col_navbar" >
-                        <div class="row">
-                            <!-- <div class="col-xs-2" style="padding-left:0px !important;">
+                </div>
+            </div>
+            <div class="col-xs-6 right_col_navbar">
+                <div class="row">
+                    <!-- <div class="col-xs-2" style="padding-left:0px !important;">
                                 <a href="page3_netflix.html" class="nav_header release_active" id="rel"  onmouseover="make_active2()" onmouseout="make_deactive2()">RELEASES</a>
                             </div>
                             <div class="col-xs-2">
@@ -75,483 +78,549 @@
                             <div class="col-xs-3">
                                 <a href="FAQ.html" class="nav_header">FAQ</a>
                             </div> -->
-                            <div style="display:flex; justify-content: space-between;  ;">
-                                <a href="page3_netflix.html" class="nav_header release_active" id="rel"  onmouseover="make_active2()" onmouseout="make_deactive2()">RELEASES</a>
-                                <a href="blogs.html" class="nav_header">BLOGS</a>
-                                <a href="gallery.html" class="nav_header">GALLERY</a>
-                                <a href="aboutus.html" class="nav_header">ABOUT US</a>
-                                <a href="FAQ.html" class="nav_header" style="margin-right:8%;">FAQ</a>
-                            </div>
-                        </div>
+                    <div style="display:flex; justify-content: space-between;  ;">
+                        <a href="page3_netflix.html" class="nav_header release_active" id="rel"
+                            onmouseover="make_active2()" onmouseout="make_deactive2()">RELEASES</a>
+                        <a href="blogs.html" class="nav_header">BLOGS</a>
+                        <a href="gallery.html" class="nav_header">GALLERY</a>
+                        <a href="aboutus.html" class="nav_header">ABOUT US</a>
+                        <a href="FAQ.html" class="nav_header" style="margin-right:8%;">FAQ</a>
                     </div>
-                  </div>
+                </div>
             </div>
-            <!-- /NAVBAR-->
-            <!-- -->
-            <!-- MAIN -->
-            <div class="container">
-                <div class="main" id="desk_links">
-                    <div class="link"><a href="page3_netflix.html">NETFLIX</a></div>
-                    <div class="link"><a href="page3_itunes.html">ITUNES</a></div >
-                    <div class="link active_tab"><a href="page3_google_play.html">GOOGLE PLAY</a></div>
-                    <div class="link"><a href="page3_prime_video_direct.html">PRIME VIDEO DIRECT</a></div>
-                   
+        </div>
+    </div>
+    <!-- /NAVBAR-->
+    <!-- -->
+    <!-- MAIN -->
+    <div class="container">
+        <div class="main" id="desk_links">
+            <div class="link"><a href="page3_netflix.html">NETFLIX</a></div>
+            <div class="link"><a href="page3_itunes.html">ITUNES</a></div>
+            <div class="link active_tab"><a href="page3_google_play.html">GOOGLE PLAY</a></div>
+            <div class="link"><a href="page3_prime_video_direct.html">PRIME VIDEO DIRECT</a></div>
 
-                </div>
-                <!-- MAIN MOB -->
-                <div class="dropdown mob_links" id="mob_links" style="display: none;">
-                    <button class="dropdown-toggle dropdown_btn" style="color: white;" type="button" data-toggle="dropdown">GOOGLE PLAY
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                      <li ><a href="page3_netflix.html" class="ls">NETFLIX</a></li>
-                      <li ><a href="page3_itunes.html" class="ls">ITUNES</a></li>
-                      <!-- <li ><a href="page3_google_play.html" class="ls">GOOGLE PLAY</a></li> -->
-                      <li ><a href="page3_prime_video_direct.html" class="ls">PRIME VIDEO DIRECT</a></li>
-                    </ul>
-                </div>
-                <!-- /MAIN MOB -->
-                <!-- PAGE1 STARTS -->
-                <div class="page">
-                <!-- ROW1 STARTS -->
-                
-                <div class="row content">
-                    <div class="col-sm-3" >
-                        <div class="card">
-                            <img src="img/GooglePlay/1.jpg" class="card_img" >
-                            <div class="container cardbox row1_height_class">
-                                <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://play.google.com/store/movies/details/Har_Kisse_Ke_Hisse_Kaamyaab?id=pu1c39wKrdY.P&PAffiliateID=100l3Q7" target="_blank">Watch</a></button>
-                                    <div class="bs-example">
-                                        <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+
+        </div>
+        <!-- MAIN MOB -->
+        <div class="dropdown mob_links" id="mob_links" style="display: none;">
+            <button class="dropdown-toggle dropdown_btn" style="color: white;" type="button"
+                data-toggle="dropdown">GOOGLE PLAY
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="page3_netflix.html" class="ls">NETFLIX</a></li>
+                <li><a href="page3_itunes.html" class="ls">ITUNES</a></li>
+                <!-- <li ><a href="page3_google_play.html" class="ls">GOOGLE PLAY</a></li> -->
+                <li><a href="page3_prime_video_direct.html" class="ls">PRIME VIDEO DIRECT</a></li>
+            </ul>
+        </div>
+        <!-- /MAIN MOB -->
+        <!-- PAGE1 STARTS -->
+        <div class="page">
+            <!-- ROW1 STARTS -->
+
+            <div class="row content">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="img/GooglePlay/1.jpg" class="card_img">
+                        <div class="container cardbox row1_height_class">
+                            <div class="card_btns_div">
+                                <button class="card_btns"><a
+                                        href="https://play.google.com/store/movies/details/Har_Kisse_Ke_Hisse_Kaamyaab?id=pu1c39wKrdY.P&PAffiliateID=100l3Q7"
+                                        target="_blank">Watch</a></button>
+                                <div class="bs-example">
+                                    <div class="dropdown">
+                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
                                             Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
+                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
                                             <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
                                             <a href="#" class="fa fa-twitter"></a>
                                             <a href="#" class="fa fa-whatsapp"></a>
                                             <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
-                                        </div>
+                                        </ul>
                                     </div>
                                 </div>
-                                <p class="title_heights"><u>Title:</u>Har Kisse Ke Hisse Kaamyaab</p>
-                                <p class="syn_heights"><u>Synopsis:</u> Always small-time, never the spotlight. His 500th film could be the break he’s waited for – or another broken dream.</p>
-                                <p><u>Services:</u></p>
-                                <div class="services">
+                            </div>
+                            <p class="title_heights"><u>Title:</u>Har Kisse Ke Hisse Kaamyaab</p>
+                            <p class="syn_heights"><u>Synopsis:</u> Always small-time, never the spotlight. His 500th
+                                film could be the break he’s waited for – or another broken dream.</p>
+                            <p><u>Services:</u></p>
+                            <div class="row">
+                                <div class="col-md-6" id="services">
                                     <p>Media processing</p>
                                     <p>English subtitles</p>
                                     <p>Artwork Creation</p>
                                 </div>
-                                <div class="services">
+                                <div class="col-md-6" id="services">
                                     <p>Forced subtitle origination</p>
                                     <p>Metadata creation</p>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-3" >
-                        <div class="card">
-                            <img src="img/GooglePlay/2.jpg" class="card_img" >
-                            <div class="container cardbox row1_height_class">
-                                <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://play.google.com/store/movies/details/The_Expendables_3?id=BE73EA2E3EC404BDMV&PAffiliateID=100l3Q7" target="_blank">Watch</a></button>
-                                    <div class="bs-example">
-                                        <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="img/GooglePlay/2.jpg" class="card_img">
+                        <div class="container cardbox row1_height_class">
+                            <div class="card_btns_div">
+                                <button class="card_btns"><a
+                                        href="https://play.google.com/store/movies/details/The_Expendables_3?id=BE73EA2E3EC404BDMV&PAffiliateID=100l3Q7"
+                                        target="_blank">Watch</a></button>
+                                <div class="bs-example">
+                                    <div class="dropdown">
+                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
                                             Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
+                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
                                             <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
                                             <a href="#" class="fa fa-twitter"></a>
                                             <a href="#" class="fa fa-whatsapp"></a>
                                             <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
-                                        </div>
+                                        </ul>
                                     </div>
                                 </div>
-                                <p class="title_heights"><u>Title:</u> Expendables 3</p>
-                                <p class="syn_heights"><u>Synopsis:</u>: Barney, Drummer, Trench and the rest of the crew reunite to fight against Stonebanks, the co-founder of The Expendables, who is now a ruthless illegal arms trader.</p>
-                                <p><u>Services:</u></p>
-                                <div class="services">
+                            </div>
+                            <p class="title_heights"><u>Title:</u> Expendables 3</p>
+                            <p class="syn_heights"><u>Synopsis:</u>: Barney, Drummer, Trench and the rest of the crew
+                                reunite to fight against Stonebanks, the co-founder of The Expendables, who is now a
+                                ruthless illegal arms trader.</p>
+                            <p><u>Services:</u></p>
+                            <div class="row">
+                                <div class="col-md-6" id="service">
                                     <p>Media processing</p>
                                     <p>English subtitles</p>
-                                    
+
                                 </div>
-                                <div class="services">
+                                <div class="col-md-6" id="service">
                                     <p>Artwork Creation</p>
                                     <p>Metadata creation.</p>
                                 </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3" >
-                        <div class="card">
-                            <img src="img/GooglePlay/3.jpg" class="card_img" >
-                            <div class="container cardbox row1_height_class">
-                                <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://play.google.com/store/movies/details/Love_Aaj_Kal?id=hFhNnv8BUyE.P&PAffiliateID=100l3Q7" target="_blank">Watch</a></button>
-                                    <div class="bs-example">
-                                        <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="title_heights"><u>Title:</u> Love Aaj Kal</p>
-                                <p class="syn_heights"><u>Synopsis:</u>: She wants to keep it casual. He wants commitment. For this love story to have a future, it may need some help from the past.</p>
-                                <p><u>Services:</u></p>
-                                <div class="services">
-                                    <p>Media processing</p>
-                                    <p>English subtitles</p>
-                                    <p>Metadata creation</p>
-                                </div>
-                                <div class="services">
-                                    <p>Artwork Creation</p>
-                                    <p>Forced subtitle origination</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3" >
-                        <div class="card">
-                            <img src="img/GooglePlay/4.jpg" class="card_img" >
-                            <div class="container cardbox row1_height_class">
-                                <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://play.google.com/store/movies/details/Made_in_China?id=WWgjB037aW4.P&PAffiliateID=100l3Q7" target="_blank">Watch</a></button>
-                                    <div class="bs-example">
-                                        <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="title_heights"><u>Title:</u>Made in China</p>
-                                <p class="syn_heights"><u>Synopsis:</u>: A middle-aged Gujarati businessman, dejected by his failures, goes to China in the hopes of better prospects. There, he embarks on an unusual and comical journey and finds something much better – a second chance to get it right.</p>
-                                
-                                <p><u>Services:</u></p>
-                                <div class="services">
-                                    <p>Media processing</p>
-                                    <p>English subtitles</p>
-                                    <p>Artwork Creation</p>
-                                </div>
-                                <div class="services">
-                                    <p>Forced subtitle origination</p>
-                                    <p>Metadata creation</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ROW1 ENDS -->
-                <!-- ROW2 STARTS -->
-                <div class="row content row2">
-                    <div class="col-sm-3" >
-                        <div class="card">
-                            <img src="img/GooglePlay/8.jpg" class="card_img" >
-                            <div class="container cardbox row1_height_class">
-                                <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://play.google.com/store/movies/details/Stree?id=3cbJVDq1Gt0.P&PAffiliateID=100l3Q7" target="_blank">Watch</a></button>
-                                    <div class="bs-example">
-                                        <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="title_heights"><u>Title:</u> Stree</p>
-                                <p class="syn_heights"><u>Synopsis:</u>: Based on an urban legend in Chanderi, Stree is set in a town where everyone is familiar with the fables of a strange woman who calls men by their name and abducts them, leaving their clothes behind. Vicky, along with his friends, decides to solve the mystery.</p>
-                                <p><u>Services:</u></p>
-                                <div class="services">
-                                    <p>Media processing</p>
-                                    <p>English subtitles</p>
-                                    <p>Artwork Creation</p>
-                                </div>
-                                <div class="services">
-                                    <p>Forced subtitle origination</p>
-                                    <p>Metadata creation</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3" >
-                        <div class="card">
-                            <img src="img/GooglePlay/6.jpg" class="card_img" >
-                            <div class="container cardbox row1_height_class">
-                                <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://play.google.com/store/movies/details/Luka_Chuppi?id=gj16Ay_R7kM.P&PAffiliateID=100l3Q7" target="_blank">Watch</a></button>
-                                    <div class="bs-example">
-                                        <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="title_heights"><u>Title:</u> Luka Chuppi</p>
-                                <p class="syn_heights"><u>Synopsis:</u> Vinod “Guddu” Shukla is a television reporter in Mathura. He falls for the headstrong Rashmi Trivedi. Guddu wants to get married but Rashmi suggests a live-in relationship. They decide to try the live-in relationship when both their traditional families assume, they’re married and start living with them.</p>
-                                <p><u>Services:</u></p>
-                                <div class="services">
-                                    <p>Media processing</p>
-                                    <p>English subtitles</p>
-                                    <p>Artwork Creation</p>
-                                </div>
-                                <div class="services">
-                                    <p>Forced subtitle origination</p>
-                                    <p>Metadata creation</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3" >
-                        <div class="card">
-                            <img src="img/GooglePlay/7.jpg" class="card_img" >
-                            <div class="container cardbox row1_height_class">
-                                <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://play.google.com/store/movies/details/Pihu?id=Ipw01EghqTo.P&PAffiliateID=100l3Q7" target="_blank">Watch</a></button>
-                                    <div class="bs-example">
-                                        <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="title_heights"><u>Title:</u> Pihu</p>
-                                <p class="syn_heights"><u>Synopsis:</u> A woman is seen lying unconscious on the bed. Meanwhile, a two-year-old toddler, Pihu believes that her mummy is sleeping and tries to go about her daily routine. She tries to wake her up, switches on the microwave when the hunger pangs strike and even gets herself trapped in the refrigerator. Pihu gives you many such heart-thumping moments</p>
-                                <p><u>Services:</u></p>
-                                <div class="services">
-                                    <p>Media processing</p>
-                                    <p>English subtitles</p>
-                                    <p>Artwork Creation</p>
-                                </div>
-                                <div class="services">
-                                    <p>Forced subtitle origination</p>
-                                    <p>Metadata creation</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3" >
-                        <div class="card">
-                            <img src="img/GooglePlay/5.jpg" class="card_img" >
-                            <div class="container cardbox row1_height_class">
-                                <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://play.google.com/store/movies/details/The_Expendables_2?id=3D8D374863A29258MV&PAffiliateID=100l3Q7" target="_blank">Watch</a></button>
-                                    <div class="bs-example">
-                                        <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="title_heights"><u>Title:</u> The Expendables 2</p>
-                                <p class="syn_heights"><u>Synopsis:</u>: All hell breaks loose when Barney, along with his band of old-school mercenaries, sets out on a path of carnage after one of their comrades gets killed during a simple task assigned by Mr Church.</p>
-                                <p><u>Services:</u></p>
-                                <div class="services">
-                                    <p>Media processing</p>
-                                    <p>English subtitles</p>
-                                </div>
-                                <div class="services">
-                                    <p>Artwork Creation</p>
-                                    <p>Metadata creation</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class="parent" style="visibility: hidden;">
-                        <div class="pagination">
-                            <a >Prev</a>
-                            <a >1</a>
-                            <a >2</a>
-                            <a>3</a>
-                            <a>4...</a>
-                            <a >Next</a>
-                          </div>
-                        </div>
-                    <!-- <p style="background-color: yellow; position:absolute; width:100%; left:0px;">asd</p> -->
-                
-                
-                    <footer id="footer" style="position:absolute !important; width:100% !important; left:0px !important;">
-                        <!-- container -->
-                        <div class="container">
-                            <!-- row -->
-                            <div class="row" style="padding-top:5px;">
-                                <!-- contact social -->
-                                
-                                <!-- /contact social -->
-                
-                                <!-- copyright -->
-                                <div class="col-sm-6 footer_col">
-                                    <span class="copyright footer_col"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved &nbsp; | &nbsp;<a href="career.html" style="color: black;">Careers </a> | &nbsp;<a style="color: black;" href="privacy.html">Privacy Policy </a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
-                                </div>
-                                <div class="col-sm-6" >
-                                    <div class="pull-right social-media_div footer_col" id="footer_right_col">
-                                        <ul class="social-media">
-                                        <li>Mail us at <a href="mailto:info@vistaindia.com" >info@vistaindia.com </a><li>
-                                        <li><a href="https://www.facebook.com/vistadigimedia/" target="_blank">| &nbsp; <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.instagram.com/vistadigimedia/"  target="_blank"><i class="fa fa-instagram" aria-hidden="true" ></i></a></li>
-                                        <li><a href="https://twitter.com/vistadigimedia"  target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/company/vista-india-digital-media/ "  target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                        </ul>
-                                </div>
-                                </div>
-                                <!-- /copyright -->
                             </div>
-                            <!-- /row -->
                         </div>
-                        <!-- /container -->
-                    </footer>
+                    </div>
                 </div>
-                <!-- ROW2 ENDS -->
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="img/GooglePlay/3.jpg" class="card_img">
+                        <div class="container cardbox row1_height_class">
+                            <div class="card_btns_div">
+                                <button class="card_btns"><a
+                                        href="https://play.google.com/store/movies/details/Love_Aaj_Kal?id=hFhNnv8BUyE.P&PAffiliateID=100l3Q7"
+                                        target="_blank">Watch</a></button>
+                                <div class="bs-example">
+                                    <div class="dropdown">
+                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
+                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="title_heights"><u>Title:</u> Love Aaj Kal</p>
+                            <p class="syn_heights"><u>Synopsis:</u>: She wants to keep it casual. He wants commitment.
+                                For this love story to have a future, it may need some help from the past.</p>
+                            <p><u>Services:</u></p>
+                            <div class="row">
+                                <div class="col-md-6" id="service">
+                                    <p>Media processing</p>
+                                    <p>English subtitles</p>
+                                    <p>Metadata creation</p>
+                                </div>
+                                <div class="col-md-6" id="service">
+                                    <p>Artwork Creation</p>
+                                    <p>Forced subtitle origination</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- PAGE 1 ENDS -->
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="img/GooglePlay/4.jpg" class="card_img">
+                        <div class="container cardbox row1_height_class">
+                            <div class="card_btns_div">
+                                <button class="card_btns"><a
+                                        href="https://play.google.com/store/movies/details/Made_in_China?id=WWgjB037aW4.P&PAffiliateID=100l3Q7"
+                                        target="_blank">Watch</a></button>
+                                <div class="bs-example">
+                                    <div class="dropdown">
+                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
+                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="title_heights"><u>Title:</u>Made in China</p>
+                            <p class="syn_heights"><u>Synopsis:</u>: A middle-aged Gujarati businessman, dejected by his
+                                failures, goes to China in the hopes of better prospects. There, he embarks on an
+                                unusual and comical journey and finds something much better – a second chance to get it
+                                right.</p>
+
+                            <p><u>Services:</u></p>
+                            <div class="row">
+                                <div class="col-md-6" id="service">
+                                    <p>Media processing</p>
+                                    <p>English subtitles</p>
+                                    <p>Artwork Creation</p>
+                                </div>
+                                <div class="col-md-6" id="service">
+                                    <p>Forced subtitle origination</p>
+                                    <p>Metadata creation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </body>
-    <script>
-        let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-        console.log(width)
-        if(width<620)
-        {
-            let D=document.getElementById('desk_links');
-            D.style.display="none";
-            let M=document.getElementById('mob_links');
-            M.style.display="block"
-        }
-        if(width<=757)
-        {
-            document.getElementById('footer_right_col').classList.remove('pull-right')
-        }
-        function equalize_card_heights(s)
-        {
-            let mx=0
-            let card_heights=document.getElementsByClassName(s);
-            for( i=0;i<card_heights.length;i++)
-            {
-               let a= card_heights[i].offsetHeight
-               if(mx< a)
-               {
-                   mx=a
-               }
-               console.log(a)
-            }
-            console.log("running"+mx);
-            for(i=0;i<card_heights.length;i++)
-            {
-                card_heights[i].style.height=mx+25
-            }
-            console.log("done")
-        }
-        function equalize_syn()
-        {
-            let mx=0;
-            let syn_heights=document.getElementsByClassName("syn_heights");
-            for( i=0;i<syn_heights.length;i++)
-            {
-                let b=syn_heights[i].offsetHeight;
-                // console.log(b)
-                if(mx<b)
-                {
-                    mx=b
-                }
-            }
-            for( i=0;i<syn_heights.length;i++)
-            {
-                if(i>3)
-                {
-                    syn_heights[i].style.height=mx+30;
-                // syn_heights[i].style.padding-bottom
-                }
-                else
-                {
-                    syn_heights[i].style.height=mx-20;
-                }
+            <!-- ROW1 ENDS -->
+            <!-- ROW2 STARTS -->
+            <div class="row content row2">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="img/GooglePlay/8.jpg" class="card_img">
+                        <div class="container cardbox row1_height_class">
+                            <div class="card_btns_div">
+                                <button class="card_btns"><a
+                                        href="https://play.google.com/store/movies/details/Stree?id=3cbJVDq1Gt0.P&PAffiliateID=100l3Q7"
+                                        target="_blank">Watch</a></button>
+                                <div class="bs-example">
+                                    <div class="dropdown">
+                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
 
-            }
-            console.log("done2")
-        }
-        
-        function equalize_title()
-        {
-            let mx=0;
-            let title_heights=document.getElementsByClassName("title_height");
-            for( i=0;i<title_heights.length;i++)
-            {
-                let b=title_heights[i].offsetHeight;
-                // console.log(b)
-                if(mx<b)
-                {
-                    mx=b
-                }
-            }
-            for( i=0;i<title_heights.length;i++)
-            {
-                title_heights[i].style.height=mx;
-                // syn_heights[i].style.padding-bottom
+                                        </button>
 
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
+                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="title_heights"><u>Title:</u> Stree</p>
+                            <p class="syn_heights"><u>Synopsis:</u>: Based on an urban legend in Chanderi, Stree is set
+                                in a town where everyone is familiar with the fables of a strange woman who calls men by
+                                their name and abducts them, leaving their clothes behind. Vicky, along with his
+                                friends, decides to solve the mystery.</p>
+                            <p><u>Services:</u></p>
+                            <div class="row">
+                                <div class="col-md-6" id="service">
+                                    <p>Media processing</p>
+                                    <p>English subtitles</p>
+                                    <p>Artwork Creation</p>
+                                </div>
+                                <div class="col-md-6" id="service">
+                                    <p>Forced subtitle origination</p>
+                                    <p>Metadata creation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="img/GooglePlay/6.jpg" class="card_img">
+                        <div class="container cardbox row1_height_class">
+                            <div class="card_btns_div">
+                                <button class="card_btns"><a
+                                        href="https://play.google.com/store/movies/details/Luka_Chuppi?id=gj16Ay_R7kM.P&PAffiliateID=100l3Q7"
+                                        target="_blank">Watch</a></button>
+                                <div class="bs-example">
+                                    <div class="dropdown">
+                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
+                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="title_heights"><u>Title:</u> Luka Chuppi</p>
+                            <p class="syn_heights"><u>Synopsis:</u> Vinod “Guddu” Shukla is a television reporter in
+                                Mathura. He falls for the headstrong Rashmi Trivedi. Guddu wants to get married but
+                                Rashmi suggests a live-in relationship. They decide to try the live-in relationship when
+                                both their traditional families assume, they’re married and start living with them.</p>
+                            <p><u>Services:</u></p>
+                            <div class="row">
+                                <div class="col-md-6" id="services">
+                                    <p>Media processing</p>
+                                    <p>English subtitles</p>
+                                    <p>Artwork Creation</p>
+                                </div>
+                                <div class="col-md-6" id="services">
+                                    <p>Forced subtitle origination</p>
+                                    <p>Metadata creation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="img/GooglePlay/7.jpg" class="card_img">
+                        <div class="container cardbox row1_height_class">
+                            <div class="card_btns_div">
+                                <button class="card_btns"><a
+                                        href="https://play.google.com/store/movies/details/Pihu?id=Ipw01EghqTo.P&PAffiliateID=100l3Q7"
+                                        target="_blank">Watch</a></button>
+                                <div class="bs-example">
+                                    <div class="dropdown">
+                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
+                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="title_heights"><u>Title:</u> Pihu</p>
+                            <p class="syn_heights"><u>Synopsis:</u> A woman is seen lying unconscious on the bed.
+                                Meanwhile, a two-year-old toddler, Pihu believes that her mummy is sleeping and tries to
+                                go about her daily routine. She tries to wake her up, switches on the microwave when the
+                                hunger pangs strike and even gets herself trapped in the refrigerator. Pihu gives you
+                                many such heart-thumping moments</p>
+                            <p><u>Services:</u></p>
+                            <div class="row">
+                                <div class="col-md-6" id="service">
+                                    <p>Media processing</p>
+                                    <p>English subtitles</p>
+                                    <p>Artwork Creation</p>
+                                </div>
+                                <div class="col-md-6" id="service">
+                                    <p>Forced subtitle origination</p>
+                                    <p>Metadata creation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="img/GooglePlay/5.jpg" class="card_img">
+                        <div class="container cardbox row1_height_class">
+                            <div class="card_btns_div">
+                                <button class="card_btns"><a
+                                        href="https://play.google.com/store/movies/details/The_Expendables_2?id=3D8D374863A29258MV&PAffiliateID=100l3Q7"
+                                        target="_blank">Watch</a></button>
+                                <div class="bs-example">
+                                    <div class="dropdown">
+                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
+                                            Share
+
+                                        </button>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
+                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
+                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
+                                            <a href="#" class="fa fa-twitter"></a>
+                                            <a href="#" class="fa fa-whatsapp"></a>
+                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="title_heights"><u>Title:</u> The Expendables 2</p>
+                            <p class="syn_heights"><u>Synopsis:</u>: All hell breaks loose when Barney, along with his
+                                band of old-school mercenaries, sets out on a path of carnage after one of their
+                                comrades gets killed during a simple task assigned by Mr Church.</p>
+                            <p><u>Services:</u></p>
+                            <div class="row">
+                                <div class="col-md-6" id="service">
+                                    <p>Media processing</p>
+                                    <p>English subtitles</p>
+                                </div>
+                                <div class="col-md-6" id="service">
+                                    <p>Artwork Creation</p>
+                                    <p>Metadata creation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parent" style="visibility: hidden;">
+                    <div class="pagination">
+                        <a>Prev</a>
+                        <a>1</a>
+                        <a>2</a>
+                        <a>3</a>
+                        <a>4...</a>
+                        <a>Next</a>
+                    </div>
+                </div>
+                <!-- <p style="background-color: yellow; position:absolute; width:100%; left:0px;">asd</p> -->
+
+
+                <footer id="footer" style="position:absolute !important; width:100% !important; left:0px !important;">
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row" style="padding-top:5px;">
+                            <!-- contact social -->
+
+                            <!-- /contact social -->
+
+                            <!-- copyright -->
+                            <div class="col-sm-6 footer_col">
+                                <span class="copyright footer_col">
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                    Copyright &copy;
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved
+                                    &nbsp; | &nbsp;<a href="career.html" style="color: black;">Careers </a> | &nbsp;<a
+                                        style="color: black;" href="privacy.html">Privacy Policy </a>
+                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="pull-right social-media_div footer_col" id="footer_right_col">
+                                    <ul class="social-media">
+                                        <li>Mail us at <a href="mailto:info@vistaindia.com">info@vistaindia.com </a>
+                                        <li>
+                                        <li><a href="https://www.facebook.com/vistadigimedia/" target="_blank">| &nbsp;
+                                                <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.instagram.com/vistadigimedia/" target="_blank"><i
+                                                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://twitter.com/vistadigimedia" target="_blank"><i
+                                                    class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/company/vista-india-digital-media/ "
+                                                target="_blank"><i class="fa fa-linkedin-square"
+                                                    aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /copyright -->
+                        </div>
+                        <!-- /row -->
+                    </div>
+                    <!-- /container -->
+                </footer>
+            </div>
+            <!-- ROW2 ENDS -->
+        </div>
+        <!-- PAGE 1 ENDS -->
+    </div>
+</body>
+<script>
+    let width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    console.log(width)
+    if (width < 620) {
+        let D = document.getElementById('desk_links');
+        D.style.display = "none";
+        let M = document.getElementById('mob_links');
+        M.style.display = "block"
+    }
+    if (width <= 757) {
+        document.getElementById('footer_right_col').classList.remove('pull-right')
+    }
+    function equalize_card_heights(s) {
+        let mx = 0
+        let card_heights = document.getElementsByClassName(s);
+        for (i = 0; i < card_heights.length; i++) {
+            let a = card_heights[i].offsetHeight
+            if (mx < a) {
+                mx = a
             }
-            console.log("done3")   
+            console.log(a)
         }
-        equalize_title()
-        equalize_syn()
-        equalize_card_heights("row1_height_class")
-    </script>
+        console.log("running" + mx);
+        for (i = 0; i < card_heights.length; i++) {
+            card_heights[i].style.height = mx + 25
+        }
+        console.log("done")
+    }
+    function equalize_syn() {
+        let mx = 0;
+        let syn_heights = document.getElementsByClassName("syn_heights");
+        for (i = 0; i < syn_heights.length; i++) {
+            let b = syn_heights[i].offsetHeight;
+            // console.log(b)
+            if (mx < b) {
+                mx = b
+            }
+        }
+        for (i = 0; i < syn_heights.length; i++) {
+            if (i > 3) {
+                console.log(i)
+                syn_heights[i].style.height = mx + 55;
+                // syn_heights[i].style.padding-bottom
+            }
+            else {
+                console.log(i+"ee")
+                syn_heights[i].style.height = mx - 20;
+            }
+
+        }
+        console.log("done2")
+    }
+
+    function equalize_title() {
+        let mx = 0;
+        let title_heights = document.getElementsByClassName("title_height");
+        for (i = 0; i < title_heights.length; i++) {
+            let b = title_heights[i].offsetHeight;
+            // console.log(b)
+            if (mx < b) {
+                mx = b
+            }
+        }
+        for (i = 0; i < title_heights.length; i++) {
+            title_heights[i].style.height = mx;
+            // syn_heights[i].style.padding-bottom
+
+        }
+        console.log("done3")
+    }
+    equalize_title()
+    equalize_syn()
+    equalize_card_heights("row1_height_class")
+</script>
+
 </html>

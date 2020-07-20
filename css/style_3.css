@@ -112,6 +112,16 @@ body
     padding: 8px 16px;
     text-decoration: none;
     cursor: pointer;
+  
+  }
+  .pagination a:hover
+  {
+    color:#fb9700
+  }
+  .active_page
+  {
+    background-color: white;
+    color: black !important;
   }
   .pagination a:active
   {
@@ -120,7 +130,7 @@ body
   }
   .parent
   {
-    width:295px;
+    width:315px;
     margin:0 auto;
     bottom:10px;
   }

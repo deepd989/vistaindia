@@ -473,7 +473,7 @@ min-height: 300px;
     padding:2px;
     padding-left:10px !important;
     padding-right:10px !important;
-    text-align: justify !important;
+    /* text-align: justify !important; */
 }
 
 

@@ -1,9 +1,27 @@
 img {
     display: block;
 }
+.b{
+  background-color:white;
+  border:0px;
+  color:black;
+  padding:0px ;
+  padding-left:5px ;
+  padding-right:5px ;
+  border-radius:5px ;
+  font-size:50px ;
+}
+.b:hover
+{
+    background-color:#fb9700;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 body
 {
     background-color: black;
+
 }
 
 .thumbnail {

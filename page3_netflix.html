@@ -16,7 +16,7 @@
        function share(platform,id)
        {
            console.log("Share function run")
-           url=document.getElementById('link_'+id)
+           let url=document.getElementById('link_'+id)
            console.log("url is",url)
            let ID='netflix_'+ id
             document.getElementById(ID)
@@ -31,6 +31,7 @@
             // console.log(synopsis)
             let intro="Check out VistaIndia's new release "+title+" on Netflix"
             console.log(intro+synopsis)
+            url="deepd989.github.io/vistaindia/page3_netflix.html"
             if (platform=='facebook')
             {
                 window.open("https://www.facebook.com/sharer/sharer.php?u="+url)

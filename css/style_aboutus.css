@@ -86,10 +86,15 @@
 {
     top:40px;
 }
+.parent_text
+{
+    max-width:90%;
+    margin-top:25px ;
+}
 
 .card_text
 {
-    width:50vw; 
+     
     color: white;
     font-size: 14px ;
 }

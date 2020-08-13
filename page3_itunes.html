@@ -16,7 +16,7 @@
        function share(platform,id)
        {
            console.log("Share function run")
-           url=document.getElementById('link_'+id)
+           let url=document.getElementById('link_'+id)
            let ID='itunes_'+ id
             document.getElementById(ID)
             str=ID+" p"
@@ -28,6 +28,7 @@
             let synopsis=arr[1].children["0"].innerText.substr(10)
             // console.log(synopsis)
             let intro="Check out VistaIndia's new release "+title+" on Itunes"
+            url="deepd989.github.io/vistaindia/page3_itunes.html"
             console.log(intro+synopsis)
             if (platform=='facebook')
             {

@@ -12,27 +12,57 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <script>
+        let ID=0;
        function share(platform,id)
        {
+           console.log("Share function run")
+           url=document.getElementById('link_'+id)
+           console.log("url is",url)
            let ID='netflix_'+ id
             document.getElementById(ID)
             str=ID+" p"
+            
             console.log(str)
             let arr=document.getElementById(ID).children
             let title=arr[0].innerHTML
-            console.log(title.substr(13))
-            // for(i=0;i<2;i++)
-            // {
-            //     console.log(arr[i].)
-            // }
-            if(platform=='facebook')
+            title=title.substr(13)
+            //console.log(title.substr(13))
+            let synopsis=arr[1].children["0"].innerText.substr(10)
+            // console.log(synopsis)
+            let intro="Check out VistaIndia's new release "+title+" on Netflix"
+            console.log(intro+synopsis)
+            if (platform=='facebook')
             {
-                
+                window.open("https://www.facebook.com/sharer/sharer.php?u="+url)
+            }
+            else if(platform=='whatsapp')
+            {
+                let t=intro.replace(/\s/g, "%20");
+                let s="https://wa.me/?text="
+                s=s+t+" "+url
+                window.open(s)
+            }
+            else if(platform=='twitter')
+            {
+                let s="http://twitter.com/share?text="
+
+                let URL="&url="+url
+                s=s+intro+URL
+                //  console.log(s)
+                window.open(s)
+                // http://twitter.com/share?text=text goes here&url=http://url goes here&hashtags=hashtag1,hashtag2,hashtag3
+            }
+            else
+            {
+                console.log("ERROR")
             }
 
        }
     </script>
     <body>
+        
+                        
+                        
         <!--MOBILE NAVBAR-->
         <div class="mobile-container mob_nav" >
             <div class="topnav">
@@ -110,6 +140,8 @@
             <!-- /NAVBAR-->
             <!-- -->
             <!-- MAIN -->
+            <div id="global" class="1">
+            </div>
             <div class="container" >
                 <div class="main" id="desk_links">
                     <div class="link active_tab"><a href="page3_netflix.html">NETFLIX</a></div>
@@ -142,20 +174,24 @@
                             <div class="container cardbox row1_height_class">
                                 
                                 <div class="card_btns_div" >
-                                    <button class="card_btns" ><a href="https://www.netflix.com/watch/81252029?trackId=13752289&tctx=0%2C0%2Cfe65abc7-1100-43e6-abd8-bb94cd735399-213682895%2C%2C%2C" target="_blank">Watch </a> </button>
+                                    <button class="card_btns" ><a id="link_1" href="https://www.netflix.com/watch/81252029?trackId=13752289&tctx=0%2C0%2Cfe65abc7-1100-43e6-abd8-bb94cd735399-213682895%2C%2C%2C" target="_blank">Watch </a> </button>
                                     <div class="bs-example">
                                         <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
+                                          <div class="dropdown"  >
+                                            <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Share
+                                            </button>
+                                            <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                            <div style="display: flex; padding-left:5px;">
+                                              <a class="dropdown-item fa fa-facebook" onclick="share('facebook',1)"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',1)" href="#"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-twitter" onclick="share('twitter',1)" href="#"></a>
+                                              <br>
+                                            </div>
+                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -184,20 +220,24 @@
                             <img src="img/NETFLIX/3.jpg" class="card_img" >
                             <div class="container cardbox row1_height_class">
                                 <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://www.netflix.com/watch/81289660?trackId=13752289&tctx=0%2C0%2C27741f5d-8332-443b-a704-df0e3089bb4c-213783859%2C%2C%2C" target="_blank">Watch</a></button>
+                                    <button class="card_btns"><a id="link_2" href="https://www.netflix.com/watch/81289660?trackId=13752289&tctx=0%2C0%2C27741f5d-8332-443b-a704-df0e3089bb4c-213783859%2C%2C%2C" target="_blank">Watch</a></button>
                                     <div class="bs-example">
                                         <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
+                                          <div class="dropdown"  >
+                                            <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Share
+                                            </button>
+                                            <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                            <div style="display: flex; padding-left:5px;">
+                                              <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',2)"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',2)" href="#"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-twitter" onclick="share('twitter',2)" href="#"></a>
+                                              <br>
+                                            </div>
+                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -229,20 +269,24 @@
                             <img src="img/NETFLIX/2.jpg" class="card_img" >
                             <div class="container cardbox row1_height_class">
                                 <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://www.netflix.com/watch/81121896?trackId=13752289&tctx=0%2C0%2Cab313485-09e6-4250-b734-884fcf15c7ee-13091583%2C%2C%2C" target="_blank">Watch</a></button>
+                                    <button class="card_btns"><a id="link_3" href="https://www.netflix.com/watch/81121896?trackId=13752289&tctx=0%2C0%2Cab313485-09e6-4250-b734-884fcf15c7ee-13091583%2C%2C%2C" target="_blank">Watch</a></button>
                                     <div class="bs-example">
                                         <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
+                                          <div class="dropdown"  >
+                                            <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Share
+                                            </button>
+                                            <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                            <div style="display: flex; padding-left:5px;">
+                                              <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',3)"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',3)" href="#"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-twitter" onclick="share('twitter',3)" href="#"></a>
+                                              <br>
+                                            </div>
+                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -269,20 +313,24 @@
                             <img src="img/NETFLIX/4.jpg" class="card_img" >
                             <div class="container cardbox row1_height_class">
                                 <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://www.netflix.com/watch/81259883?trackId=13752289&tctx=0%2C0%2C094e22cb-5aed-4584-ad00-939e72221e86-53385713%2C%2C%2C" target="_blank">Watch</a></button>
+                                    <button class="card_btns"><a id="link_4" href="https://www.netflix.com/watch/81259883?trackId=13752289&tctx=0%2C0%2C094e22cb-5aed-4584-ad00-939e72221e86-53385713%2C%2C%2C" target="_blank">Watch</a></button>
                                     <div class="bs-example">
                                         <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
+                                          <div class="dropdown"  >
+                                            <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Share
+                                            </button>
+                                            <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                            <div style="display: flex; padding-left:5px;">
+                                              <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',4)"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',4)" href="#"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-twitter" onclick="share('twitter',4)" href="#"></a>
+                                              <br>
+                                            </div>
+                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -313,20 +361,24 @@
                             <img src="img/NETFLIX/5.jpg" class="card_img" >
                             <div class="container cardbox row2_height_class">
                                 <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://www.netflix.com/watch/81191228?trackId=13752289&tctx=0%2C0%2C83eb6cc9-133b-455e-899a-f4277309ea07-107626360%2C%2C%2C" target="_blank">Watch</a></button>
+                                    <button class="card_btns"><a id="link_5" href="https://www.netflix.com/watch/81191228?trackId=13752289&tctx=0%2C0%2C83eb6cc9-133b-455e-899a-f4277309ea07-107626360%2C%2C%2C" target="_blank">Watch</a></button>
                                     <div class="bs-example">
                                         <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
+                                          <div class="dropdown"  >
+                                            <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Share
+                                            </button>
+                                            <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                            <div style="display: flex; padding-left:5px;">
+                                              <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',5)"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',5)" href="#"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-twitter" onclick="share('twitter',5)" href="#"></a>
+                                              <br>
+                                            </div>
+                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -359,20 +411,24 @@
                             <img src="img/NETFLIX/7.jpg" class="card_img" >
                             <div class="container cardbox row2_height_class">
                                 <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://www.netflix.com/watch/81155803?trackId=13752289&tctx=0%2C0%2Cc2a711ef-8376-4192-a5a9-322ad2293308-4059847%2C%2C%2C" target="_blank">Watch</a></button>
+                                    <button class="card_btns"><a id="link_6" href="https://www.netflix.com/watch/81155803?trackId=13752289&tctx=0%2C0%2Cc2a711ef-8376-4192-a5a9-322ad2293308-4059847%2C%2C%2C" target="_blank">Watch</a></button>
                                     <div class="bs-example">
                                         <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
+                                          <div class="dropdown"  >
+                                            <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Share
+                                            </button>
+                                            <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                            <div style="display: flex; padding-left:5px;">
+                                              <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',6)"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',6)" href="#"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-twitter" onclick="share('twitter',6)" href="#"></a>
+                                              <br>
+                                            </div>
+                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -400,26 +456,30 @@
                             <img src="img/NETFLIX/6.jpg" class="card_img" >
                             <div class="container cardbox row2_height_class">
                                 <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://www.netflix.com/watch/81113920?trackId=14170287&tctx=0%2C0%2Cfddc166a-4299-45ea-a977-dde6dff6feda-3583038%2C7797718e-41fa-489d-aba9-0fff3a146036_113511476X3XX1591547765659%2C7797718e-41fa-489d-aba9-0fff3a146036_ROOT%2C" target="_blank">Watch</a></button>
+                                    <button class="card_btns"><a id="link_7" href="https://www.netflix.com/watch/81113920?trackId=14170287&tctx=0%2C0%2Cfddc166a-4299-45ea-a977-dde6dff6feda-3583038%2C7797718e-41fa-489d-aba9-0fff3a146036_113511476X3XX1591547765659%2C7797718e-41fa-489d-aba9-0fff3a146036_ROOT%2C" target="_blank">Watch</a></button>
                                     <div class="bs-example">
                                         <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
+                                          <div class="dropdown"  >
+                                            <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Share
+                                            </button>
+                                            <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                            <div style="display: flex; padding-left:5px;">
+                                              <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',7)"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',7)" href="#"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-twitter" onclick="share('twitter',7)" href="#"></a>
+                                              <br>
+                                            </div>
+                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div style="position:relative; z-index:1 ;" id="netflix_7">
                                 <p class="title_height"><u>Title:</u> Love Aak Kal</p>
-                                <div class="syn_netflix"><p ><u>Synopsis</u> : She wants to keep it casual. He wants commitment. For this love story to have a future, it may need some help from the past.</p></div>
+                                <div ><p ><u>Synopsis</u> : She wants to keep it casual. He wants commitment. For this love story to have a future, it may need some help from the past.</p></div>
                                 <p><u>Services:</u></p>
                                 <div class="row">
                                 <div class="col-md-6">
@@ -441,20 +501,24 @@
                             <img src="img/NETFLIX/8.jpg" class="card_img" >
                             <div class="container cardbox row2_height_class">
                                 <div class="card_btns_div">
-                                    <button class="card_btns"><a href="https://www.netflix.com/watch/81273579?trackId=13752289&tctx=0%2C0%2Cf4711d2a-1c14-4d91-8324-55165b8398d1-250677250%2C%2C%2C" target="_blank">Watch</a></button>
+                                    <button class="card_btns"><a id="link_8" href="https://www.netflix.com/watch/81273579?trackId=13752289&tctx=0%2C0%2Cf4711d2a-1c14-4d91-8324-55165b8398d1-250677250%2C%2C%2C" target="_blank">Watch</a></button>
                                     <div class="bs-example">
                                         <div class="dropdown" >
-                                          <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-                                            
-                                          </button>
-                                        
-                                          <ul  class="dropdown-menu" aria-labelledby="dLabel" style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                          </ul>
+                                          <div class="dropdown"  >
+                                            <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Share
+                                            </button>
+                                            <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                            <div style="display: flex; padding-left:5px;">
+                                              <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',8)"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',8)" href="#"></a>
+                                              <br>
+                                              <a class="dropdown-item fa fa-twitter" onclick="share('twitter',8)" href="#"></a>
+                                              <br>
+                                            </div>
+                                            </div>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
@@ -616,6 +680,15 @@
             equalize_card_heights("row1_height_class")
             equalize_card_heights("row2_height_class")
         }
+        function helo()
+        {
+            console.log("hello this is helo function")
+        }
+        let global=document.getElementById("global")
+        // console.log(global.classList)
+        // global.className="0"
+        // console.log(global.classList)
+  
 
     </script>
 </html>

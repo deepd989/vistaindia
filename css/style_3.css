@@ -97,6 +97,17 @@ body
 {
   color: white;
 }
+.card_btns:focus
+{
+  color:white;
+}
+.new_share
+{
+  padding-left:6px;
+  padding-right:6px;
+  padding-top:3px ;
+  padding-bottom:3px ;
+}
 .content
 {
     margin-top:30px;

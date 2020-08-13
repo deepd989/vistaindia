@@ -11,6 +11,54 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
+    <script>
+        let ID=0;
+       function share(platform,id)
+       {
+           console.log("Share function run")
+           url=document.getElementById('link_'+id)
+           console.log("url is",url)
+           let ID='pvd_'+ id
+            document.getElementById(ID)
+            str=ID+" p"
+            
+            console.log(str)
+            let arr=document.getElementById(ID).children
+            let title=arr[0].innerHTML
+            title=title.substr(13)
+            //console.log(title.substr(13))
+            let synopsis=arr[1].children["0"].innerText.substr(10)
+            // console.log(synopsis)
+            let intro="Check out VistaIndia's new release "+title+" on Netflix"
+            console.log(intro+synopsis)
+            if (platform=='facebook')
+            {
+                window.open("https://www.facebook.com/sharer/sharer.php?u="+url)
+            }
+            else if(platform=='whatsapp')
+            {
+                let t=intro.replace(/\s/g, "%20");
+                let s="https://wa.me/?text="
+                s=s+t+" "+url
+                window.open(s)
+            }
+            else if(platform=='twitter')
+            {
+                let s="http://twitter.com/share?text="
+
+                let URL="&url="+url
+                s=s+intro+URL
+                //  console.log(s)
+                window.open(s)
+                // http://twitter.com/share?text=text goes here&url=http://url goes here&hashtags=hashtag1,hashtag2,hashtag3
+            }
+            else
+            {
+                console.log("ERROR")
+            }
+
+       }
+    </script>
     <body>
         <!--MOBILE NAVBAR-->
         <div class="mobile-container mob_nav" >

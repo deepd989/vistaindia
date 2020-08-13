@@ -12,6 +12,54 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+<script>
+    let ID=0;
+   function share(platform,id)
+   {
+       console.log("Share function run")
+       url=document.getElementById('link_'+id)
+       console.log("url is",url)
+       let ID='google_play_'+ id
+        document.getElementById(ID)
+        str=ID+" p"
+        
+        console.log(str)
+        let arr=document.getElementById(ID).children
+        let title=arr[0].innerHTML
+        title=title.substr(13)
+        //console.log(title.substr(13))
+        let synopsis=arr[1].children["0"].innerText.substr(10)
+        // console.log(synopsis)
+        let intro="Check out VistaIndia's new release "+title+" on Google Play"
+        console.log(intro+synopsis)
+        if (platform=='facebook')
+        {
+            window.open("https://www.facebook.com/sharer/sharer.php?u="+url)
+        }
+        else if(platform=='whatsapp')
+        {
+            let t=intro.replace(/\s/g, "%20");
+            let s="https://wa.me/?text="
+            s=s+t+" "+url
+            window.open(s)
+        }
+        else if(platform=='twitter')
+        {
+            let s="http://twitter.com/share?text="
+
+            let URL="&url="+url
+            s=s+intro+URL
+            //  console.log(s)
+            window.open(s)
+            // http://twitter.com/share?text=text goes here&url=http://url goes here&hashtags=hashtag1,hashtag2,hashtag3
+        }
+        else
+        {
+            console.log("ERROR")
+        }
+
+   }
+</script>
 
 <body>
     <!--MOBILE NAVBAR-->
@@ -125,27 +173,30 @@
                         <img src="img/GooglePlay/1.jpg" class="card_img">
                         <div class="container cardbox row1_height_class">
                             <div class="card_btns_div">
-                                <button class="card_btns"><a
+                                <button class="card_btns"><a id="link_1"
                                         href="https://play.google.com/store/movies/details/Har_Kisse_Ke_Hisse_Kaamyaab?id=pu1c39wKrdY.P&PAffiliateID=100l3Q7"
                                         target="_blank">Watch</a></button>
-                                <div class="bs-example">
-                                    <div class="dropdown">
-                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
-                                            role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-
-                                        </button>
-
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
-                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                        <div class="bs-example">
+                                            <div class="dropdown" >
+                                              <div class="dropdown"  >
+                                                <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Share
+                                                </button>
+                                                <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                                <div style="display: flex; padding-left:5px;">
+                                                  <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',1)"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',1)" href="#"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-twitter" onclick="share('twitter',1)" href="#"></a>
+                                                  <br>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
                             </div>
+                            <div id="google_play_1">
                             <p class="title_heights"><u>Title:</u>Har Kisse Ke Hisse Kaamyaab</p>
                             <p class="syn_heights"><u>Synopsis:</u> Always small-time, never the spotlight. His 500th
                                 film could be the break he’s waited for – or another broken dream.</p>
@@ -161,6 +212,7 @@
                                     <p>Metadata creation</p>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,27 +221,30 @@
                         <img src="img/GooglePlay/2.jpg" class="card_img">
                         <div class="container cardbox row1_height_class">
                             <div class="card_btns_div">
-                                <button class="card_btns"><a
+                                <button class="card_btns"><a id="link_2"
                                         href="https://play.google.com/store/movies/details/The_Expendables_3?id=BE73EA2E3EC404BDMV&PAffiliateID=100l3Q7"
                                         target="_blank">Watch</a></button>
-                                <div class="bs-example">
-                                    <div class="dropdown">
-                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
-                                            role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-
-                                        </button>
-
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
-                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                        <div class="bs-example">
+                                            <div class="dropdown" >
+                                              <div class="dropdown"  >
+                                                <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Share
+                                                </button>
+                                                <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                                <div style="display: flex; padding-left:5px;">
+                                                  <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',2)"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',2)" href="#"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-twitter" onclick="share('twitter',2)" href="#"></a>
+                                                  <br>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
                             </div>
+                            <div id="google_play_2">
                             <p class="title_heights"><u>Title:</u> Expendables 3</p>
                             <p class="syn_heights"><u>Synopsis:</u>: Barney, Drummer, Trench and the rest of the crew
                                 reunite to fight against Stonebanks, the co-founder of The Expendables, who is now a
@@ -206,6 +261,7 @@
                                     <p>Metadata creation.</p>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -214,27 +270,30 @@
                         <img src="img/GooglePlay/3.jpg" class="card_img">
                         <div class="container cardbox row1_height_class">
                             <div class="card_btns_div">
-                                <button class="card_btns"><a
+                                <button class="card_btns"><a id="link_3"
                                         href="https://play.google.com/store/movies/details/Love_Aaj_Kal?id=hFhNnv8BUyE.P&PAffiliateID=100l3Q7"
                                         target="_blank">Watch</a></button>
-                                <div class="bs-example">
-                                    <div class="dropdown">
-                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
-                                            role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-
-                                        </button>
-
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
-                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                        <div class="bs-example">
+                                            <div class="dropdown" >
+                                              <div class="dropdown"  >
+                                                <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Share
+                                                </button>
+                                                <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                                <div style="display: flex; padding-left:5px;">
+                                                  <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',3)"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',3)" href="#"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-twitter" onclick="share('twitter',3)" href="#"></a>
+                                                  <br>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
                             </div>
+                            <div id="google_play_3">
                             <p class="title_heights"><u>Title:</u> Love Aaj Kal</p>
                             <p class="syn_heights"><u>Synopsis:</u>: She wants to keep it casual. He wants commitment.
                                 For this love story to have a future, it may need some help from the past.</p>
@@ -251,6 +310,7 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -258,27 +318,30 @@
                         <img src="img/GooglePlay/4.jpg" class="card_img">
                         <div class="container cardbox row1_height_class">
                             <div class="card_btns_div">
-                                <button class="card_btns"><a
+                                <button class="card_btns"><a id="link_4"
                                         href="https://play.google.com/store/movies/details/Made_in_China?id=WWgjB037aW4.P&PAffiliateID=100l3Q7"
                                         target="_blank">Watch</a></button>
-                                <div class="bs-example">
-                                    <div class="dropdown">
-                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
-                                            role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-
-                                        </button>
-
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
-                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                        <div class="bs-example">
+                                            <div class="dropdown" >
+                                              <div class="dropdown"  >
+                                                <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Share
+                                                </button>
+                                                <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                                <div style="display: flex; padding-left:5px;">
+                                                  <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',4)"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',4)" href="#"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-twitter" onclick="share('twitter',4)" href="#"></a>
+                                                  <br>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
                             </div>
+                            <div id="google_play_4">
                             <p class="title_heights"><u>Title:</u>Made in China</p>
                             <p class="syn_heights"><u>Synopsis:</u>: A middle-aged Gujarati businessman, dejected by his
                                 failures, goes to China in the hopes of better prospects. There, he embarks on an
@@ -298,6 +361,7 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -309,27 +373,30 @@
                         <img src="img/GooglePlay/8.jpg" class="card_img">
                         <div class="container cardbox row1_height_class">
                             <div class="card_btns_div">
-                                <button class="card_btns"><a
+                                <button class="card_btns"><a id="link_5"
                                         href="https://play.google.com/store/movies/details/Stree?id=3cbJVDq1Gt0.P&PAffiliateID=100l3Q7"
                                         target="_blank">Watch</a></button>
-                                <div class="bs-example">
-                                    <div class="dropdown">
-                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
-                                            role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-
-                                        </button>
-
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
-                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                        <div class="bs-example">
+                                            <div class="dropdown" >
+                                              <div class="dropdown"  >
+                                                <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Share
+                                                </button>
+                                                <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                                <div style="display: flex; padding-left:5px;">
+                                                  <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',5)"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',5)" href="#"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-twitter" onclick="share('twitter',5)" href="#"></a>
+                                                  <br>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
                             </div>
+                            <div id="google_play_5">
                             <p class="title_heights"><u>Title:</u> Stree</p>
                             <p class="syn_heights"><u>Synopsis:</u>: Based on an urban legend in Chanderi, Stree is set
                                 in a town where everyone is familiar with the fables of a strange woman who calls men by
@@ -347,6 +414,7 @@
                                     <p>Metadata creation</p>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -355,27 +423,30 @@
                         <img src="img/GooglePlay/6.jpg" class="card_img">
                         <div class="container cardbox row1_height_class">
                             <div class="card_btns_div">
-                                <button class="card_btns"><a
+                                <button class="card_btns"><a id="link_6"
                                         href="https://play.google.com/store/movies/details/Luka_Chuppi?id=gj16Ay_R7kM.P&PAffiliateID=100l3Q7"
                                         target="_blank">Watch</a></button>
-                                <div class="bs-example">
-                                    <div class="dropdown">
-                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
-                                            role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-
-                                        </button>
-
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
-                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                        <div class="bs-example">
+                                            <div class="dropdown" >
+                                              <div class="dropdown"  >
+                                                <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Share
+                                                </button>
+                                                <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                                <div style="display: flex; padding-left:5px;">
+                                                  <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',6)"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',6)" href="#"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-twitter" onclick="share('twitter',6)" href="#"></a>
+                                                  <br>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
                             </div>
+                            <div id="google_play_6"> 
                             <p class="title_heights"><u>Title:</u> Luka Chuppi</p>
                             <p class="syn_heights"><u>Synopsis:</u> Vinod “Guddu” Shukla is a television reporter in
                                 Mathura. He falls for the headstrong Rashmi Trivedi. Guddu wants to get married but
@@ -393,6 +464,7 @@
                                     <p>Metadata creation</p>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -401,27 +473,30 @@
                         <img src="img/GooglePlay/7.jpg" class="card_img">
                         <div class="container cardbox row1_height_class">
                             <div class="card_btns_div">
-                                <button class="card_btns"><a
+                                <button class="card_btns"><a id="link_7"
                                         href="https://play.google.com/store/movies/details/Pihu?id=Ipw01EghqTo.P&PAffiliateID=100l3Q7"
                                         target="_blank">Watch</a></button>
-                                <div class="bs-example">
-                                    <div class="dropdown">
-                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
-                                            role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-
-                                        </button>
-
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
-                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                        <div class="bs-example">
+                                            <div class="dropdown" >
+                                              <div class="dropdown"  >
+                                                <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Share
+                                                </button>
+                                                <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                                <div style="display: flex; padding-left:5px;">
+                                                  <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook',7)"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',7)" href="#"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-twitter" onclick="share('twitter',7)" href="#"></a>
+                                                  <br>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
                             </div>
+                            <div id="google_play_7">
                             <p class="title_heights"><u>Title:</u> Pihu</p>
                             <p class="syn_heights"><u>Synopsis:</u> A woman is seen lying unconscious on the bed.
                                 Meanwhile, a two-year-old toddler, Pihu believes that her mummy is sleeping and tries to
@@ -440,6 +515,7 @@
                                     <p>Metadata creation</p>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -448,27 +524,30 @@
                         <img src="img/GooglePlay/5.jpg" class="card_img">
                         <div class="container cardbox row1_height_class">
                             <div class="card_btns_div">
-                                <button class="card_btns"><a
+                                <button class="card_btns"><a id="link_8"
                                         href="https://play.google.com/store/movies/details/The_Expendables_2?id=3D8D374863A29258MV&PAffiliateID=100l3Q7"
                                         target="_blank">Watch</a></button>
-                                <div class="bs-example">
-                                    <div class="dropdown">
-                                        <button id="dLabel" class="card_btns" data-target="#" data-toggle="dropdown"
-                                            role="button" aria-haspopup="true" aria-expanded="false">
-                                            Share
-
-                                        </button>
-
-                                        <ul class="dropdown-menu" aria-labelledby="dLabel"
-                                            style="background-color: white;position: absolute; z-index:2 !important; padding-left:4px; min-width:122px;">
-                                            <a onclick="share('facebook','1')" class="fa fa-facebook"></a>
-                                            <a href="#" class="fa fa-twitter"></a>
-                                            <a href="#" class="fa fa-whatsapp"></a>
-                                            <!-- <a href="#" class="fa fa-linkedin"></a> -->
-                                        </ul>
-                                    </div>
-                                </div>
+                                        <div class="bs-example">
+                                            <div class="dropdown" >
+                                              <div class="dropdown"  >
+                                                <button class="btn card_btns btn-secondary dropdown-toggle new_share" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Share
+                                                </button>
+                                                <div class="dropdown-menu" style="min-width:116px; background-color: white;" aria-labelledby="dropdownMenuButton">
+                                                <div style="display: flex; padding-left:5px;">
+                                                  <a class="dropdown-item fa fa-facebook" style="" onclick="share('facebook'8)"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-whatsapp" onclick="share('whatsapp',8)" href="#"></a>
+                                                  <br>
+                                                  <a class="dropdown-item fa fa-twitter" onclick="share('twitter',8)" href="#"></a>
+                                                  <br>
+                                                </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
                             </div>
+                            <div id="google_play_8">
                             <p class="title_heights"><u>Title:</u> The Expendables 2</p>
                             <p class="syn_heights"><u>Synopsis:</u>: All hell breaks loose when Barney, along with his
                                 band of old-school mercenaries, sets out on a path of carnage after one of their
@@ -484,6 +563,7 @@
                                     <p>Metadata creation</p>
                                 </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>

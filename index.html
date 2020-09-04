@@ -261,6 +261,7 @@
                         <div class="parentcirclediv-text">
                             <h3>3260000</h3> -->
                         <div class="try2">
+                            <p id="og_val" style="display: none;">350000</p>
                             <div class="watermark1" id="circle_num">
                                 350000
                             </div>
@@ -549,6 +550,31 @@
     let val=(diffDays*840)+350000;
     console.log(val);
     document.getElementById("circle_num").innerText=val;
+    // FUNCTION FOR TIMER
+    function circle_timer()
+    {
+        // console.log("this is circle timer function")
+        let og_val=document.getElementById("og_val").innerText
+        let start=og_val
+        // console.log(og_val)
+        start=parseInt(start)+1
+        // console.log(start)
+        document.getElementById("og_val").innerText=start
+        start=start.toString()
+        start=start.split('').reverse().join('');
+        let str_arr=start.match(/.{1,3}/g);
+        rs=""
+        for(var i=str_arr.length-1;i>=0;i--)
+        {
+            rs=rs+str_arr[i].split('').reverse().join('');
+            rs=rs+','
+        }
+        rs=rs.substr(0,rs.length-1)
+        document.getElementById("circle_num").innerText=rs
+
+    }
+    setInterval(circle_timer,120000)
+    circle_timer()
     console.log("done")
     function grey_card_heights()
         {

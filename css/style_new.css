@@ -338,6 +338,7 @@ span.orange
     {
         font-size: small !important;
         padding:2px;
+        color: black !important ;
     }
     .numberCircle2 {
         width: 200px;

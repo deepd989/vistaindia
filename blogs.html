@@ -8,11 +8,20 @@
         
         <link type="text/css" rel="stylesheet" href="css/style_new.css" />
         <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/nav.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
         <link type="text/css" rel="stylesheet" href="css/style_blogs.css" />
         <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
         <script src="js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/carousel.css" />
+        <script src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src="js/caroursel.js"></script>
+            <link type="text/css" rel="stylesheet" href="css/style_2.css" />
+
     </head>
     <script>
         function show_blog1()
@@ -218,33 +227,75 @@
             </div>
             <!-- /SOCIAL BUTTONS mobile -->
 
-            <!-- HORIZONTAL ROW
+            <!-- HORIZONTAL ROW-->
         <div class="container" style="margin-top:20px;">
-            <div class="row">
-                <div class="col-sm-4 row_container">
-                    <img src="img/blogs/blog.jpg" alt="" class="row_img">
-                    <p class="img_header">We are excited to share the details of our advertisement that found a place in the Box-Office India’s 9th anniversary edition.</p>
-                    <p>18 December 2018</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
-                    <button type="button" class="btn btn_cust" onclick="show_blog1()">Read More</button>
+            <div id="myCarouselb" class="carousel slide" data-ride="carousel">
+              
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div style="display:flex;">
+                        <div class="row_container">
+                            <img src="img/blogs/blog.jpg" alt="" height="200px">
+                            <p class="img_header">We are excited to share the details of our advertisement that found a place in the Box-Office India’s 9th anniversary edition.</p>
+                            <p>18 December 2018</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                            <button type="button" class="btn btn_cust" onclick="show_blog1()">Read More</button>
+                        </div>
+                        <div class="row_container">
+                            <img src="img/img2.jpg" alt="" class="row_img">
+                            <p class="img_header">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                            <p>18 December 2018</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                            <button type="button" class="btn btn_cust" onclick="show_blog2()">Read More</button>
+                        </div>
+                        <div class="row_container">
+                            <img src="img/img3.jpg" alt=""  class="row_img">
+                            <p class="img_header">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                            <p>18 December 2018</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                            <button type="button" class="btn btn_cust" onclick="show_blog3()">Read More</button>
+                        </div>
+                    </div>  
+                  </div>
+                  <div class="item">
+                    <div style="display:flex;">
+                        <div class="row_container">
+                            <img src="img/blogs/blog.jpg" alt="" class="row_img">
+                            <p class="img_header">We are excited to share the details of our advertisement that found a place in the Box-Office India’s 9th anniversary edition.</p>
+                            <p>18 December 2018</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                            <button type="button" class="btn btn_cust" onclick="show_blog1()">Read More</button>
+                        </div>
+                        <div class="row_container">
+                            <img src="img/img3.jpg" alt="" class="row_img">
+                            <p class="img_header">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                            <p>18 December 2018</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                            <button type="button" class="btn btn_cust" onclick="show_blog2()">Read More</button>
+                        </div>
+                        <div class="row_container">
+                            <img src="img/img2.jpg" alt=""  class="row_img">
+                            <p class="img_header">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                            <p>18 December 2018</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
+                            <button type="button" class="btn btn_cust" onclick="show_blog3()">Read More</button>
+                        </div>
+                    </div>  
+                  </div>
+            
+                 
+                  </div>
+          
                 </div>
-                <div class="col-sm-4 row_container">
-                    <img src="img/img2.jpg" alt="" class="row_img">
-                    <p class="img_header">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-                    <p>18 December 2018</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
-                    <button type="button" class="btn btn_cust" onclick="show_blog2()">Read More</button>
-                </div>
-                <div class="col-sm-4 row_container">
-                    <img src="img/img3.jpg" alt=""  class="row_img">
-                    <p class="img_header">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-                    <p>18 December 2018</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took</p>
-                    <button type="button" class="btn btn_cust" onclick="show_blog3()">Read More</button>
-                </div>
-            </div> 
-        </div> -->
+              </div>
+        </div>
+          
+              
+             
+        </div> 
             <!--HORIZONTAL ROW ENDS  -->
+            
             <footer id="footer">
                 <!-- container -->
                 <div class="container">
@@ -279,3 +330,6 @@
             </footer>
     </body>
 </html>
+
+
+

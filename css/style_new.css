@@ -294,6 +294,15 @@ span.orange
           background-color: black;
       }
 }
+.testimonial_item
+{
+    background:linear-gradient( #d7d7d7 90%, #fb9700 10%) !important;
+    /* box-shadow: none !important; */
+}
+.card-bod2-mob
+{
+    box-shadow: none !important;   
+}
 
 /* Card CSS */
 
@@ -301,9 +310,9 @@ span.orange
     box-shadow: 5px 5px 5px grey;
     position:relative;
     padding-top: 120px;
-    border:2px solid white;
+    /* border:10px solid white; */
     background:white;
-    border-radius:10px;
+    border-radius:5px;
     min-height: 375px;
     /* width:300px; */
     }
@@ -444,6 +453,10 @@ color:black;
     left: 50%;
     transform: translateX(-50%) translateY(-70%);
 
+}
+.mob_cards
+{
+    margin-top:100px ;
 }
 
 .card-body {

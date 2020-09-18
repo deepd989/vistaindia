@@ -7,6 +7,15 @@
     padding:15px;
     margin-bottom:40px ;
 }
+.row_blogs_div
+{
+    margin-left:20px;
+    margin-right:20px ;
+}
+.potrait_blog
+{
+    height:250px;
+}
 .blog_captiontop
 {
     /* font-size:21px; */
@@ -32,6 +41,7 @@
 }
 .row_img
 {
+    margin-top:100px ;
     height:200px;
     width:100%;
     border-radius:10px;

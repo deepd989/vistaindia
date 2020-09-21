@@ -15,7 +15,10 @@
     color: black;
   }
 
-  
+.slider_carousel
+{
+    background: linear-gradient(to left, #fb9700 50%, #000000 50%);
+}  
 
 
 

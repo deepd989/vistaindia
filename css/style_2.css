@@ -1,31 +1,73 @@
 a {
     color: #fb9700;
 }
-ul
-{
-    list-style-type: square !important;
-}
-li.datalist
-{
-    
-    /* list-style-position: outside; */
-     font-size: 15px;
-     display: list-item !important;
-     /* list-style-Type: */
-    /* display: inline;  */
-    list-style-type: disc !important;
-    /* margin-bottom: 1em; */
-    color:#fb9700;
-    margin-left:10px ;
-    
 
+li {
+    display: list-item;
     
-    
-    
+    color:#fb9700;
+ }
+ ul
+ {
+     padding-left:14px ;
+ }
+.li_span
+{
+    color:#333;
+    font-size:16px ;
 }
+.blog__parent
+{
+  display:flex; 
+   position: relative; ;
+  align-items: center;
+  min-height:320px ;
+    width: 95%;
+    padding-top:20px;
+    padding-bottom:20px ;
+    /* background-color: red; */
+  
+
+}
+
+.blog__orange
+{
+    background-color: #fb9700;
+  height:30px ;
+  min-width:315px;
+  transform: translateX(70px);
+  height: 50px;
+  border-radius:10px;
+  text-align: center;
+  z-index:1 ;
+
+}
+.blog__orange p
+{
+    margin-top:15px;
+    font-size:18px ;
+}
+.blog__info
+{
+    
+    /* position: relative;
+    z-index:0 ;
+    width: 80%; */
+    background-color: white;
+    padding-right:25px;
+    padding-left:100px;
+    padding-top:30px ;
+    padding-bottom:30px ;
+  border-radius: 10px;
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  width:80vw !important;
+  
+}
+
 .keyservice
 {
-    margin-left:20px ;
+    margin-left:10px ;
 }
 
 
@@ -110,6 +152,9 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
 .logo_div2
 {
     margin-top: 0px;
+    text-align: center;
+    padding:10px ;
+
 }
 .top_para
 {
@@ -154,7 +199,21 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
 /* Change card view when device is smaller than 735px */
 @media screen and (max-width: 1000px)
 {
-
+    .blog__parent
+    {
+        flex-direction: column;
+    }
+    .blog__orange
+    {
+        width:80%;
+        /* transform: translateX(-20px); */
+        transform: translateY(20px);
+    }
+    .blog__info
+    {
+        padding:35px;
+        
+    }
     .div2_content_desktop
     {
         margin-left:150px;
@@ -231,132 +290,32 @@ box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.15);
     }
     
 }
-@media screen and (max-width: 640px)
+
+
+@media screen and (max-width: 400px)
 {
-    .outer2
+    .blog__parent
     {
-        height:540px !important;
-    }
-}
-
-
-
- @media screen and (max-width: 551px)
-{
-   
-    #outerWrap {
-        height:520px;
-        margin-top:80px ;
-        }
+        flex-direction: column;
         
-    .outer4
-    {
-        margin-top:50px !important;
-        height:470px !important;
     }
-    .outer4_key
+    .blog__orange
     {
-        margin-top:0px !important;
-        margin-bottom:40px ;
+        width:320px;
+        /* transform: translateX(-20px); */
+        transform: translateY(20px);
     }
-}
-@media screen and (max-width: 450px)
-{
-    #outerwrap
+    .blog__info
     {
-        margin-top:120px ;
+        padding:15px;
+        padding-top:30;
+        padding-bottom:30px ;
+        font-size:14px ;
+        
     }
-    .outer4
-    {
-        margin-top:100px !important;
-        margin-bottom:45px !important ;
-    }
-    .outer4_key
-    {
-        margin-top:0px !important;
-        margin-bottom:40px ;
-    }
+    
 }
 
 
 
-@media screen and (max-width: 420px)
-{
-    #outerwrap
-    {
-        margin-top:140px ;
-    }
-    .outer2
-    {
-        height:565px !important;
-    }
-    .outer4
-    {
-        margin-top:135px !important;
-        margin-bottom:65px !important ;
-    }
-    .outer4_key
-    {
-        margin-top:0px !important;
-        margin-bottom:40px ;
-    }
-}
-@media screen and (max-width: 375px)
-{
-    #outerwrap
-    {
-        margin-top:180px ;
-    }
-    .outer4
-    {
-        margin-top:210px !important;
-        margin-bottom:115px !important ;
-    }
-    .outer4_key
-    {
-        margin-top:0px !important;
-        margin-bottom:40px ;
-    }
-}
-@media screen and (max-width: 360px)
-{
-    #outerWrap
-    {
-        height:620px;
-    }
-    .outer2
-    {
-        height:600px  !important;
-    }
-    .outer4
-    {
-        height: 400px !important;
-        margin-top:240px !important;
-        margin-bottom:115px !important ;
-    }
-}
-@media screen and (max-width: 340px)
-{
-    #outerWrap
-    {
-        height:640px;
-    }
-    .outer2
-    {
-        height:680px  !important;
-    }
-    .outer1
-    {
-        height:680px  !important;
-    }
-    .outer4
-    {
-        height: 500px !important;
-        margin-top:240px !important;
-        margin-bottom:115px !important ;
-    }
-    .outer4_key
-    {
-        height:500px !important ;
-    }
-}
+

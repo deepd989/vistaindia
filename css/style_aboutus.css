@@ -1,3 +1,68 @@
+.card_info
+{
+    margin:auto;
+     padding-top:15px ;
+}
+.AU_parent
+{
+    padding:20px;
+    background-color: black;
+    border-radius:5px  ;
+    margin-bottom:20px ;
+}
+.card_image_right
+{
+    height:270px; 
+    width:270px; 
+    padding:30px;
+    padding-bottom: 0px;
+    top:0px ;
+    background-image:linear-gradient(to left, orange 135px,transparent 0);
+}
+.left_card_caption
+{
+    color: white; margin-top:15px; margin-left:60px ;
+}
+.left_card_image
+{
+    height:270px; 
+    width:270px; 
+    padding:30px; 
+    padding-bottom:0px ; 
+    background-image:linear-gradient(to right, orange 135px,transparent 0);
+}
+
+
+.AU_card
+{
+    /* align-items: center; */
+    /* background-color:white;   */
+    display: flex;
+    padding-right: 20px ;
+    border-radius:5px ;
+    border: orange solid 2px;
+    min-height:300px ; 
+    /* background: linear-gradient(to ,black 200px, transparent 0), linear-gradient(to right, red 50px, transparent 0); */
+    background-image:linear-gradient(to right, orange 50px,transparent 0);
+    padding-bottom:15px ;
+        
+    
+    
+}
+.AU_card_right
+{
+    display: flex;
+    /* align-items: center; */
+    background-image:linear-gradient(to left, orange 50px,transparent 0);
+    min-height:300px ; 
+    border: orange solid 2px;
+    border-radius:5px ;
+    padding-left:30px;
+    /* padding-top:10px; */
+    padding-bottom:15px ;
+}
+
+
 .card_text_1
 {
     top:55px;
@@ -92,10 +157,10 @@
     margin-top:25px ;
 }
 
-.card_text
+.card_text_new
 {
      
-    color: white;
+    color: white !important;
     font-size: 14px ;
 }
 

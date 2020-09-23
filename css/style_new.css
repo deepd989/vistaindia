@@ -328,6 +328,13 @@ span.orange
     }
     .card-title2
     {
+        margin-top:25px ;
+        font-size: large;
+        color: black;
+    }
+    .card-title3
+    {
+        margin-top:15px ;
         font-size: large;
         color: black;
     }
@@ -340,7 +347,7 @@ span.orange
     .card-text
     {
         font-size: small !important;
-        padding:2px;
+        padding:4px !important;
         color: black !important ;
     }
     .numberCircle2 {

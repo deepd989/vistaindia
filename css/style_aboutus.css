@@ -2,6 +2,8 @@
 {
     margin:auto;
      padding-top:15px ;
+     text-align: justify;
+
 }
 .AU_parent
 {
@@ -15,6 +17,7 @@
     height:270px; 
     width:270px; 
     padding:30px;
+    padding-left:40px ;
     padding-bottom: 0px;
     top:0px ;
     background-image:linear-gradient(to left, orange 135px,transparent 0);
@@ -38,7 +41,7 @@
     /* align-items: center; */
     /* background-color:white;   */
     display: flex;
-    padding-right: 20px ;
+    padding-right: 30px ;
     border-radius:5px ;
     border: orange solid 2px;
     min-height:300px ; 

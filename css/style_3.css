@@ -2,14 +2,20 @@
 /* $height: $lineheight * 3; */
 /* $ellipsiswidth: 3em !default; */
 
-
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-.extrapadding
+.read_less
 {
-  margin-top:30px ;
+  cursor: pointer;
+}
+
+
+.extramargin
+{
+  margin-top:30px !important;
+}
+.synopsis_head
+{
+  margin:0px; 
+  margin-top:20px;
 }
 .page
 {
@@ -21,7 +27,7 @@ body
 }
 .syn_heights:hover
 {
-  color: red;
+  
   cursor: pointer;
 }
 .RR_cards
@@ -108,7 +114,7 @@ body
     border-bottom-left-radius:5px;
     background-color: white; 
     width:100% ;
-    height:400px;
+    height:430px;
 }
 .cardbox p
 {

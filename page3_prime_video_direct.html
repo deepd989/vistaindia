@@ -10,6 +10,7 @@
         <link type="text/css" rel="stylesheet" href="css/style_3.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="js/clamp.js"></script>
     </head>
     <script>
         let ID=0;
@@ -146,7 +147,7 @@
                     <div class="link active_tab"><a href="page3_prime_video_direct.html">AMAZON</a></div>
                 </div>
                 <!-- MAIN MOB -->
-                <div class="dropdown mob_links" id="mob_links" style="display: none;">
+                <div class="dropdown mob_links" id="mob_links" style="display: none; ">
                     <button class="dropdown-toggle dropdown_btn" style="color: white;" type="button" data-toggle="dropdown">AMAZON
                     <span class="caret"></span></button>
                     <ul class="dropdown-menu">
@@ -189,7 +190,13 @@
                                 </div>
                                 <div id="pvd_1">
                                 <p><u>Title:</u> A Good Man</p>
-                                <div class="syn_heights"><p><u>Synopsis</u>: A man leaves special forces and hides away as handyman in Bucharest. He befriends two sisters living next door. When the Russian mob threatens them, he takes action.</p></div>
+                                <p class="synopsis_head "><u>Synopsis:</u></p>
+                                <p class="syn_heights" id="1_OG">A man leaves special forces and hides away as handyman in Bucharest. He befriends two sisters living next door. When the Russian mob threatens them, he takes action.</p>
+                                <p id="1_synopsis"  style="display: none; text-align:justify;">
+                                    A man leaves special forces and hides away as handyman in Bucharest. He befriends two sisters living next door. When the Russian mob threatens them, he takes action.
+                                    ...<a onclick="show(1)">Read less</a>
+                                </p>
+                                <div id="1_service">
                                 <p><u>Services:</u></p>
                                 <div class="row">
                                     <div class="col-md-6" id="service">
@@ -201,6 +208,7 @@
                                         <p>Artwork Creation</p>
                                         <p>Metadata creation.</p>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                             </div>
@@ -233,7 +241,13 @@
                                 </div>
                                 <div id="pvd_2">
                                 <p><u>Title:</u> Ghost Machine</p>
-                                <div class="syn_heights"><p><u>Synopsis</u>: Two technicians battle a vengeful spirit that has infected their stolen military software.</p></div>
+                                <p class="synopsis_head "><u>Synopsis:</u></p>
+                                <p class="syn_heights" id="2_OG">Two technicians battle a vengeful spirit that has infected their stolen military software.</p>
+                                <p id="2_synopsis"  style="display: none; text-align:justify;">
+                                    Two technicians battle a vengeful spirit that has infected their stolen military software.
+                                    ...<a onclick="show(2)">Read less</a>
+                                </p>
+                                <div id="2_service">
                                 <p><u>Services:</u></p>
                                 <div class="row">
                                     <div class="col-md-6" id="service">
@@ -245,6 +259,7 @@
                                         <p>Artwork Creation</p>
                                         <p>Metadata creation.</p>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                               </div>
@@ -277,7 +292,13 @@
                                 </div>
                                 <div id="pvd_3">
                                 <p><u>Title:</u> Phoebe in Wonderland</p>
-                                <div class="syn_heights"><p><u>Synopsis</u>:  Confounded by her clashes with the seemingly rule-obsessed world, a troubled young girl seeks enlightenment from her unconventional drama teacher.</p></div>
+                                <p class="synopsis_head "><u>Synopsis:</u></p>
+                                <p class="syn_heights" id="3_OG"> Confounded by her clashes with the seemingly rule-obsessed world, a troubled young girl seeks enlightenment from her unconventional drama teacher.</p>
+                                <p id="3_synopsis"  style="display: none; text-align:justify;">
+                                    Confounded by her clashes with the seemingly rule-obsessed world, a troubled young girl seeks enlightenment from her unconventional drama teacher.
+                                    ...<a onclick="show(3)">Read less</a>
+                                </p>
+                                <div id="3_service">
                                 <p><u>Services:</u></p>
                                 <div class="row">
                                     <div class="col-md-6" id="service">
@@ -290,6 +311,7 @@
                                         <p>Metadata creation.</p>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                                 
                               </div>
@@ -322,7 +344,13 @@
                                 </div>
                                 <div id="pvd_4">
                                 <p><u>Title:</u> Intruders</p>
-                                <div class="syn_heights"> <p><u>Synopsis</u>: Anna suffers from agoraphobia so crippling that when a trio of criminals break into her house, she cannot bring herself to flee. But what the intruders don’t realize is that agoraphobia is not her only problem.</p></div>
+                                <p class="synopsis_head "><u>Synopsis:</u></p>
+                                <p class="syn_heights" id="4_OG"> Anna suffers from agoraphobia so crippling that when a trio of criminals break into her house, she cannot bring herself to flee. But what the intruders don’t realize is that agoraphobia is not her only problem.</p>
+                                <p id="4_synopsis"  style="display: none; text-align:justify;">
+                                    Anna suffers from agoraphobia so crippling that when a trio of criminals break into her house, she cannot bring herself to flee. But what the intruders don’t realize is that agoraphobia is not her only problem.
+                                    ...<a onclick="show(4)">Read less</a>
+                                </p>
+                                <div id="4_service">
                                 <p><u>Services:</u></p>
                                 <div class="row">
                                     <div class="col-md-6" id="service">
@@ -334,6 +362,7 @@
                                         <p>Artwork Creation</p>
                                         <p>Metadata creation.</p>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                               </div>
@@ -366,7 +395,13 @@
                                 </div>
                                 <div id="pvd_5">
                                 <p><u>Title:</u> Jimmy Vestvood</p>
-                                <div class="syn_heights"> <p><u>Synopsis</u>: A wannabe private investigator wins the Green Card lottery and moves to America to pursue his dream only to find himself embroiled in a conspiracy to start the next world war.</p></div>
+                                <p class="synopsis_head "><u>Synopsis:</u></p>
+                                <p class="syn_heights" id="5_OG">  A wannabe private investigator wins the Green Card lottery and moves to America to pursue his dream only to find himself embroiled in a conspiracy to start the next world war.</p>
+                                <p id="5_synopsis"  style="display: none; text-align:justify;">
+                                    A wannabe private investigator wins the Green Card lottery and moves to America to pursue his dream only to find himself embroiled in a conspiracy to start the next world war.        
+                                    ...<a onclick="show(5)">Read less</a>
+                                </p>
+                                <div id="5_service">
                                 <p><u>Services:</u></p>
                                 <div class="row">
                                     <div class="col-md-6" id="service">
@@ -378,6 +413,7 @@
                                         <p>Artwork Creation</p>
                                         <p>Metadata creation.</p>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                                 
@@ -412,7 +448,13 @@
                                 </div>
                                 <div id="pvd_6">
                                 <p><u>Title:</u> Soldiers of Fortune</p>
-                                <div class="syn_heights"> <p><u>Synopsis</u>: Wealthy thrill-seekers pay huge premiums to have themselves inserted into military adventures, only this time things don’t go exactly to plan.</p></div>
+                                <p class="synopsis_head "><u>Synopsis:</u></p>
+                                <p class="syn_heights" id="6_OG">  Wealthy thrill-seekers pay huge premiums to have themselves inserted into military adventures, only this time things don’t go exactly to plan.</p>
+                                <p id="6_synopsis"  style="display: none; text-align:justify;">
+                                    Wealthy thrill-seekers pay huge premiums to have themselves inserted into military adventures, only this time things don’t go exactly to plan.     
+                                    ...<a onclick="show(6)">Read less</a>
+                                </p>
+                                <div id="6_service">
                                 <p><u>Services:</u></p>
                                 <div class="row">
                                     <div class="col-md-6" id="service">
@@ -424,6 +466,7 @@
                                         <p>Artwork Creation</p>
                                         <p>Metadata creation.</p>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                                 
@@ -457,9 +500,15 @@
                                 </div>
                                 <div id="pvd_7">
                                 <p><u>Title:</u> The Secret in Their Eyes</p>
-                                <div class="syn_heights">
-                                    <p><u>Synopsis</u>: A retired legal counselor writes a novel hoping to find closure for one of his past unresolved homicide cases and for his unreciprocated love with his superior – both of which still haunt him decades later.</p></div>
-                                <p><u>Services:</u></p>
+                                <p class="synopsis_head "><u>Synopsis:</u></p>
+                                <p class="syn_heights" id="7_OG">
+                                     A retired legal counselor writes a novel hoping to find closure for one of his past unresolved homicide cases and for his unreciprocated love with his superior – both of which still haunt him decades later.</p>
+                                <p id="7_synopsis"  style="display: none; text-align:justify;">
+                                    A retired legal counselor writes a novel hoping to find closure for one of his past unresolved homicide cases and for his unreciprocated love with his superior – both of which still haunt him decades later.
+                                        ...<a onclick="show(7)">Read less</a>
+                                    </p>
+                                <div id="7_service">
+                                     <p><u>Services:</u></p>
                                 <div class="row">
                                     <div class="col-md-6" id="service">
                                         <p>Media processing</p>
@@ -471,6 +520,7 @@
                                         <p>Metadata creation.</p>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                                 
                               </div>
@@ -502,8 +552,14 @@
                                     </div>
                                 </div>
                                 <div id="pvd_8">
-                                <p><u>Title:</u> Whiplash </p>
-                                <div class="syn_heights"> <p><u>Synopsis</u>: A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student’s potential.</p></div>
+                                <p><u>Title:</u> Whiplash </p>  
+                                <p class="synopsis_head "><u>Synopsis:</u></p>
+                                <p class="syn_heights" id="8_OG"> A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student’s potential.</p>
+                                <p id="8_synopsis"  style="display: none; text-align:justify;">
+                                    A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student’s potential.      
+                                    ...<a onclick="show(8)">Read less</a>
+                                </p>
+                                <div id="8_service">
                                 <p><u>Services:</u></p>
                                 <div class="row">
                                     <div class="col-md-6" id="service">
@@ -516,6 +572,7 @@
                                         <p>Metadata creation.</p>
                                     </div>
                                 </div>
+                            </div>
                             </div>
                                 
                               </div>
@@ -590,66 +647,19 @@
         {
             document.getElementById('footer_right_col').classList.remove('pull-right')
         }
-        function equalize_card_heights(s) {
-        let mx = 0
-        let card_heights = document.getElementsByClassName(s);
-        for (i = 0; i < card_heights.length; i++) {
-            let a = card_heights[i].offsetHeight
-            if (mx < a) {
-                mx = a
-            }
-            console.log(a)
+ 
+    let module=document.getElementsByClassName('syn_heights');
+    for(let p=0;p<module.length;p++)
+    {
+        console.log(p)
+        console.log(module[p].innerText)
+        let SYN=module[p].innerText;
+        if(SYN.length>=120)
+        {
+            clamp(p+1)
         }
-        console.log("running" + mx);
-        for (i = 0; i < card_heights.length; i++) {
-            card_heights[i].style.height = mx + 25
-        }
-        console.log("done")
+        
+        
     }
-    function equalize_syn() {
-        let mx = 0;
-        let syn_heights = document.getElementsByClassName("syn_heights");
-        for (i = 0; i < syn_heights.length; i++) {
-            let b = syn_heights[i].offsetHeight;
-            // console.log(b)
-            if (mx < b) {
-                mx = b
-            }
-        }
-        for (i = 0; i < syn_heights.length; i++) {
-            if (i > 3) {
-                console.log(i)
-                syn_heights[i].style.height = mx + 55;
-                // syn_heights[i].style.padding-bottom
-            }
-            else {
-                console.log(i+"ee")
-                syn_heights[i].style.height = mx+30;
-            }
-
-        }
-        console.log("done2")
-    }
-
-    function equalize_title() {
-        let mx = 0;
-        let title_heights = document.getElementsByClassName("title_height");
-        for (i = 0; i < title_heights.length; i++) {
-            let b = title_heights[i].offsetHeight;
-            // console.log(b)
-            if (mx < b) {
-                mx = b
-            }
-        }
-        for (i = 0; i < title_heights.length; i++) {
-            title_heights[i].style.height = mx;
-            // syn_heights[i].style.padding-bottom
-
-        }
-        console.log("done3")
-    }
-    equalize_title()
-    equalize_syn()
-    equalize_card_heights("row1_height_class")
     </script>
 </html>

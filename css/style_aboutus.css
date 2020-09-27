@@ -192,7 +192,7 @@
 }
 .certi_image
 {
-    padding-left:5vw;
+    /* padding-left:5vw; */
 }
 @media screen and (max-width: 1199px)
 {
@@ -309,7 +309,7 @@
     }
     .award_text
     {
-        padding-top:20px;
+        padding-top:50px;
         text-align: center;
         /* padding-left:0px; */
         /* padding-right:0px; */

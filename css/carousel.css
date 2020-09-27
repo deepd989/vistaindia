@@ -22,8 +22,8 @@
 
 .post-slider .post-wrapper
 {
-    width: 84%;
-    height: 350px;
+    width: 88%;
+    height: 400px;
     margin: 0px auto;
     /* border:1px dashed red; */
     overflow: hidden;
@@ -31,7 +31,7 @@
 }
 .post-slider .post-wrapper .post
 {
-    height:300px;
+    height:350px;
     /* width:200px !important;  */
     background:white;
     display: inline-block;

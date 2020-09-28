@@ -5,6 +5,16 @@
      text-align: justify;
 
 }
+
+.col-container {
+    display: flex;
+    width: 100%;
+  }
+  .col {
+    flex: 1;
+    padding: 16px;
+    /* margin-right:100px ; */
+  }
 .AU_parent
 {
     padding:20px;
@@ -322,4 +332,16 @@
     {
         display: none;
     }
+    .col-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        
+      }
+      .col {
+        margin:auto;
+        flex: 1;
+        padding: 16px;
+        /* margin-right:100px ; */
+      }
 }

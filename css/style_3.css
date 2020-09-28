@@ -378,7 +378,7 @@ body
   } 
 
   /* icons */
-  .fa {
+  .social_media_btn {
     padding: 10px;
     font-size: 20px;
     width: 35px;
@@ -387,7 +387,7 @@ body
     /* margin: 5px 2px; */
   }
   
-  .fa:hover {
+  .social_media_btn:hover {
       opacity: 0.3;
   }
   

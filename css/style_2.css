@@ -29,7 +29,15 @@ li {
   
 
 }
-
+.slider-image
+{
+    max-width:300px !important;
+    height:300px !important;
+    
+}.post
+{
+    background-color: transparent !important;
+}
 .blog__orange
 {
     background-color: #fb9700;

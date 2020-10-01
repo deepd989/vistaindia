@@ -141,6 +141,12 @@ a
     /* background-color:#d7d7d7; */
 
 }
+.first_p::first-letter
+  {
+    font-size: xx-large;
+    font-weight: bold;
+    
+  }
 .slider-image
 {
     max-width:280px !important;

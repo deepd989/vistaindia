@@ -28,7 +28,7 @@ function hide(num)
         // console.log(synopsis)
         let a =document.createElement("a")
         a.setAttribute("onclick","hide("+num+");");
-        a.innerText=" Read More ..."
+        a.innerText=" Read More"
         clamp_module.innerText=synopsis
         clamp_module.appendChild(a)
         // console.log(clamp_module)

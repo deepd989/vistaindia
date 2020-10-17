@@ -253,7 +253,7 @@
                 <!--MINUTES-->
                 <div style="margin-top:100px; display:flex; justify-content: center;">
                         <div class="try2">
-                            <p id="og_val" style="display: none;">35000</p>
+                            <p id="og_val" style="display: none;">470120</p>
                             <div class="watermark1" id="circle_num" >
                                 10000
                                 
@@ -617,10 +617,11 @@
         }
         rs=rs.substr(0,rs.length-1)
         document.getElementById("circle_num").innerText=rs
+        console.log("timer incerased")
 
     }
     setInterval(circle_timer,120000)
-    circle_timer()
+    // circle_timer()
     // console.log("done")
     function grey_card_heights()
         {
@@ -714,7 +715,7 @@
 }, {
   offset: '90%'
 })
-    var start_counter=20000;
+    var start_counter=440120;
     function wrapper_interval()
     {
         var interval= setInterval(increment,1);
@@ -726,10 +727,10 @@
         start_counter=parseInt(start_counter)+17
         document.getElementById("circle_num").innerText=start_counter;
         // console.log("end",start_counter)
-        if (start_counter>=35000)
+        if (start_counter>=470120)
         {
             console.log("greater")
-            document.getElementById("circle_num").innerText=35000;
+            document.getElementById("circle_num").innerText=470120;
             clearInterval(interval);
         }
 

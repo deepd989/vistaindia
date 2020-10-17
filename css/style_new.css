@@ -3,6 +3,11 @@
     src: url("font/CodecPro-Regular.woff") format('woff');
 }
 
+#desk_logo
+{
+    cursor: pointer;
+}
+
 #to_top_btn {
     display: none;
     position: fixed;

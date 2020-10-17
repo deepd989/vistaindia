@@ -59,13 +59,13 @@
 }
 .caption
 {
-    max-width:280px;
+    max-width:300px;
      padding-left:15px;
-     padding-right: 15px; 
+     padding-right:15px; 
      font-size:18px ;
      margin:0px ;
      font-weight: bold;
-     text-align:justify;
+     text-align:center;
 }
 .row_img
 {

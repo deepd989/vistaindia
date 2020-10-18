@@ -5,14 +5,19 @@
      text-align: justify;
 
 }
+.left_col
+{
+    margin-right:50px ;
+}
 
 .col-container {
     display: flex;
     width: 100%;
   }
   .col {
-    flex: 1;
+    /* flex: 1; */
     padding: 16px;
+
     /* margin-right:100px ; */
   }
 .AU_parent
